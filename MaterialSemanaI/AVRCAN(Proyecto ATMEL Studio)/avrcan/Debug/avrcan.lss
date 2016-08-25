@@ -1,0 +1,3539 @@
+
+avrcan.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000013c  00800100  000013e2  00001476  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000013e2  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000081  0080023c  0080023c  000015b2  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000015b2  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 000004c0  00000000  00000000  000015e2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00003628  00000000  00000000  00001aa2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00001191  00000000  00000000  000050ca  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00002401  00000000  00000000  0000625b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000b68  00000000  00000000  0000865c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000192c  00000000  00000000  000091c4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000020c3  00000000  00000000  0000aaf0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 000003e0  00000000  00000000  0000cbb3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	12 c1       	rjmp	.+548    	; 0x226 <__ctors_end>
+       2:	00 00       	nop
+       4:	2e c1       	rjmp	.+604    	; 0x262 <__bad_interrupt>
+       6:	00 00       	nop
+       8:	2c c1       	rjmp	.+600    	; 0x262 <__bad_interrupt>
+       a:	00 00       	nop
+       c:	2a c1       	rjmp	.+596    	; 0x262 <__bad_interrupt>
+       e:	00 00       	nop
+      10:	28 c1       	rjmp	.+592    	; 0x262 <__bad_interrupt>
+      12:	00 00       	nop
+      14:	26 c1       	rjmp	.+588    	; 0x262 <__bad_interrupt>
+      16:	00 00       	nop
+      18:	24 c1       	rjmp	.+584    	; 0x262 <__bad_interrupt>
+      1a:	00 00       	nop
+      1c:	22 c1       	rjmp	.+580    	; 0x262 <__bad_interrupt>
+      1e:	00 00       	nop
+      20:	20 c1       	rjmp	.+576    	; 0x262 <__bad_interrupt>
+      22:	00 00       	nop
+      24:	1e c1       	rjmp	.+572    	; 0x262 <__bad_interrupt>
+      26:	00 00       	nop
+      28:	1c c1       	rjmp	.+568    	; 0x262 <__bad_interrupt>
+      2a:	00 00       	nop
+      2c:	1a c1       	rjmp	.+564    	; 0x262 <__bad_interrupt>
+      2e:	00 00       	nop
+      30:	18 c1       	rjmp	.+560    	; 0x262 <__bad_interrupt>
+      32:	00 00       	nop
+      34:	16 c1       	rjmp	.+556    	; 0x262 <__bad_interrupt>
+      36:	00 00       	nop
+      38:	14 c1       	rjmp	.+552    	; 0x262 <__bad_interrupt>
+      3a:	00 00       	nop
+      3c:	12 c1       	rjmp	.+548    	; 0x262 <__bad_interrupt>
+      3e:	00 00       	nop
+      40:	21 c6       	rjmp	.+3138   	; 0xc84 <__vector_16>
+      42:	00 00       	nop
+      44:	29 c6       	rjmp	.+3154   	; 0xc98 <__vector_17>
+      46:	00 00       	nop
+      48:	0d c1       	rjmp	.+538    	; 0x264 <__vector_18>
+      4a:	00 00       	nop
+      4c:	0a c1       	rjmp	.+532    	; 0x262 <__bad_interrupt>
+      4e:	00 00       	nop
+      50:	08 c1       	rjmp	.+528    	; 0x262 <__bad_interrupt>
+      52:	00 00       	nop
+      54:	0c 94 1a 09 	jmp	0x1234	; 0x1234 <__vector_21>
+      58:	04 c1       	rjmp	.+520    	; 0x262 <__bad_interrupt>
+      5a:	00 00       	nop
+      5c:	02 c1       	rjmp	.+516    	; 0x262 <__bad_interrupt>
+      5e:	00 00       	nop
+      60:	00 c1       	rjmp	.+512    	; 0x262 <__bad_interrupt>
+      62:	00 00       	nop
+      64:	fe c0       	rjmp	.+508    	; 0x262 <__bad_interrupt>
+      66:	00 00       	nop
+      68:	fc c0       	rjmp	.+504    	; 0x262 <__bad_interrupt>
+      6a:	00 00       	nop
+      6c:	fa c0       	rjmp	.+500    	; 0x262 <__bad_interrupt>
+      6e:	00 00       	nop
+      70:	f8 c0       	rjmp	.+496    	; 0x262 <__bad_interrupt>
+      72:	00 00       	nop
+      74:	f6 c0       	rjmp	.+492    	; 0x262 <__bad_interrupt>
+      76:	00 00       	nop
+      78:	f4 c0       	rjmp	.+488    	; 0x262 <__bad_interrupt>
+      7a:	00 00       	nop
+      7c:	f2 c0       	rjmp	.+484    	; 0x262 <__bad_interrupt>
+      7e:	00 00       	nop
+      80:	f0 c0       	rjmp	.+480    	; 0x262 <__bad_interrupt>
+      82:	00 00       	nop
+      84:	ee c0       	rjmp	.+476    	; 0x262 <__bad_interrupt>
+      86:	00 00       	nop
+      88:	ec c0       	rjmp	.+472    	; 0x262 <__bad_interrupt>
+      8a:	00 00       	nop
+      8c:	0c 94 77 08 	jmp	0x10ee	; 0x10ee <__vector_35>
+      90:	e8 c0       	rjmp	.+464    	; 0x262 <__bad_interrupt>
+      92:	00 00       	nop
+      94:	65 08       	sbc	r6, r5
+      96:	6b 08       	sbc	r6, r11
+      98:	6b 08       	sbc	r6, r11
+      9a:	6b 08       	sbc	r6, r11
+      9c:	6b 08       	sbc	r6, r11
+      9e:	6b 08       	sbc	r6, r11
+      a0:	6b 08       	sbc	r6, r11
+      a2:	6b 08       	sbc	r6, r11
+      a4:	96 06       	cpc	r9, r22
+      a6:	6b 08       	sbc	r6, r11
+      a8:	6b 08       	sbc	r6, r11
+      aa:	6b 08       	sbc	r6, r11
+      ac:	6b 08       	sbc	r6, r11
+      ae:	6b 08       	sbc	r6, r11
+      b0:	6b 08       	sbc	r6, r11
+      b2:	6b 08       	sbc	r6, r11
+      b4:	96 06       	cpc	r9, r22
+      b6:	6b 08       	sbc	r6, r11
+      b8:	6b 08       	sbc	r6, r11
+      ba:	6b 08       	sbc	r6, r11
+      bc:	6b 08       	sbc	r6, r11
+      be:	6b 08       	sbc	r6, r11
+      c0:	6b 08       	sbc	r6, r11
+      c2:	6b 08       	sbc	r6, r11
+      c4:	aa 06       	cpc	r10, r26
+      c6:	6b 08       	sbc	r6, r11
+      c8:	6b 08       	sbc	r6, r11
+      ca:	6b 08       	sbc	r6, r11
+      cc:	6b 08       	sbc	r6, r11
+      ce:	6b 08       	sbc	r6, r11
+      d0:	6b 08       	sbc	r6, r11
+      d2:	6b 08       	sbc	r6, r11
+      d4:	5b 07       	cpc	r21, r27
+      d6:	6b 08       	sbc	r6, r11
+      d8:	6b 08       	sbc	r6, r11
+      da:	6b 08       	sbc	r6, r11
+      dc:	6b 08       	sbc	r6, r11
+      de:	6b 08       	sbc	r6, r11
+      e0:	6b 08       	sbc	r6, r11
+      e2:	6b 08       	sbc	r6, r11
+      e4:	aa 06       	cpc	r10, r26
+      e6:	6b 08       	sbc	r6, r11
+      e8:	6b 08       	sbc	r6, r11
+      ea:	6b 08       	sbc	r6, r11
+      ec:	6b 08       	sbc	r6, r11
+      ee:	6b 08       	sbc	r6, r11
+      f0:	6b 08       	sbc	r6, r11
+      f2:	6b 08       	sbc	r6, r11
+      f4:	e7 06       	cpc	r14, r23
+      f6:	6b 08       	sbc	r6, r11
+      f8:	6b 08       	sbc	r6, r11
+      fa:	6b 08       	sbc	r6, r11
+      fc:	6b 08       	sbc	r6, r11
+      fe:	6b 08       	sbc	r6, r11
+     100:	6b 08       	sbc	r6, r11
+     102:	6b 08       	sbc	r6, r11
+     104:	5d 08       	sbc	r5, r13
+     106:	6b 08       	sbc	r6, r11
+     108:	6b 08       	sbc	r6, r11
+     10a:	6b 08       	sbc	r6, r11
+     10c:	6b 08       	sbc	r6, r11
+     10e:	6b 08       	sbc	r6, r11
+     110:	6b 08       	sbc	r6, r11
+     112:	6b 08       	sbc	r6, r11
+     114:	ef 06       	cpc	r14, r31
+     116:	6b 08       	sbc	r6, r11
+     118:	6b 08       	sbc	r6, r11
+     11a:	6b 08       	sbc	r6, r11
+     11c:	6b 08       	sbc	r6, r11
+     11e:	6b 08       	sbc	r6, r11
+     120:	6b 08       	sbc	r6, r11
+     122:	6b 08       	sbc	r6, r11
+     124:	5b 07       	cpc	r21, r27
+     126:	6b 08       	sbc	r6, r11
+     128:	6b 08       	sbc	r6, r11
+     12a:	6b 08       	sbc	r6, r11
+     12c:	6b 08       	sbc	r6, r11
+     12e:	6b 08       	sbc	r6, r11
+     130:	6b 08       	sbc	r6, r11
+     132:	6b 08       	sbc	r6, r11
+     134:	f7 06       	cpc	r15, r23
+     136:	6b 08       	sbc	r6, r11
+     138:	6b 08       	sbc	r6, r11
+     13a:	6b 08       	sbc	r6, r11
+     13c:	6b 08       	sbc	r6, r11
+     13e:	6b 08       	sbc	r6, r11
+     140:	6b 08       	sbc	r6, r11
+     142:	6b 08       	sbc	r6, r11
+     144:	5b 07       	cpc	r21, r27
+     146:	6b 08       	sbc	r6, r11
+     148:	6b 08       	sbc	r6, r11
+     14a:	6b 08       	sbc	r6, r11
+     14c:	6b 08       	sbc	r6, r11
+     14e:	6b 08       	sbc	r6, r11
+     150:	6b 08       	sbc	r6, r11
+     152:	6b 08       	sbc	r6, r11
+     154:	6b 07       	cpc	r22, r27
+     156:	6b 08       	sbc	r6, r11
+     158:	6b 08       	sbc	r6, r11
+     15a:	6b 08       	sbc	r6, r11
+     15c:	6b 08       	sbc	r6, r11
+     15e:	6b 08       	sbc	r6, r11
+     160:	6b 08       	sbc	r6, r11
+     162:	6b 08       	sbc	r6, r11
+     164:	63 07       	cpc	r22, r19
+     166:	6b 08       	sbc	r6, r11
+     168:	6b 08       	sbc	r6, r11
+     16a:	6b 08       	sbc	r6, r11
+     16c:	6b 08       	sbc	r6, r11
+     16e:	6b 08       	sbc	r6, r11
+     170:	6b 08       	sbc	r6, r11
+     172:	6b 08       	sbc	r6, r11
+     174:	6b 07       	cpc	r22, r27
+     176:	6b 08       	sbc	r6, r11
+     178:	6b 08       	sbc	r6, r11
+     17a:	6b 08       	sbc	r6, r11
+     17c:	6b 08       	sbc	r6, r11
+     17e:	6b 08       	sbc	r6, r11
+     180:	6b 08       	sbc	r6, r11
+     182:	6b 08       	sbc	r6, r11
+     184:	63 07       	cpc	r22, r19
+     186:	6b 08       	sbc	r6, r11
+     188:	6b 08       	sbc	r6, r11
+     18a:	6b 08       	sbc	r6, r11
+     18c:	6b 08       	sbc	r6, r11
+     18e:	6b 08       	sbc	r6, r11
+     190:	6b 08       	sbc	r6, r11
+     192:	6b 08       	sbc	r6, r11
+     194:	80 07       	cpc	r24, r16
+     196:	6b 08       	sbc	r6, r11
+     198:	6b 08       	sbc	r6, r11
+     19a:	6b 08       	sbc	r6, r11
+     19c:	6b 08       	sbc	r6, r11
+     19e:	6b 08       	sbc	r6, r11
+     1a0:	6b 08       	sbc	r6, r11
+     1a2:	6b 08       	sbc	r6, r11
+     1a4:	ca 07       	cpc	r28, r26
+     1a6:	6b 08       	sbc	r6, r11
+     1a8:	6b 08       	sbc	r6, r11
+     1aa:	6b 08       	sbc	r6, r11
+     1ac:	6b 08       	sbc	r6, r11
+     1ae:	6b 08       	sbc	r6, r11
+     1b0:	6b 08       	sbc	r6, r11
+     1b2:	6b 08       	sbc	r6, r11
+     1b4:	80 07       	cpc	r24, r16
+     1b6:	6b 08       	sbc	r6, r11
+     1b8:	6b 08       	sbc	r6, r11
+     1ba:	6b 08       	sbc	r6, r11
+     1bc:	6b 08       	sbc	r6, r11
+     1be:	6b 08       	sbc	r6, r11
+     1c0:	6b 08       	sbc	r6, r11
+     1c2:	6b 08       	sbc	r6, r11
+     1c4:	ca 07       	cpc	r28, r26
+     1c6:	6b 08       	sbc	r6, r11
+     1c8:	6b 08       	sbc	r6, r11
+     1ca:	6b 08       	sbc	r6, r11
+     1cc:	6b 08       	sbc	r6, r11
+     1ce:	6b 08       	sbc	r6, r11
+     1d0:	6b 08       	sbc	r6, r11
+     1d2:	6b 08       	sbc	r6, r11
+     1d4:	bd 07       	cpc	r27, r29
+     1d6:	6b 08       	sbc	r6, r11
+     1d8:	6b 08       	sbc	r6, r11
+     1da:	6b 08       	sbc	r6, r11
+     1dc:	6b 08       	sbc	r6, r11
+     1de:	6b 08       	sbc	r6, r11
+     1e0:	6b 08       	sbc	r6, r11
+     1e2:	6b 08       	sbc	r6, r11
+     1e4:	d2 07       	cpc	r29, r18
+     1e6:	6b 08       	sbc	r6, r11
+     1e8:	6b 08       	sbc	r6, r11
+     1ea:	6b 08       	sbc	r6, r11
+     1ec:	6b 08       	sbc	r6, r11
+     1ee:	6b 08       	sbc	r6, r11
+     1f0:	6b 08       	sbc	r6, r11
+     1f2:	6b 08       	sbc	r6, r11
+     1f4:	d2 07       	cpc	r29, r18
+     1f6:	6b 08       	sbc	r6, r11
+     1f8:	6b 08       	sbc	r6, r11
+     1fa:	6b 08       	sbc	r6, r11
+     1fc:	6b 08       	sbc	r6, r11
+     1fe:	6b 08       	sbc	r6, r11
+     200:	6b 08       	sbc	r6, r11
+     202:	6b 08       	sbc	r6, r11
+     204:	ec 07       	cpc	r30, r28
+     206:	6b 08       	sbc	r6, r11
+     208:	6b 08       	sbc	r6, r11
+     20a:	6b 08       	sbc	r6, r11
+     20c:	6b 08       	sbc	r6, r11
+     20e:	6b 08       	sbc	r6, r11
+     210:	6b 08       	sbc	r6, r11
+     212:	6b 08       	sbc	r6, r11
+     214:	ca 07       	cpc	r28, r26
+     216:	6b 08       	sbc	r6, r11
+     218:	6b 08       	sbc	r6, r11
+     21a:	6b 08       	sbc	r6, r11
+     21c:	6b 08       	sbc	r6, r11
+     21e:	6b 08       	sbc	r6, r11
+     220:	6b 08       	sbc	r6, r11
+     222:	6b 08       	sbc	r6, r11
+     224:	5c 07       	cpc	r21, r28
+
+00000226 <__ctors_end>:
+     226:	11 24       	eor	r1, r1
+     228:	1f be       	out	0x3f, r1	; 63
+     22a:	cf ef       	ldi	r28, 0xFF	; 255
+     22c:	d0 e1       	ldi	r29, 0x10	; 16
+     22e:	de bf       	out	0x3e, r29	; 62
+     230:	cd bf       	out	0x3d, r28	; 61
+
+00000232 <__do_copy_data>:
+     232:	12 e0       	ldi	r17, 0x02	; 2
+     234:	a0 e0       	ldi	r26, 0x00	; 0
+     236:	b1 e0       	ldi	r27, 0x01	; 1
+     238:	e2 ee       	ldi	r30, 0xE2	; 226
+     23a:	f3 e1       	ldi	r31, 0x13	; 19
+     23c:	00 e0       	ldi	r16, 0x00	; 0
+     23e:	0b bf       	out	0x3b, r16	; 59
+     240:	02 c0       	rjmp	.+4      	; 0x246 <__do_copy_data+0x14>
+     242:	07 90       	elpm	r0, Z+
+     244:	0d 92       	st	X+, r0
+     246:	ac 33       	cpi	r26, 0x3C	; 60
+     248:	b1 07       	cpc	r27, r17
+     24a:	d9 f7       	brne	.-10     	; 0x242 <__do_copy_data+0x10>
+
+0000024c <__do_clear_bss>:
+     24c:	22 e0       	ldi	r18, 0x02	; 2
+     24e:	ac e3       	ldi	r26, 0x3C	; 60
+     250:	b2 e0       	ldi	r27, 0x02	; 2
+     252:	01 c0       	rjmp	.+2      	; 0x256 <.do_clear_bss_start>
+
+00000254 <.do_clear_bss_loop>:
+     254:	1d 92       	st	X+, r1
+
+00000256 <.do_clear_bss_start>:
+     256:	ad 3b       	cpi	r26, 0xBD	; 189
+     258:	b2 07       	cpc	r27, r18
+     25a:	e1 f7       	brne	.-8      	; 0x254 <.do_clear_bss_loop>
+     25c:	40 d2       	rcall	.+1152   	; 0x6de <main>
+     25e:	0c 94 ef 09 	jmp	0x13de	; 0x13de <_exit>
+
+00000262 <__bad_interrupt>:
+     262:	ce ce       	rjmp	.-612    	; 0x0 <__vectors>
+
+00000264 <__vector_18>:
+/*******************************************************************************************/
+/*    F U N C T I O N   P R O T O T Y P E S                                                */
+/*******************************************************************************************/
+#pragma vector=SIG_CAN_INTERRUPT1
+ISR(SIG_CAN_INTERRUPT1)
+{
+     264:	1f 92       	push	r1
+     266:	0f 92       	push	r0
+     268:	0f b6       	in	r0, 0x3f	; 63
+     26a:	0f 92       	push	r0
+     26c:	11 24       	eor	r1, r1
+     26e:	0b b6       	in	r0, 0x3b	; 59
+     270:	0f 92       	push	r0
+     272:	2f 93       	push	r18
+     274:	3f 93       	push	r19
+     276:	4f 93       	push	r20
+     278:	5f 93       	push	r21
+     27a:	6f 93       	push	r22
+     27c:	7f 93       	push	r23
+     27e:	8f 93       	push	r24
+     280:	9f 93       	push	r25
+     282:	af 93       	push	r26
+     284:	bf 93       	push	r27
+     286:	ef 93       	push	r30
+     288:	ff 93       	push	r31
+	CanMW_set_mutex(MUTEX_LOCK_CHANNEL);
+     28a:	81 e0       	ldi	r24, 0x01	; 1
+     28c:	db d1       	rcall	.+950    	; 0x644 <CanMW_set_mutex>
+	CanMW_ReceivedRxHandle();
+     28e:	8e d1       	rcall	.+796    	; 0x5ac <CanMW_ReceivedRxHandle>
+	CanMW_set_mutex(MUTEX_RELEASE_CHANNEL);
+     290:	80 e0       	ldi	r24, 0x00	; 0
+     292:	d8 d1       	rcall	.+944    	; 0x644 <CanMW_set_mutex>
+}
+     294:	ff 91       	pop	r31
+     296:	ef 91       	pop	r30
+     298:	bf 91       	pop	r27
+     29a:	af 91       	pop	r26
+     29c:	9f 91       	pop	r25
+     29e:	8f 91       	pop	r24
+     2a0:	7f 91       	pop	r23
+     2a2:	6f 91       	pop	r22
+     2a4:	5f 91       	pop	r21
+     2a6:	4f 91       	pop	r20
+     2a8:	3f 91       	pop	r19
+     2aa:	2f 91       	pop	r18
+     2ac:	0f 90       	pop	r0
+     2ae:	0b be       	out	0x3b, r0	; 59
+     2b0:	0f 90       	pop	r0
+     2b2:	0f be       	out	0x3f, r0	; 63
+     2b4:	0f 90       	pop	r0
+     2b6:	1f 90       	pop	r1
+     2b8:	18 95       	reti
+
+000002ba <Can_App_Init>:
+/*    F U N C T I O N   P R O T O T Y P E S                                                */
+/*******************************************************************************************/
+volatile uint8_t can_initialization=0;
+void Can_AppLED(void);
+
+void Can_App_Init(void){
+     2ba:	cf 92       	push	r12
+     2bc:	df 92       	push	r13
+     2be:	ef 92       	push	r14
+     2c0:	0f 93       	push	r16
+     2c2:	1f 93       	push	r17
+	Can_Driver_Init();
+     2c4:	6f d0       	rcall	.+222    	; 0x3a4 <Can_Driver_Init>
+	CanMW_APP_Init();
+     2c6:	7f d1       	rcall	.+766    	; 0x5c6 <CanMW_APP_Init>
+
+	CanMW_InitMail_Box(MailBox_0);
+     2c8:	0f 2e       	mov	r0, r31
+     2ca:	fa e0       	ldi	r31, 0x0A	; 10
+     2cc:	cf 2e       	mov	r12, r31
+     2ce:	d1 2c       	mov	r13, r1
+     2d0:	f0 2d       	mov	r31, r0
+     2d2:	ee 24       	eor	r14, r14
+     2d4:	e3 94       	inc	r14
+     2d6:	0f ef       	ldi	r16, 0xFF	; 255
+     2d8:	17 e0       	ldi	r17, 0x07	; 7
+     2da:	24 e9       	ldi	r18, 0x94	; 148
+     2dc:	32 e0       	ldi	r19, 0x02	; 2
+     2de:	48 e0       	ldi	r20, 0x08	; 8
+     2e0:	62 e0       	ldi	r22, 0x02	; 2
+     2e2:	80 e0       	ldi	r24, 0x00	; 0
+     2e4:	75 d1       	rcall	.+746    	; 0x5d0 <CanMW_InitMail_Box>
+	CanMW_InitMail_Box(MailBox_1);
+     2e6:	28 e8       	ldi	r18, 0x88	; 136
+     2e8:	31 e0       	ldi	r19, 0x01	; 1
+     2ea:	48 e0       	ldi	r20, 0x08	; 8
+     2ec:	62 e0       	ldi	r22, 0x02	; 2
+     2ee:	81 e0       	ldi	r24, 0x01	; 1
+     2f0:	6f d1       	rcall	.+734    	; 0x5d0 <CanMW_InitMail_Box>
+	CanMW_InitMail_Box(MailBox_2);
+     2f2:	21 e0       	ldi	r18, 0x01	; 1
+     2f4:	31 e0       	ldi	r19, 0x01	; 1
+     2f6:	48 e0       	ldi	r20, 0x08	; 8
+     2f8:	62 e0       	ldi	r22, 0x02	; 2
+     2fa:	82 e0       	ldi	r24, 0x02	; 2
+     2fc:	69 d1       	rcall	.+722    	; 0x5d0 <CanMW_InitMail_Box>
+
+	schedulerSetupItem( 0, TRUE, SCH_100MS_SETUP );
+     2fe:	43 e1       	ldi	r20, 0x13	; 19
+     300:	61 e0       	ldi	r22, 0x01	; 1
+     302:	80 e0       	ldi	r24, 0x00	; 0
+     304:	06 d4       	rcall	.+2060   	; 0xb12 <schedulerSetupItem>
+	schedulerSetupItem( 1, TRUE, SCH_150MS_SETUP );
+     306:	4d e1       	ldi	r20, 0x1D	; 29
+     308:	61 e0       	ldi	r22, 0x01	; 1
+     30a:	81 e0       	ldi	r24, 0x01	; 1
+     30c:	02 d4       	rcall	.+2052   	; 0xb12 <schedulerSetupItem>
+	schedulerSetupItem( 2, TRUE, SCH_220MS_SETUP );
+     30e:	4b e2       	ldi	r20, 0x2B	; 43
+     310:	61 e0       	ldi	r22, 0x01	; 1
+     312:	82 e0       	ldi	r24, 0x02	; 2
+     314:	fe d3       	rcall	.+2044   	; 0xb12 <schedulerSetupItem>
+	//CanMw_Send_TX_Messages();
+
+	ENABLE_CAN_RECEIVE_INTERRUPT();
+     316:	eb ed       	ldi	r30, 0xDB	; 219
+     318:	f0 e0       	ldi	r31, 0x00	; 0
+     31a:	80 81       	ld	r24, Z
+     31c:	80 62       	ori	r24, 0x20	; 32
+     31e:	80 83       	st	Z, r24
+	can_initialization=1;
+     320:	81 e0       	ldi	r24, 0x01	; 1
+     322:	80 93 3c 02 	sts	0x023C, r24
+}
+     326:	1f 91       	pop	r17
+     328:	0f 91       	pop	r16
+     32a:	ef 90       	pop	r14
+     32c:	df 90       	pop	r13
+     32e:	cf 90       	pop	r12
+     330:	08 95       	ret
+
+00000332 <Get_CAN_ID>:
+#endif
+
+#if CONFIG_CAN_TIMER_OVERRUN_INTERRUPT == 1
+	ENABLE_CAN_TIMER_OVERRUN_INTERRUPT();
+#else
+	DISABLE_CAN_TIMER_OVERRUN_INTERRUPT();
+     332:	80 91 f3 00 	lds	r24, 0x00F3
+     336:	20 91 f2 00 	lds	r18, 0x00F2
+     33a:	90 e0       	ldi	r25, 0x00	; 0
+     33c:	88 0f       	add	r24, r24
+     33e:	99 1f       	adc	r25, r25
+     340:	88 0f       	add	r24, r24
+     342:	99 1f       	adc	r25, r25
+     344:	88 0f       	add	r24, r24
+     346:	99 1f       	adc	r25, r25
+     348:	22 95       	swap	r18
+     34a:	26 95       	lsr	r18
+     34c:	27 70       	andi	r18, 0x07	; 7
+     34e:	82 0f       	add	r24, r18
+     350:	91 1d       	adc	r25, r1
+     352:	08 95       	ret
+
+00000354 <Can_Set_MSG_ID>:
+     354:	9c 01       	movw	r18, r24
+     356:	36 95       	lsr	r19
+     358:	27 95       	ror	r18
+     35a:	36 95       	lsr	r19
+     35c:	27 95       	ror	r18
+     35e:	36 95       	lsr	r19
+     360:	27 95       	ror	r18
+     362:	20 93 f3 00 	sts	0x00F3, r18
+     366:	82 95       	swap	r24
+     368:	88 0f       	add	r24, r24
+     36a:	80 7e       	andi	r24, 0xE0	; 224
+     36c:	80 93 f2 00 	sts	0x00F2, r24
+     370:	08 95       	ret
+
+00000372 <Can_Set_IDMask>:
+     372:	9c 01       	movw	r18, r24
+     374:	36 95       	lsr	r19
+     376:	27 95       	ror	r18
+     378:	36 95       	lsr	r19
+     37a:	27 95       	ror	r18
+     37c:	36 95       	lsr	r19
+     37e:	27 95       	ror	r18
+     380:	20 93 f7 00 	sts	0x00F7, r18
+     384:	82 95       	swap	r24
+     386:	88 0f       	add	r24, r24
+     388:	80 7e       	andi	r24, 0xE0	; 224
+     38a:	80 93 f6 00 	sts	0x00F6, r24
+     38e:	08 95       	ret
+
+00000390 <Get_Can_Time_Stamp>:
+     390:	e9 ef       	ldi	r30, 0xF9	; 249
+     392:	f0 e0       	ldi	r31, 0x00	; 0
+     394:	80 81       	ld	r24, Z
+     396:	20 81       	ld	r18, Z
+     398:	90 e0       	ldi	r25, 0x00	; 0
+     39a:	98 2f       	mov	r25, r24
+     39c:	88 27       	eor	r24, r24
+     39e:	82 0f       	add	r24, r18
+     3a0:	91 1d       	adc	r25, r1
+     3a2:	08 95       	ret
+
+000003a4 <Can_Driver_Init>:
+     3a4:	cf 93       	push	r28
+     3a6:	df 93       	push	r29
+     3a8:	e8 ed       	ldi	r30, 0xD8	; 216
+     3aa:	f0 e0       	ldi	r31, 0x00	; 0
+     3ac:	80 81       	ld	r24, Z
+     3ae:	81 60       	ori	r24, 0x01	; 1
+     3b0:	80 83       	st	Z, r24
+     3b2:	80 81       	ld	r24, Z
+     3b4:	8d 7f       	andi	r24, 0xFD	; 253
+     3b6:	80 83       	st	Z, r24
+     3b8:	80 e0       	ldi	r24, 0x00	; 0
+     3ba:	cd ee       	ldi	r28, 0xED	; 237
+     3bc:	d0 e0       	ldi	r29, 0x00	; 0
+     3be:	af ee       	ldi	r26, 0xEF	; 239
+     3c0:	b0 e0       	ldi	r27, 0x00	; 0
+     3c2:	ee ee       	ldi	r30, 0xEE	; 238
+     3c4:	f0 e0       	ldi	r31, 0x00	; 0
+     3c6:	98 2f       	mov	r25, r24
+     3c8:	92 95       	swap	r25
+     3ca:	90 7f       	andi	r25, 0xF0	; 240
+     3cc:	98 83       	st	Y, r25
+     3ce:	1c 92       	st	X, r1
+     3d0:	10 82       	st	Z, r1
+     3d2:	8f 5f       	subi	r24, 0xFF	; 255
+     3d4:	8f 30       	cpi	r24, 0x0F	; 15
+     3d6:	b9 f7       	brne	.-18     	; 0x3c6 <Can_Driver_Init+0x22>
+     3d8:	86 e0       	ldi	r24, 0x06	; 6
+     3da:	80 93 e2 00 	sts	0x00E2, r24
+     3de:	84 e0       	ldi	r24, 0x04	; 4
+     3e0:	80 93 e3 00 	sts	0x00E3, r24
+     3e4:	83 e1       	ldi	r24, 0x13	; 19
+     3e6:	80 93 e4 00 	sts	0x00E4, r24
+     3ea:	e8 ed       	ldi	r30, 0xD8	; 216
+     3ec:	f0 e0       	ldi	r31, 0x00	; 0
+     3ee:	80 81       	ld	r24, Z
+     3f0:	8d 7f       	andi	r24, 0xFD	; 253
+     3f2:	80 83       	st	Z, r24
+     3f4:	df 91       	pop	r29
+     3f6:	cf 91       	pop	r28
+     3f8:	08 95       	ret
+
+000003fa <CAN_MOB_Interrupt_Control>:
+     3fa:	88 30       	cpi	r24, 0x08	; 8
+     3fc:	70 f0       	brcs	.+28     	; 0x41a <CAN_MOB_Interrupt_Control+0x20>
+     3fe:	ef ed       	ldi	r30, 0xDF	; 223
+     400:	f0 e0       	ldi	r31, 0x00	; 0
+     402:	20 81       	ld	r18, Z
+     404:	70 e0       	ldi	r23, 0x00	; 0
+     406:	ab 01       	movw	r20, r22
+     408:	02 c0       	rjmp	.+4      	; 0x40e <CAN_MOB_Interrupt_Control+0x14>
+     40a:	44 0f       	add	r20, r20
+     40c:	55 1f       	adc	r21, r21
+     40e:	8a 95       	dec	r24
+     410:	e2 f7       	brpl	.-8      	; 0x40a <CAN_MOB_Interrupt_Control+0x10>
+     412:	ca 01       	movw	r24, r20
+     414:	82 2b       	or	r24, r18
+     416:	80 83       	st	Z, r24
+     418:	08 95       	ret
+     41a:	ee ed       	ldi	r30, 0xDE	; 222
+     41c:	f0 e0       	ldi	r31, 0x00	; 0
+     41e:	20 81       	ld	r18, Z
+     420:	70 e0       	ldi	r23, 0x00	; 0
+     422:	ab 01       	movw	r20, r22
+     424:	02 c0       	rjmp	.+4      	; 0x42a <CAN_MOB_Interrupt_Control+0x30>
+     426:	44 0f       	add	r20, r20
+     428:	55 1f       	adc	r21, r21
+     42a:	8a 95       	dec	r24
+     42c:	e2 f7       	brpl	.-8      	; 0x426 <CAN_MOB_Interrupt_Control+0x2c>
+     42e:	ca 01       	movw	r24, r20
+     430:	82 2b       	or	r24, r18
+     432:	80 83       	st	Z, r24
+     434:	08 95       	ret
+
+00000436 <CAN_MOB_SimpleMode_Set>:
+     436:	ef ee       	ldi	r30, 0xEF	; 239
+     438:	f0 e0       	ldi	r31, 0x00	; 0
+     43a:	20 81       	ld	r18, Z
+     43c:	30 e4       	ldi	r19, 0x40	; 64
+     43e:	83 9f       	mul	r24, r19
+     440:	c0 01       	movw	r24, r0
+     442:	11 24       	eor	r1, r1
+     444:	82 2b       	or	r24, r18
+     446:	80 83       	st	Z, r24
+     448:	08 95       	ret
+
+0000044a <Can_Tx_Msg>:
+
+#endif
+	return;
+}
+
+can_status Can_Tx_Msg(MBox_type mailbox ,CAN_ID_type msg_id ,can_dlc_type dlc,can_message_data * buffer){
+     44a:	1f 93       	push	r17
+     44c:	cf 93       	push	r28
+     44e:	df 93       	push	r29
+     450:	c4 2f       	mov	r28, r20
+     452:	d2 2f       	mov	r29, r18
+     454:	13 2f       	mov	r17, r19
+	can_dlc_type icounter=0;
+	can_status status=CAN_SUCESS;
+
+	DISABLE_CAN_RECEIVE_INTERRUPT();
+     456:	eb ed       	ldi	r30, 0xDB	; 219
+     458:	f0 e0       	ldi	r31, 0x00	; 0
+     45a:	90 81       	ld	r25, Z
+     45c:	9f 7d       	andi	r25, 0xDF	; 223
+     45e:	90 83       	st	Z, r25
+	if(dlc <= 8){
+     460:	49 30       	cpi	r20, 0x09	; 9
+     462:	c8 f4       	brcc	.+50     	; 0x496 <Can_Tx_Msg+0x4c>
+		Set_MailBox(mailbox);
+     464:	82 95       	swap	r24
+     466:	80 7f       	andi	r24, 0xF0	; 240
+     468:	80 93 ed 00 	sts	0x00ED, r24
+		can_set_dlc(dlc);
+     46c:	ef ee       	ldi	r30, 0xEF	; 239
+     46e:	f0 e0       	ldi	r31, 0x00	; 0
+     470:	80 81       	ld	r24, Z
+     472:	84 2b       	or	r24, r20
+     474:	80 83       	st	Z, r24
+		Can_Set_MSG_ID(msg_id);
+     476:	cb 01       	movw	r24, r22
+     478:	6d df       	rcall	.-294    	; 0x354 <Can_Set_MSG_ID>
+		for(icounter=0; icounter<dlc; icounter++){
+     47a:	cc 23       	and	r28, r28
+     47c:	71 f0       	breq	.+28     	; 0x49a <Can_Tx_Msg+0x50>
+     47e:	9d 2f       	mov	r25, r29
+     480:	ed 2f       	mov	r30, r29
+     482:	f1 2f       	mov	r31, r17
+			CANMSG=buffer[icounter];
+     484:	aa ef       	ldi	r26, 0xFA	; 250
+     486:	b0 e0       	ldi	r27, 0x00	; 0
+     488:	81 91       	ld	r24, Z+
+     48a:	8c 93       	st	X, r24
+     48c:	8e 2f       	mov	r24, r30
+     48e:	89 1b       	sub	r24, r25
+	DISABLE_CAN_RECEIVE_INTERRUPT();
+	if(dlc <= 8){
+		Set_MailBox(mailbox);
+		can_set_dlc(dlc);
+		Can_Set_MSG_ID(msg_id);
+		for(icounter=0; icounter<dlc; icounter++){
+     490:	8c 17       	cp	r24, r28
+     492:	d0 f3       	brcs	.-12     	; 0x488 <Can_Tx_Msg+0x3e>
+     494:	04 c0       	rjmp	.+8      	; 0x49e <Can_Tx_Msg+0x54>
+			CANMSG=buffer[icounter];
+		}
+	}else{
+		status=CAN_ERROR;
+     496:	81 e0       	ldi	r24, 0x01	; 1
+     498:	03 c0       	rjmp	.+6      	; 0x4a0 <Can_Tx_Msg+0x56>
+	return;
+}
+
+can_status Can_Tx_Msg(MBox_type mailbox ,CAN_ID_type msg_id ,can_dlc_type dlc,can_message_data * buffer){
+	can_dlc_type icounter=0;
+	can_status status=CAN_SUCESS;
+     49a:	80 e0       	ldi	r24, 0x00	; 0
+     49c:	01 c0       	rjmp	.+2      	; 0x4a0 <Can_Tx_Msg+0x56>
+     49e:	80 e0       	ldi	r24, 0x00	; 0
+			CANMSG=buffer[icounter];
+		}
+	}else{
+		status=CAN_ERROR;
+	}
+	ENABLE_CAN_RECEIVE_INTERRUPT();
+     4a0:	eb ed       	ldi	r30, 0xDB	; 219
+     4a2:	f0 e0       	ldi	r31, 0x00	; 0
+     4a4:	90 81       	ld	r25, Z
+     4a6:	90 62       	ori	r25, 0x20	; 32
+     4a8:	90 83       	st	Z, r25
+	return status;
+}
+     4aa:	df 91       	pop	r29
+     4ac:	cf 91       	pop	r28
+     4ae:	1f 91       	pop	r17
+     4b0:	08 95       	ret
+
+000004b2 <Can_Configure_MailBox>:
+void Can_Configure_MailBox(MBox_type mailbox,CAN_Mode_type mode,can_dlc_type data_l,CAN_ID_type mbox_id,CAN_ID_type mbox_mask,can_int_ctrl enable_int){
+     4b2:	df 92       	push	r13
+     4b4:	ef 92       	push	r14
+     4b6:	ff 92       	push	r15
+     4b8:	0f 93       	push	r16
+     4ba:	1f 93       	push	r17
+     4bc:	cf 93       	push	r28
+     4be:	df 93       	push	r29
+     4c0:	f8 2e       	mov	r15, r24
+     4c2:	d4 2e       	mov	r13, r20
+     4c4:	e9 01       	movw	r28, r18
+	switch (mode) {
+     4c6:	61 30       	cpi	r22, 0x01	; 1
+     4c8:	a9 f0       	breq	.+42     	; 0x4f4 <Can_Configure_MailBox+0x42>
+     4ca:	62 30       	cpi	r22, 0x02	; 2
+     4cc:	21 f5       	brne	.+72     	; 0x516 <Can_Configure_MailBox+0x64>
+
+
+	case MAIL_BOX_ENABLE_RX:
+		Set_MailBox(mailbox);
+     4ce:	82 95       	swap	r24
+     4d0:	80 7f       	andi	r24, 0xF0	; 240
+     4d2:	80 93 ed 00 	sts	0x00ED, r24
+		CAN_MOB_SimpleMode_Set(mode);
+     4d6:	82 e0       	ldi	r24, 0x02	; 2
+     4d8:	ae df       	rcall	.-164    	; 0x436 <CAN_MOB_SimpleMode_Set>
+		can_set_dlc(data_l);
+     4da:	ef ee       	ldi	r30, 0xEF	; 239
+     4dc:	f0 e0       	ldi	r31, 0x00	; 0
+     4de:	80 81       	ld	r24, Z
+     4e0:	d8 2a       	or	r13, r24
+     4e2:	d0 82       	st	Z, r13
+		Can_Set_MSG_ID(mbox_id);
+     4e4:	ce 01       	movw	r24, r28
+     4e6:	36 df       	rcall	.-404    	; 0x354 <Can_Set_MSG_ID>
+		Can_Set_IDMask(mbox_mask);
+     4e8:	c8 01       	movw	r24, r16
+     4ea:	43 df       	rcall	.-378    	; 0x372 <Can_Set_IDMask>
+		CAN_MOB_Interrupt_Control(mailbox,enable_int);
+     4ec:	6e 2d       	mov	r22, r14
+     4ee:	8f 2d       	mov	r24, r15
+     4f0:	84 df       	rcall	.-248    	; 0x3fa <CAN_MOB_Interrupt_Control>
+		break;
+     4f2:	11 c0       	rjmp	.+34     	; 0x516 <Can_Configure_MailBox+0x64>
+	case MAIL_BOX_ENABLE_TX:
+		Set_MailBox(mailbox);
+     4f4:	ff 0c       	add	r15, r15
+     4f6:	ff 0c       	add	r15, r15
+     4f8:	ff 0c       	add	r15, r15
+     4fa:	ff 0c       	add	r15, r15
+     4fc:	f0 92 ed 00 	sts	0x00ED, r15
+		CAN_MOB_SimpleMode_Set(mode);
+     500:	81 e0       	ldi	r24, 0x01	; 1
+     502:	99 df       	rcall	.-206    	; 0x436 <CAN_MOB_SimpleMode_Set>
+		can_set_dlc(data_l);
+     504:	ef ee       	ldi	r30, 0xEF	; 239
+     506:	f0 e0       	ldi	r31, 0x00	; 0
+     508:	80 81       	ld	r24, Z
+     50a:	d8 2a       	or	r13, r24
+     50c:	d0 82       	st	Z, r13
+		Can_Set_MSG_ID(mbox_id);
+     50e:	ce 01       	movw	r24, r28
+     510:	21 df       	rcall	.-446    	; 0x354 <Can_Set_MSG_ID>
+		Can_Set_IDMask(mbox_mask);
+     512:	c8 01       	movw	r24, r16
+     514:	2e df       	rcall	.-420    	; 0x372 <Can_Set_IDMask>
+
+		break;
+	}
+
+
+}
+     516:	df 91       	pop	r29
+     518:	cf 91       	pop	r28
+     51a:	1f 91       	pop	r17
+     51c:	0f 91       	pop	r16
+     51e:	ff 90       	pop	r15
+     520:	ef 90       	pop	r14
+     522:	df 90       	pop	r13
+     524:	08 95       	ret
+
+00000526 <CanMw_MailBox_Rx_Handler>:
+
+can_event CanMW_Event_Get(void){
+	return event_can;
+}
+void CanMW_Event_Clean(void){
+	event_can=0;
+     526:	ff 92       	push	r15
+     528:	0f 93       	push	r16
+     52a:	1f 93       	push	r17
+     52c:	cf 93       	push	r28
+     52e:	df 93       	push	r29
+     530:	98 2f       	mov	r25, r24
+     532:	92 95       	swap	r25
+     534:	90 7f       	andi	r25, 0xF0	; 240
+     536:	90 93 ed 00 	sts	0x00ED, r25
+     53a:	90 91 ef 00 	lds	r25, 0x00EF
+     53e:	9f 70       	andi	r25, 0x0F	; 15
+     540:	f9 2e       	mov	r15, r25
+     542:	08 2f       	mov	r16, r24
+     544:	10 e0       	ldi	r17, 0x00	; 0
+     546:	96 e1       	ldi	r25, 0x16	; 22
+     548:	89 9f       	mul	r24, r25
+     54a:	e0 01       	movw	r28, r0
+     54c:	11 24       	eor	r1, r1
+     54e:	c8 58       	subi	r28, 0x88	; 136
+     550:	dd 4f       	sbci	r29, 0xFD	; 253
+     552:	f8 86       	std	Y+8, r15	; 0x08
+     554:	ee de       	rcall	.-548    	; 0x332 <Get_CAN_ID>
+     556:	9f 83       	std	Y+7, r25	; 0x07
+     558:	8e 83       	std	Y+6, r24	; 0x06
+     55a:	1a df       	rcall	.-460    	; 0x390 <Get_Can_Time_Stamp>
+     55c:	9b 8b       	std	Y+19, r25	; 0x13
+     55e:	8a 8b       	std	Y+18, r24	; 0x12
+     560:	ff 20       	and	r15, r15
+     562:	b9 f0       	breq	.+46     	; 0x592 <CanMw_MailBox_Rx_Handler+0x6c>
+     564:	20 e0       	ldi	r18, 0x00	; 0
+     566:	cd ee       	ldi	r28, 0xED	; 237
+     568:	d0 e0       	ldi	r29, 0x00	; 0
+     56a:	aa ef       	ldi	r26, 0xFA	; 250
+     56c:	b0 e0       	ldi	r27, 0x00	; 0
+     56e:	36 e1       	ldi	r19, 0x16	; 22
+     570:	30 9f       	mul	r19, r16
+     572:	c0 01       	movw	r24, r0
+     574:	31 9f       	mul	r19, r17
+     576:	90 0d       	add	r25, r0
+     578:	11 24       	eor	r1, r1
+     57a:	88 58       	subi	r24, 0x88	; 136
+     57c:	9d 4f       	sbci	r25, 0xFD	; 253
+     57e:	48 81       	ld	r20, Y
+     580:	3c 91       	ld	r19, X
+     582:	47 70       	andi	r20, 0x07	; 7
+     584:	fc 01       	movw	r30, r24
+     586:	e4 0f       	add	r30, r20
+     588:	f1 1d       	adc	r31, r1
+     58a:	31 87       	std	Z+9, r19	; 0x09
+     58c:	2f 5f       	subi	r18, 0xFF	; 255
+     58e:	2f 11       	cpse	r18, r15
+     590:	f6 cf       	rjmp	.-20     	; 0x57e <CanMw_MailBox_Rx_Handler+0x58>
+     592:	ee ee       	ldi	r30, 0xEE	; 238
+     594:	f0 e0       	ldi	r31, 0x00	; 0
+     596:	80 81       	ld	r24, Z
+     598:	8f 79       	andi	r24, 0x9F	; 159
+     59a:	80 83       	st	Z, r24
+     59c:	10 92 ef 00 	sts	0x00EF, r1
+     5a0:	df 91       	pop	r29
+     5a2:	cf 91       	pop	r28
+     5a4:	1f 91       	pop	r17
+     5a6:	0f 91       	pop	r16
+     5a8:	ff 90       	pop	r15
+     5aa:	08 95       	ret
+
+000005ac <CanMW_ReceivedRxHandle>:
+     5ac:	80 91 ec 00 	lds	r24, 0x00EC
+     5b0:	82 95       	swap	r24
+     5b2:	8f 70       	andi	r24, 0x0F	; 15
+     5b4:	80 93 77 02 	sts	0x0277, r24
+     5b8:	80 91 77 02 	lds	r24, 0x0277
+     5bc:	b4 df       	rcall	.-152    	; 0x526 <CanMw_MailBox_Rx_Handler>
+     5be:	81 e0       	ldi	r24, 0x01	; 1
+     5c0:	80 93 bb 02 	sts	0x02BB, r24
+     5c4:	08 95       	ret
+
+000005c6 <CanMW_APP_Init>:
+     5c6:	10 92 bb 02 	sts	0x02BB, r1
+     5ca:	10 92 bc 02 	sts	0x02BC, r1
+     5ce:	08 95       	ret
+
+000005d0 <CanMW_InitMail_Box>:
+     5d0:	cf 92       	push	r12
+     5d2:	df 92       	push	r13
+     5d4:	ef 92       	push	r14
+     5d6:	0f 93       	push	r16
+     5d8:	1f 93       	push	r17
+     5da:	96 e1       	ldi	r25, 0x16	; 22
+     5dc:	89 9f       	mul	r24, r25
+     5de:	f0 01       	movw	r30, r0
+     5e0:	11 24       	eor	r1, r1
+     5e2:	e8 58       	subi	r30, 0x88	; 136
+     5e4:	fd 4f       	sbci	r31, 0xFD	; 253
+     5e6:	80 83       	st	Z, r24
+     5e8:	61 83       	std	Z+1, r22	; 0x01
+     5ea:	40 87       	std	Z+8, r20	; 0x08
+     5ec:	d5 8a       	std	Z+21, r13	; 0x15
+     5ee:	c4 8a       	std	Z+20, r12	; 0x14
+     5f0:	37 83       	std	Z+7, r19	; 0x07
+     5f2:	26 83       	std	Z+6, r18	; 0x06
+     5f4:	14 83       	std	Z+4, r17	; 0x04
+     5f6:	03 83       	std	Z+3, r16	; 0x03
+     5f8:	e5 82       	std	Z+5, r14	; 0x05
+     5fa:	5b df       	rcall	.-330    	; 0x4b2 <Can_Configure_MailBox>
+     5fc:	1f 91       	pop	r17
+     5fe:	0f 91       	pop	r16
+     600:	ef 90       	pop	r14
+     602:	df 90       	pop	r13
+     604:	cf 90       	pop	r12
+     606:	08 95       	ret
+
+00000608 <CanMw_Send_TX_Message>:
+     608:	83 30       	cpi	r24, 0x03	; 3
+     60a:	d8 f4       	brcc	.+54     	; 0x642 <CanMw_Send_TX_Message+0x3a>
+     60c:	48 2f       	mov	r20, r24
+     60e:	50 e0       	ldi	r21, 0x00	; 0
+     610:	96 e1       	ldi	r25, 0x16	; 22
+     612:	89 9f       	mul	r24, r25
+     614:	f0 01       	movw	r30, r0
+     616:	11 24       	eor	r1, r1
+     618:	e8 58       	subi	r30, 0x88	; 136
+     61a:	fd 4f       	sbci	r31, 0xFD	; 253
+     61c:	81 81       	ldd	r24, Z+1	; 0x01
+     61e:	81 30       	cpi	r24, 0x01	; 1
+     620:	81 f4       	brne	.+32     	; 0x642 <CanMw_Send_TX_Message+0x3a>
+     622:	86 e1       	ldi	r24, 0x16	; 22
+     624:	84 9f       	mul	r24, r20
+     626:	90 01       	movw	r18, r0
+     628:	85 9f       	mul	r24, r21
+     62a:	30 0d       	add	r19, r0
+     62c:	11 24       	eor	r1, r1
+     62e:	f9 01       	movw	r30, r18
+     630:	e8 58       	subi	r30, 0x88	; 136
+     632:	fd 4f       	sbci	r31, 0xFD	; 253
+     634:	40 85       	ldd	r20, Z+8	; 0x08
+     636:	66 81       	ldd	r22, Z+6	; 0x06
+     638:	77 81       	ldd	r23, Z+7	; 0x07
+     63a:	80 81       	ld	r24, Z
+     63c:	2f 57       	subi	r18, 0x7F	; 127
+     63e:	3d 4f       	sbci	r19, 0xFD	; 253
+     640:	04 cf       	rjmp	.-504    	; 0x44a <Can_Tx_Msg>
+     642:	08 95       	ret
+
+00000644 <CanMW_set_mutex>:
+     644:	80 93 ba 02 	sts	0x02BA, r24
+     648:	08 95       	ret
+
+0000064a <Get_Message_FromMbox>:
+}
+
+void Get_Message_FromMbox(MBox_type mail,CanMw_Message * message){
+	memcpy(message,(void*)&MboxControlReg[mail].msg,sizeof(CanMw_Message));
+     64a:	26 e1       	ldi	r18, 0x16	; 22
+     64c:	82 9f       	mul	r24, r18
+     64e:	c0 01       	movw	r24, r0
+     650:	11 24       	eor	r1, r1
+     652:	fc 01       	movw	r30, r24
+     654:	e2 58       	subi	r30, 0x82	; 130
+     656:	fd 4f       	sbci	r31, 0xFD	; 253
+     658:	80 e1       	ldi	r24, 0x10	; 16
+     65a:	db 01       	movw	r26, r22
+     65c:	01 90       	ld	r0, Z+
+     65e:	0d 92       	st	X+, r0
+     660:	8a 95       	dec	r24
+     662:	e1 f7       	brne	.-8      	; 0x65c <Get_Message_FromMbox+0x12>
+     664:	08 95       	ret
+
+00000666 <Get_MboxConfig>:
+}
+
+void Get_MboxConfig( MBox_type mail, CanMW_MBox * MboxConfig ){
+    memcpy(MboxConfig,(void*)&MboxControlReg[mail],sizeof(CanMW_MBox));
+     666:	26 e1       	ldi	r18, 0x16	; 22
+     668:	82 9f       	mul	r24, r18
+     66a:	c0 01       	movw	r24, r0
+     66c:	11 24       	eor	r1, r1
+     66e:	fc 01       	movw	r30, r24
+     670:	e8 58       	subi	r30, 0x88	; 136
+     672:	fd 4f       	sbci	r31, 0xFD	; 253
+     674:	86 e1       	ldi	r24, 0x16	; 22
+     676:	db 01       	movw	r26, r22
+     678:	01 90       	ld	r0, Z+
+     67a:	0d 92       	st	X+, r0
+     67c:	8a 95       	dec	r24
+     67e:	e1 f7       	brne	.-8      	; 0x678 <Get_MboxConfig+0x12>
+     680:	08 95       	ret
+
+00000682 <Write_Message_Mbox>:
+}
+
+void Write_Message_Mbox(MBox_type mail,CanMW_MBox  * mail_box){
+     682:	cf 93       	push	r28
+     684:	df 93       	push	r29
+	#if CAN_MIDLEWARE_SECURE_MAILBOX_WRITE == 1
+	Can_Int_Transactions_Off();
+     686:	cb ed       	ldi	r28, 0xDB	; 219
+     688:	d0 e0       	ldi	r29, 0x00	; 0
+     68a:	98 81       	ld	r25, Y
+     68c:	9f 7d       	andi	r25, 0xDF	; 223
+     68e:	98 83       	st	Y, r25
+     690:	98 81       	ld	r25, Y
+     692:	9f 7e       	andi	r25, 0xEF	; 239
+     694:	98 83       	st	Y, r25
+	#endif
+	memcpy((void*)&MboxControlReg[mail],(void*)mail_box,sizeof(CanMW_MBox));
+     696:	26 e1       	ldi	r18, 0x16	; 22
+     698:	82 9f       	mul	r24, r18
+     69a:	c0 01       	movw	r24, r0
+     69c:	11 24       	eor	r1, r1
+     69e:	dc 01       	movw	r26, r24
+     6a0:	a8 58       	subi	r26, 0x88	; 136
+     6a2:	bd 4f       	sbci	r27, 0xFD	; 253
+     6a4:	86 e1       	ldi	r24, 0x16	; 22
+     6a6:	fb 01       	movw	r30, r22
+     6a8:	01 90       	ld	r0, Z+
+     6aa:	0d 92       	st	X+, r0
+     6ac:	8a 95       	dec	r24
+     6ae:	e1 f7       	brne	.-8      	; 0x6a8 <Write_Message_Mbox+0x26>
+	#if CAN_MIDLEWARE_SECURE_MAILBOX_WRITE == 1
+	Can_Int_Transactions_On();
+     6b0:	88 81       	ld	r24, Y
+     6b2:	80 62       	ori	r24, 0x20	; 32
+     6b4:	88 83       	st	Y, r24
+     6b6:	88 81       	ld	r24, Y
+     6b8:	80 61       	ori	r24, 0x10	; 16
+     6ba:	88 83       	st	Y, r24
+	#endif
+}
+     6bc:	df 91       	pop	r29
+     6be:	cf 91       	pop	r28
+     6c0:	08 95       	ret
+
+000006c2 <CAN_Main_Board_Init>:
+#include <cpu.h>
+/*******************************************************************************************/
+/*    M A C R O S                                                                          */
+/*******************************************************************************************/
+void CAN_Main_Board_Init(void){
+	watchdog_on(WDT_TIME_2_1S);
+     6c2:	87 e0       	ldi	r24, 0x07	; 7
+     6c4:	79 d6       	rcall	.+3314   	; 0x13b8 <watchdog_on>
+	usart_init((uint8_t)BAUD_RATE_57_6k);
+     6c6:	87 e0       	ldi	r24, 0x07	; 7
+     6c8:	3f d5       	rcall	.+2686   	; 0x1148 <usart_init>
+	Led_Indicators_Init();
+     6ca:	02 d0       	rcall	.+4      	; 0x6d0 <Led_Indicators_Init>
+	asm("NOP");
+     6cc:	00 00       	nop
+     6ce:	08 95       	ret
+
+000006d0 <Led_Indicators_Init>:
+
+volatile LED_Indicators_struct Ind_led;
+
+void Led_Indicators_Init(void){
+	//memset(&Ind_led,0,sizeof(Ind_led));
+	Pin_Config_Err();
+     6d0:	0d 9a       	sbi	0x01, 5	; 1
+     6d2:	15 9a       	sbi	0x02, 5	; 2
+	Pin_Config_Tx();
+     6d4:	0f 9a       	sbi	0x01, 7	; 1
+     6d6:	17 9a       	sbi	0x02, 7	; 2
+	Pin_Config_Rx();
+     6d8:	0e 9a       	sbi	0x01, 6	; 1
+     6da:	16 9a       	sbi	0x02, 6	; 2
+     6dc:	08 95       	ret
+
+000006de <main>:
+/*******************************************************************************************/
+/*    F U N C T I O N   P R O T O T Y P E S                                                */
+/*******************************************************************************************/
+int  main(void){
+
+	CAN_Main_Board_Init();
+     6de:	f1 df       	rcall	.-30     	; 0x6c2 <CAN_Main_Board_Init>
+	Can_App_Init();
+     6e0:	ec dd       	rcall	.-1064   	; 0x2ba <Can_App_Init>
+    //Here enable UART
+    usart_init(BAUD_RATE_57_6k);
+    usart_enable_interrupts( );
+#else
+    //Here enable TWI
+    twiAt90can128Init( FALSE, TWIADDR, TWBR_VALUE, TWPS_VALUE );
+     6e2:	20 e0       	ldi	r18, 0x00	; 0
+     6e4:	48 e4       	ldi	r20, 0x48	; 72
+     6e6:	69 e3       	ldi	r22, 0x39	; 57
+     6e8:	80 e0       	ldi	r24, 0x00	; 0
+     6ea:	e0 d2       	rcall	.+1472   	; 0xcac <twiAt90can128Init>
+    twiAt90can128EnableInterrupt( TRUE );
+     6ec:	81 e0       	ldi	r24, 0x01	; 1
+     6ee:	ff d2       	rcall	.+1534   	; 0xcee <twiAt90can128EnableInterrupt>
+#endif
+	ENABLE_ALL_INTERRUPTS();
+     6f0:	eb ed       	ldi	r30, 0xDB	; 219
+     6f2:	f0 e0       	ldi	r31, 0x00	; 0
+     6f4:	80 81       	ld	r24, Z
+     6f6:	80 68       	ori	r24, 0x80	; 128
+     6f8:	80 83       	st	Z, r24
+	can_ctrl_enable_controller();
+     6fa:	e8 ed       	ldi	r30, 0xD8	; 216
+     6fc:	f0 e0       	ldi	r31, 0x00	; 0
+     6fe:	80 81       	ld	r24, Z
+     700:	82 60       	ori	r24, 0x02	; 2
+     702:	80 83       	st	Z, r24
+	schedulerInit( );
+     704:	16 d2       	rcall	.+1068   	; 0xb32 <schedulerInit>
+	sei();
+     706:	78 94       	sei
+// MACRO define at compile time
+#ifdef TEST_TWI
+    test_twi( );
+#else
+ 	while(1){
+	      schedulerEventHandler();
+     708:	1f d2       	rcall	.+1086   	; 0xb48 <schedulerEventHandler>
+	      //Can_App_IDLE_Hook();
+
+		watchdog_reset( );
+     70a:	54 d6       	rcall	.+3240   	; 0x13b4 <watchdog_reset>
+     70c:	fd cf       	rjmp	.-6      	; 0x708 <main+0x2a>
+
+0000070e <schedule_callback_Mailbox0>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox0( void )
+{
+    CanMw_Send_TX_Message( 0 );
+     70e:	80 e0       	ldi	r24, 0x00	; 0
+     710:	7b cf       	rjmp	.-266    	; 0x608 <CanMw_Send_TX_Message>
+     712:	08 95       	ret
+
+00000714 <schedule_callback_Mailbox1>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox1( void )
+{
+    CanMw_Send_TX_Message( 1 );
+     714:	81 e0       	ldi	r24, 0x01	; 1
+     716:	78 cf       	rjmp	.-272    	; 0x608 <CanMw_Send_TX_Message>
+     718:	08 95       	ret
+
+0000071a <schedule_callback_Mailbox2>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox2( void )
+{
+    CanMw_Send_TX_Message( 2 );
+     71a:	82 e0       	ldi	r24, 0x02	; 2
+     71c:	75 cf       	rjmp	.-278    	; 0x608 <CanMw_Send_TX_Message>
+     71e:	08 95       	ret
+
+00000720 <schedule_callback_Mailbox3>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox3( void )
+{
+    CanMw_Send_TX_Message( 3 );
+     720:	83 e0       	ldi	r24, 0x03	; 3
+     722:	72 cf       	rjmp	.-284    	; 0x608 <CanMw_Send_TX_Message>
+     724:	08 95       	ret
+
+00000726 <schedule_callback_Mailbox4>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox4( void )
+{
+    CanMw_Send_TX_Message( 4 );
+     726:	84 e0       	ldi	r24, 0x04	; 4
+     728:	6f cf       	rjmp	.-290    	; 0x608 <CanMw_Send_TX_Message>
+     72a:	08 95       	ret
+
+0000072c <schedule_callback_Mailbox5>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox5( void )
+{
+    CanMw_Send_TX_Message( 5 );
+     72c:	85 e0       	ldi	r24, 0x05	; 5
+     72e:	6c cf       	rjmp	.-296    	; 0x608 <CanMw_Send_TX_Message>
+     730:	08 95       	ret
+
+00000732 <schedule_callback_Mailbox6>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox6( void )
+{
+    CanMw_Send_TX_Message( 6 );
+     732:	86 e0       	ldi	r24, 0x06	; 6
+     734:	69 cf       	rjmp	.-302    	; 0x608 <CanMw_Send_TX_Message>
+     736:	08 95       	ret
+
+00000738 <schedule_callback_Mailbox7>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox7( void )
+{
+    CanMw_Send_TX_Message( 7 );
+     738:	87 e0       	ldi	r24, 0x07	; 7
+     73a:	66 cf       	rjmp	.-308    	; 0x608 <CanMw_Send_TX_Message>
+     73c:	08 95       	ret
+
+0000073e <schedule_callback_Mailbox8>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox8( void )
+{
+    CanMw_Send_TX_Message( 8 );
+     73e:	88 e0       	ldi	r24, 0x08	; 8
+     740:	63 cf       	rjmp	.-314    	; 0x608 <CanMw_Send_TX_Message>
+     742:	08 95       	ret
+
+00000744 <schedule_callback_Mailbox9>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox9( void )
+{
+    CanMw_Send_TX_Message( 9 );
+     744:	89 e0       	ldi	r24, 0x09	; 9
+     746:	60 cf       	rjmp	.-320    	; 0x608 <CanMw_Send_TX_Message>
+     748:	08 95       	ret
+
+0000074a <schedule_callback_Mailbox10>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox10( void )
+{
+    CanMw_Send_TX_Message( 10 );
+     74a:	8a e0       	ldi	r24, 0x0A	; 10
+     74c:	5d cf       	rjmp	.-326    	; 0x608 <CanMw_Send_TX_Message>
+     74e:	08 95       	ret
+
+00000750 <schedule_callback_Mailbox11>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox11( void )
+{
+    CanMw_Send_TX_Message( 11 );
+     750:	8b e0       	ldi	r24, 0x0B	; 11
+     752:	5a cf       	rjmp	.-332    	; 0x608 <CanMw_Send_TX_Message>
+     754:	08 95       	ret
+
+00000756 <schedule_callback_Mailbox12>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox12( void )
+{
+    CanMw_Send_TX_Message( 12 );
+     756:	8c e0       	ldi	r24, 0x0C	; 12
+     758:	57 cf       	rjmp	.-338    	; 0x608 <CanMw_Send_TX_Message>
+     75a:	08 95       	ret
+
+0000075c <schedule_callback_Mailbox13>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox13( void )
+{
+    CanMw_Send_TX_Message( 13 );
+     75c:	8d e0       	ldi	r24, 0x0D	; 13
+     75e:	54 cf       	rjmp	.-344    	; 0x608 <CanMw_Send_TX_Message>
+     760:	08 95       	ret
+
+00000762 <schedule_callback_Mailbox14>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox14( void )
+{
+    CanMw_Send_TX_Message( 14 );
+     762:	8e e0       	ldi	r24, 0x0E	; 14
+     764:	51 cf       	rjmp	.-350    	; 0x608 <CanMw_Send_TX_Message>
+     766:	08 95       	ret
+
+00000768 <schedule_callback_Mailbox15>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void schedule_callback_Mailbox15( void )
+{
+    CanMw_Send_TX_Message( 15 );
+     768:	8f e0       	ldi	r24, 0x0F	; 15
+     76a:	4e cf       	rjmp	.-356    	; 0x608 <CanMw_Send_TX_Message>
+     76c:	08 95       	ret
+
+0000076e <cbSetRXBuffer>:
+ * \brief
+ * \note        This function is called at the beginning of the reception.
+ * \return
+ *****************************************************************************/
+void cbSetRXBuffer( uint8_t** data, uint32_t *len)
+{
+     76e:	cf 93       	push	r28
+     770:	df 93       	push	r29
+     772:	db 01       	movw	r26, r22
+    memset( dataBuffer, 0, sizeof( dataBuffer ) );
+     774:	ed e3       	ldi	r30, 0x3D	; 61
+     776:	f2 e0       	ldi	r31, 0x02	; 2
+     778:	2f e0       	ldi	r18, 0x0F	; 15
+     77a:	ef 01       	movw	r28, r30
+     77c:	19 92       	st	Y+, r1
+     77e:	2a 95       	dec	r18
+     780:	e9 f7       	brne	.-6      	; 0x77c <cbSetRXBuffer+0xe>
+    *len = sizeof( dataBuffer );
+     782:	4f e0       	ldi	r20, 0x0F	; 15
+     784:	50 e0       	ldi	r21, 0x00	; 0
+     786:	60 e0       	ldi	r22, 0x00	; 0
+     788:	70 e0       	ldi	r23, 0x00	; 0
+     78a:	4d 93       	st	X+, r20
+     78c:	5d 93       	st	X+, r21
+     78e:	6d 93       	st	X+, r22
+     790:	7c 93       	st	X, r23
+     792:	13 97       	sbiw	r26, 0x03	; 3
+    *data = dataBuffer;
+     794:	dc 01       	movw	r26, r24
+     796:	ed 93       	st	X+, r30
+     798:	fc 93       	st	X, r31
+    return;
+}
+     79a:	df 91       	pop	r29
+     79c:	cf 91       	pop	r28
+     79e:	08 95       	ret
+
+000007a0 <cbSetTXBuffer>:
+ * \brief
+ * \note        This function is called at the beginning of the transmission.
+ * \return
+ *****************************************************************************/
+void cbSetTXBuffer( uint8_t** data, uint32_t *len)
+{
+     7a0:	cf 93       	push	r28
+     7a2:	df 93       	push	r29
+     7a4:	db 01       	movw	r26, r22
+    memset( dataBuffer, 0, sizeof( dataBuffer ) );
+     7a6:	ed e3       	ldi	r30, 0x3D	; 61
+     7a8:	f2 e0       	ldi	r31, 0x02	; 2
+     7aa:	2f e0       	ldi	r18, 0x0F	; 15
+     7ac:	ef 01       	movw	r28, r30
+     7ae:	19 92       	st	Y+, r1
+     7b0:	2a 95       	dec	r18
+     7b2:	e9 f7       	brne	.-6      	; 0x7ae <cbSetTXBuffer+0xe>
+    *len = sizeof( dataBuffer );
+     7b4:	4f e0       	ldi	r20, 0x0F	; 15
+     7b6:	50 e0       	ldi	r21, 0x00	; 0
+     7b8:	60 e0       	ldi	r22, 0x00	; 0
+     7ba:	70 e0       	ldi	r23, 0x00	; 0
+     7bc:	4d 93       	st	X+, r20
+     7be:	5d 93       	st	X+, r21
+     7c0:	6d 93       	st	X+, r22
+     7c2:	7c 93       	st	X, r23
+     7c4:	13 97       	sbiw	r26, 0x03	; 3
+    *data = dataBuffer;
+     7c6:	dc 01       	movw	r26, r24
+     7c8:	ed 93       	st	X+, r30
+     7ca:	fc 93       	st	X, r31
+    return;
+}
+     7cc:	df 91       	pop	r29
+     7ce:	cf 91       	pop	r28
+     7d0:	08 95       	ret
+
+000007d2 <cbStartOfFrame>:
+ * \param[in]
+ * \brief
+ * \return
+ *****************************************************************************/
+uint8_t cbStartOfFrame( volatile uint8_t data )
+{
+     7d2:	cf 93       	push	r28
+     7d4:	df 93       	push	r29
+     7d6:	1f 92       	push	r1
+     7d8:	cd b7       	in	r28, 0x3d	; 61
+     7da:	de b7       	in	r29, 0x3e	; 62
+     7dc:	89 83       	std	Y+1, r24	; 0x01
+    uint8_t ret = FALSE;
+    uint8_t cmd = GET_HIGH_NIBBLE( data );
+     7de:	99 81       	ldd	r25, Y+1	; 0x01
+     7e0:	92 95       	swap	r25
+     7e2:	9f 70       	andi	r25, 0x0F	; 15
+    if ( ( cmd == CAN_READ )
+        || ( cmd == CAN_WRITE ) )
+     7e4:	9a 50       	subi	r25, 0x0A	; 10
+ *****************************************************************************/
+uint8_t cbStartOfFrame( volatile uint8_t data )
+{
+    uint8_t ret = FALSE;
+    uint8_t cmd = GET_HIGH_NIBBLE( data );
+    if ( ( cmd == CAN_READ )
+     7e6:	81 e0       	ldi	r24, 0x01	; 1
+     7e8:	92 30       	cpi	r25, 0x02	; 2
+     7ea:	08 f0       	brcs	.+2      	; 0x7ee <cbStartOfFrame+0x1c>
+     7ec:	80 e0       	ldi	r24, 0x00	; 0
+        || ( cmd == CAN_WRITE ) )
+    {
+        ret = TRUE;
+    }
+    return ret;
+}
+     7ee:	0f 90       	pop	r0
+     7f0:	df 91       	pop	r29
+     7f2:	cf 91       	pop	r28
+     7f4:	08 95       	ret
+
+000007f6 <cbValidateChecksum>:
+uint8_t cbValidateChecksum( uint8_t *data, uint8_t chksm, uint32_t len )
+{
+    uint32_t i  = 0;
+    uint8_t sum = 0;
+    uint8_t ret = FALSE;
+    if ( data )
+     7f6:	00 97       	sbiw	r24, 0x00	; 0
+     7f8:	a9 f0       	breq	.+42     	; 0x824 <cbValidateChecksum+0x2e>
+    {
+        for ( ; i < len; i++)
+     7fa:	21 15       	cp	r18, r1
+     7fc:	31 05       	cpc	r19, r1
+     7fe:	41 05       	cpc	r20, r1
+     800:	51 05       	cpc	r21, r1
+     802:	51 f0       	breq	.+20     	; 0x818 <cbValidateChecksum+0x22>
+     804:	fc 01       	movw	r30, r24
+     806:	28 0f       	add	r18, r24
+     808:	39 1f       	adc	r19, r25
+     80a:	90 e0       	ldi	r25, 0x00	; 0
+        {
+            sum += data[ i ];
+     80c:	81 91       	ld	r24, Z+
+     80e:	98 0f       	add	r25, r24
+    uint32_t i  = 0;
+    uint8_t sum = 0;
+    uint8_t ret = FALSE;
+    if ( data )
+    {
+        for ( ; i < len; i++)
+     810:	e2 17       	cp	r30, r18
+     812:	f3 07       	cpc	r31, r19
+     814:	d9 f7       	brne	.-10     	; 0x80c <cbValidateChecksum+0x16>
+     816:	01 c0       	rjmp	.+2      	; 0x81a <cbValidateChecksum+0x24>
+     818:	90 e0       	ldi	r25, 0x00	; 0
+        {
+            sum += data[ i ];
+        }
+        ret = ( uint8_t ) ( sum == chksm );
+     81a:	81 e0       	ldi	r24, 0x01	; 1
+     81c:	96 17       	cp	r25, r22
+     81e:	19 f0       	breq	.+6      	; 0x826 <cbValidateChecksum+0x30>
+     820:	80 e0       	ldi	r24, 0x00	; 0
+     822:	08 95       	ret
+ *****************************************************************************/
+uint8_t cbValidateChecksum( uint8_t *data, uint8_t chksm, uint32_t len )
+{
+    uint32_t i  = 0;
+    uint8_t sum = 0;
+    uint8_t ret = FALSE;
+     824:	80 e0       	ldi	r24, 0x00	; 0
+            sum += data[ i ];
+        }
+        ret = ( uint8_t ) ( sum == chksm );
+    }
+    return ret;
+}
+     826:	08 95       	ret
+
+00000828 <cbCommitData>:
+ * \param[in]
+ * \brief
+ * \return
+ *****************************************************************************/
+void cbCommitData( uint8_t* data, uint32_t len )
+{
+     828:	bf 92       	push	r11
+     82a:	cf 92       	push	r12
+     82c:	df 92       	push	r13
+     82e:	ef 92       	push	r14
+     830:	ff 92       	push	r15
+     832:	0f 93       	push	r16
+     834:	1f 93       	push	r17
+     836:	cf 93       	push	r28
+     838:	df 93       	push	r29
+     83a:	cd b7       	in	r28, 0x3d	; 61
+     83c:	de b7       	in	r29, 0x3e	; 62
+     83e:	66 97       	sbiw	r28, 0x16	; 22
+     840:	0f b6       	in	r0, 0x3f	; 63
+     842:	f8 94       	cli
+     844:	de bf       	out	0x3e, r29	; 62
+     846:	0f be       	out	0x3f, r0	; 63
+     848:	cd bf       	out	0x3d, r28	; 61
+     84a:	8c 01       	movw	r16, r24
+     84c:	6a 01       	movw	r12, r20
+     84e:	7b 01       	movw	r14, r22
+    CanMW_MBox mbcfg;
+    uint8_t Mailbox  = GET_LOW_NIBBLE( data[ MSG_CMD ] );
+     850:	fc 01       	movw	r30, r24
+     852:	80 81       	ld	r24, Z
+     854:	8f 70       	andi	r24, 0x0F	; 15
+     856:	b8 2e       	mov	r11, r24
+    uint32_t chkidx  = 0;
+
+    if ( ( Mailbox < NUM_MAILBOXES ) && len )
+     858:	f2 e0       	ldi	r31, 0x02	; 2
+     85a:	f8 17       	cp	r31, r24
+     85c:	98 f1       	brcs	.+102    	; 0x8c4 <cbCommitData+0x9c>
+     85e:	41 15       	cp	r20, r1
+     860:	51 05       	cpc	r21, r1
+     862:	61 05       	cpc	r22, r1
+     864:	71 05       	cpc	r23, r1
+     866:	71 f1       	breq	.+92     	; 0x8c4 <cbCommitData+0x9c>
+    {
+        Get_MboxConfig(Mailbox, &mbcfg);
+     868:	be 01       	movw	r22, r28
+     86a:	6f 5f       	subi	r22, 0xFF	; 255
+     86c:	7f 4f       	sbci	r23, 0xFF	; 255
+     86e:	fb de       	rcall	.-522    	; 0x666 <Get_MboxConfig>
+        chkidx = len - 1;
+     870:	a7 01       	movw	r20, r14
+     872:	96 01       	movw	r18, r12
+     874:	21 50       	subi	r18, 0x01	; 1
+     876:	31 09       	sbc	r19, r1
+     878:	41 09       	sbc	r20, r1
+     87a:	51 09       	sbc	r21, r1
+        if ( cbValidateChecksum( data, data[ chkidx ], chkidx ) )
+     87c:	f8 01       	movw	r30, r16
+     87e:	e2 0f       	add	r30, r18
+     880:	f3 1f       	adc	r31, r19
+     882:	60 81       	ld	r22, Z
+     884:	c8 01       	movw	r24, r16
+     886:	b7 df       	rcall	.-146    	; 0x7f6 <cbValidateChecksum>
+     888:	88 23       	and	r24, r24
+     88a:	b9 f0       	breq	.+46     	; 0x8ba <cbCommitData+0x92>
+        {
+            mbcfg.msg.message_id = CAT_BYTES( data [ MSG_IDH ], data [ MSG_IDL ] );
+     88c:	f8 01       	movw	r30, r16
+     88e:	81 81       	ldd	r24, Z+1	; 0x01
+     890:	90 e0       	ldi	r25, 0x00	; 0
+     892:	98 2f       	mov	r25, r24
+     894:	88 27       	eor	r24, r24
+     896:	22 81       	ldd	r18, Z+2	; 0x02
+     898:	82 2b       	or	r24, r18
+     89a:	98 87       	std	Y+8, r25	; 0x08
+     89c:	8f 83       	std	Y+7, r24	; 0x07
+            mbcfg.msg.dlc = data[ MSG_DLC ];
+     89e:	83 81       	ldd	r24, Z+3	; 0x03
+     8a0:	89 87       	std	Y+9, r24	; 0x09
+            mbcfg.msg.ttc_timmer = data[ MSG_PRD ];
+     8a2:	84 85       	ldd	r24, Z+12	; 0x0c
+     8a4:	90 e0       	ldi	r25, 0x00	; 0
+     8a6:	9e 8b       	std	Y+22, r25	; 0x16
+     8a8:	8d 8b       	std	Y+21, r24	; 0x15
+            memcpy( &mbcfg.msg.data, &(data[ MSG_DT7 ]), ( MSG_DT0 - MSG_DLC ) );
+     8aa:	34 96       	adiw	r30, 0x04	; 4
+     8ac:	88 e0       	ldi	r24, 0x08	; 8
+     8ae:	de 01       	movw	r26, r28
+     8b0:	1a 96       	adiw	r26, 0x0a	; 10
+     8b2:	01 90       	ld	r0, Z+
+     8b4:	0d 92       	st	X+, r0
+     8b6:	8a 95       	dec	r24
+     8b8:	e1 f7       	brne	.-8      	; 0x8b2 <cbCommitData+0x8a>
+
+        }
+        Write_Message_Mbox( Mailbox, &mbcfg );
+     8ba:	be 01       	movw	r22, r28
+     8bc:	6f 5f       	subi	r22, 0xFF	; 255
+     8be:	7f 4f       	sbci	r23, 0xFF	; 255
+     8c0:	8b 2d       	mov	r24, r11
+     8c2:	df de       	rcall	.-578    	; 0x682 <Write_Message_Mbox>
+    }
+
+    return;
+}
+     8c4:	66 96       	adiw	r28, 0x16	; 22
+     8c6:	0f b6       	in	r0, 0x3f	; 63
+     8c8:	f8 94       	cli
+     8ca:	de bf       	out	0x3e, r29	; 62
+     8cc:	0f be       	out	0x3f, r0	; 63
+     8ce:	cd bf       	out	0x3d, r28	; 61
+     8d0:	df 91       	pop	r29
+     8d2:	cf 91       	pop	r28
+     8d4:	1f 91       	pop	r17
+     8d6:	0f 91       	pop	r16
+     8d8:	ff 90       	pop	r15
+     8da:	ef 90       	pop	r14
+     8dc:	df 90       	pop	r13
+     8de:	cf 90       	pop	r12
+     8e0:	bf 90       	pop	r11
+     8e2:	08 95       	ret
+
+000008e4 <cbDecodeReceivedData>:
+ * \note        This function is called at the end of the reception.
+ *              Checksum is assumed to be the last byte received.
+ * \return
+ *****************************************************************************/
+void cbDecodeReceivedData( uint8_t *data, uint32_t len )
+{
+     8e4:	cf 92       	push	r12
+     8e6:	df 92       	push	r13
+     8e8:	ef 92       	push	r14
+     8ea:	ff 92       	push	r15
+     8ec:	cf 93       	push	r28
+     8ee:	df 93       	push	r29
+     8f0:	ec 01       	movw	r28, r24
+     8f2:	6a 01       	movw	r12, r20
+     8f4:	7b 01       	movw	r14, r22
+    uint8_t chksmCorrect = FALSE;
+    uint8_t cmd = 0;
+    uint8_t idx = 0;
+    uint32_t chkidx = 0;
+    // Data pointer must not be NULL and len must be higher than zero.
+    if ( ( data ) && ( len ) )
+     8f6:	00 97       	sbiw	r24, 0x00	; 0
+     8f8:	11 f1       	breq	.+68     	; 0x93e <cbDecodeReceivedData+0x5a>
+     8fa:	41 15       	cp	r20, r1
+     8fc:	51 05       	cpc	r21, r1
+     8fe:	61 05       	cpc	r22, r1
+     900:	71 05       	cpc	r23, r1
+     902:	e9 f0       	breq	.+58     	; 0x93e <cbDecodeReceivedData+0x5a>
+    {
+        chkidx = len - 1;
+     904:	9a 01       	movw	r18, r20
+     906:	ab 01       	movw	r20, r22
+     908:	21 50       	subi	r18, 0x01	; 1
+     90a:	31 09       	sbc	r19, r1
+     90c:	41 09       	sbc	r20, r1
+     90e:	51 09       	sbc	r21, r1
+        chksmCorrect = cbValidateChecksum( data, data[ chkidx ], chkidx );
+     910:	fc 01       	movw	r30, r24
+     912:	e2 0f       	add	r30, r18
+     914:	f3 1f       	adc	r31, r19
+     916:	60 81       	ld	r22, Z
+     918:	6e df       	rcall	.-292    	; 0x7f6 <cbValidateChecksum>
+        if ( chksmCorrect )
+     91a:	88 23       	and	r24, r24
+     91c:	81 f0       	breq	.+32     	; 0x93e <cbDecodeReceivedData+0x5a>
+        {
+            cmd = GET_HIGH_NIBBLE( data[ idx ] );
+     91e:	98 81       	ld	r25, Y
+     920:	89 2f       	mov	r24, r25
+     922:	82 95       	swap	r24
+     924:	8f 70       	andi	r24, 0x0F	; 15
+        }
+        if ( cmd == CAN_READ )
+     926:	8a 30       	cpi	r24, 0x0A	; 10
+     928:	21 f4       	brne	.+8      	; 0x932 <cbDecodeReceivedData+0x4e>
+        {
+            targetMailbox = GET_LOW_NIBBLE( data[ idx ] );
+     92a:	9f 70       	andi	r25, 0x0F	; 15
+     92c:	90 93 00 01 	sts	0x0100, r25
+     930:	06 c0       	rjmp	.+12     	; 0x93e <cbDecodeReceivedData+0x5a>
+        }
+        else if ( cmd == CAN_WRITE )
+     932:	8b 30       	cpi	r24, 0x0B	; 11
+     934:	21 f4       	brne	.+8      	; 0x93e <cbDecodeReceivedData+0x5a>
+        {
+            cbCommitData( data, len);
+     936:	b7 01       	movw	r22, r14
+     938:	a6 01       	movw	r20, r12
+     93a:	ce 01       	movw	r24, r28
+     93c:	75 df       	rcall	.-278    	; 0x828 <cbCommitData>
+        {
+            //No operation
+        }
+    }
+    return;
+}
+     93e:	df 91       	pop	r29
+     940:	cf 91       	pop	r28
+     942:	ff 90       	pop	r15
+     944:	ef 90       	pop	r14
+     946:	df 90       	pop	r13
+     948:	cf 90       	pop	r12
+     94a:	08 95       	ret
+
+0000094c <cbCalculateChecksum>:
+ *****************************************************************************/
+uint8_t cbCalculateChecksum( uint8_t* data, uint32_t len )
+{
+    uint8_t ret = 0;
+    uint32_t i  = 0;
+    if ( data )
+     94c:	00 97       	sbiw	r24, 0x00	; 0
+     94e:	79 f0       	breq	.+30     	; 0x96e <cbCalculateChecksum+0x22>
+    {
+        for ( ; i < len; i++ )
+     950:	41 15       	cp	r20, r1
+     952:	51 05       	cpc	r21, r1
+     954:	61 05       	cpc	r22, r1
+     956:	71 05       	cpc	r23, r1
+     958:	61 f0       	breq	.+24     	; 0x972 <cbCalculateChecksum+0x26>
+     95a:	fc 01       	movw	r30, r24
+     95c:	48 0f       	add	r20, r24
+     95e:	59 1f       	adc	r21, r25
+     960:	80 e0       	ldi	r24, 0x00	; 0
+        {
+            ret += data[i];
+     962:	91 91       	ld	r25, Z+
+     964:	89 0f       	add	r24, r25
+{
+    uint8_t ret = 0;
+    uint32_t i  = 0;
+    if ( data )
+    {
+        for ( ; i < len; i++ )
+     966:	e4 17       	cp	r30, r20
+     968:	f5 07       	cpc	r31, r21
+     96a:	d9 f7       	brne	.-10     	; 0x962 <cbCalculateChecksum+0x16>
+     96c:	08 95       	ret
+ * \brief
+ * \return
+ *****************************************************************************/
+uint8_t cbCalculateChecksum( uint8_t* data, uint32_t len )
+{
+    uint8_t ret = 0;
+     96e:	80 e0       	ldi	r24, 0x00	; 0
+     970:	08 95       	ret
+    uint32_t i  = 0;
+    if ( data )
+    {
+        for ( ; i < len; i++ )
+     972:	80 e0       	ldi	r24, 0x00	; 0
+        {
+            ret += data[i];
+        }
+    }
+    return ret;
+}
+     974:	08 95       	ret
+
+00000976 <cbBuildDataFrame>:
+ * \brief
+ * \return
+ *****************************************************************************/
+uint32_t cbBuildDataFrame(uint8_t* data, CanMw_Message *msg,
+                          CanMW_MBox *mailbox )
+{
+     976:	cf 93       	push	r28
+     978:	df 93       	push	r29
+     97a:	ec 01       	movw	r28, r24
+    messageFields ret     = 0;
+    uint8_t checksum = 0;
+
+    if ( data && msg && mailbox )
+     97c:	00 97       	sbiw	r24, 0x00	; 0
+     97e:	41 f1       	breq	.+80     	; 0x9d0 <cbBuildDataFrame+0x5a>
+     980:	61 15       	cp	r22, r1
+     982:	71 05       	cpc	r23, r1
+     984:	39 f1       	breq	.+78     	; 0x9d4 <cbBuildDataFrame+0x5e>
+     986:	45 2b       	or	r20, r21
+     988:	39 f1       	breq	.+78     	; 0x9d8 <cbBuildDataFrame+0x62>
+    {
+        data[ MSG_CMD ] = CAT_NIBBLES( CAN_WRITE, targetMailbox );
+     98a:	80 91 00 01 	lds	r24, 0x0100
+     98e:	8f 70       	andi	r24, 0x0F	; 15
+     990:	80 6b       	ori	r24, 0xB0	; 176
+     992:	88 83       	st	Y, r24
+        data[ MSG_IDH ] = GET_HIGH_BYTE( msg->message_id );
+     994:	fb 01       	movw	r30, r22
+     996:	81 81       	ldd	r24, Z+1	; 0x01
+     998:	89 83       	std	Y+1, r24	; 0x01
+        data[ MSG_IDL ] = GET_LOW_BYTE( msg->message_id );
+     99a:	80 81       	ld	r24, Z
+     99c:	8a 83       	std	Y+2, r24	; 0x02
+        data[ MSG_DLC ] = msg->dlc;
+     99e:	82 81       	ldd	r24, Z+2	; 0x02
+     9a0:	8b 83       	std	Y+3, r24	; 0x03
+        memcpy( ( data + MSG_DT7 ), msg->data, ( sizeof( msg->data ) / sizeof( can_message_data ) ) );
+     9a2:	de 01       	movw	r26, r28
+     9a4:	14 96       	adiw	r26, 0x04	; 4
+     9a6:	33 96       	adiw	r30, 0x03	; 3
+     9a8:	89 e0       	ldi	r24, 0x09	; 9
+     9aa:	01 90       	ld	r0, Z+
+     9ac:	0d 92       	st	X+, r0
+     9ae:	8a 95       	dec	r24
+     9b0:	e1 f7       	brne	.-8      	; 0x9aa <cbBuildDataFrame+0x34>
+        data[ MSG_PRD ] = GET_LOW_BYTE( msg->ttc_timmer );
+     9b2:	fb 01       	movw	r30, r22
+     9b4:	86 85       	ldd	r24, Z+14	; 0x0e
+     9b6:	8c 87       	std	Y+12, r24	; 0x0c
+        checksum = cbCalculateChecksum( data, MSG_CHK );
+     9b8:	4d e0       	ldi	r20, 0x0D	; 13
+     9ba:	50 e0       	ldi	r21, 0x00	; 0
+     9bc:	60 e0       	ldi	r22, 0x00	; 0
+     9be:	70 e0       	ldi	r23, 0x00	; 0
+     9c0:	ce 01       	movw	r24, r28
+     9c2:	c4 df       	rcall	.-120    	; 0x94c <cbCalculateChecksum>
+        data[ MSG_CHK ] = checksum;
+     9c4:	8d 87       	std	Y+13, r24	; 0x0d
+        ret = MSG_TOTAL_LENGTH;
+        targetMailbox = NUM_MAILBOXES;
+     9c6:	83 e0       	ldi	r24, 0x03	; 3
+     9c8:	80 93 00 01 	sts	0x0100, r24
+        data[ MSG_DLC ] = msg->dlc;
+        memcpy( ( data + MSG_DT7 ), msg->data, ( sizeof( msg->data ) / sizeof( can_message_data ) ) );
+        data[ MSG_PRD ] = GET_LOW_BYTE( msg->ttc_timmer );
+        checksum = cbCalculateChecksum( data, MSG_CHK );
+        data[ MSG_CHK ] = checksum;
+        ret = MSG_TOTAL_LENGTH;
+     9cc:	6e e0       	ldi	r22, 0x0E	; 14
+     9ce:	05 c0       	rjmp	.+10     	; 0x9da <cbBuildDataFrame+0x64>
+ * \return
+ *****************************************************************************/
+uint32_t cbBuildDataFrame(uint8_t* data, CanMw_Message *msg,
+                          CanMW_MBox *mailbox )
+{
+    messageFields ret     = 0;
+     9d0:	60 e0       	ldi	r22, 0x00	; 0
+     9d2:	03 c0       	rjmp	.+6      	; 0x9da <cbBuildDataFrame+0x64>
+     9d4:	60 e0       	ldi	r22, 0x00	; 0
+     9d6:	01 c0       	rjmp	.+2      	; 0x9da <cbBuildDataFrame+0x64>
+     9d8:	60 e0       	ldi	r22, 0x00	; 0
+        data[ MSG_CHK ] = checksum;
+        ret = MSG_TOTAL_LENGTH;
+        targetMailbox = NUM_MAILBOXES;
+    }
+
+    return ret;
+     9da:	70 e0       	ldi	r23, 0x00	; 0
+     9dc:	80 e0       	ldi	r24, 0x00	; 0
+     9de:	90 e0       	ldi	r25, 0x00	; 0
+}
+     9e0:	df 91       	pop	r29
+     9e2:	cf 91       	pop	r28
+     9e4:	08 95       	ret
+
+000009e6 <cbFetchData>:
+ * \brief       This function is called at every read request from a master to
+ *              this device.
+ * \return      uint32_t returns data length in bytes
+ *****************************************************************************/
+uint32_t cbFetchData( uint8_t* data )
+{
+     9e6:	0f 93       	push	r16
+     9e8:	1f 93       	push	r17
+     9ea:	cf 93       	push	r28
+     9ec:	df 93       	push	r29
+     9ee:	cd b7       	in	r28, 0x3d	; 61
+     9f0:	de b7       	in	r29, 0x3e	; 62
+     9f2:	a6 97       	sbiw	r28, 0x26	; 38
+     9f4:	0f b6       	in	r0, 0x3f	; 63
+     9f6:	f8 94       	cli
+     9f8:	de bf       	out	0x3e, r29	; 62
+     9fa:	0f be       	out	0x3f, r0	; 63
+     9fc:	cd bf       	out	0x3d, r28	; 61
+     9fe:	8c 01       	movw	r16, r24
+    uint32_t ret        = 0;
+    CanMw_Message msg;
+    CanMW_MBox mailbox;
+    uint32_t len = NUM_CONTROL_BYTES;
+    if ( targetMailbox < NUM_MAILBOXES )
+     a00:	80 91 00 01 	lds	r24, 0x0100
+     a04:	83 30       	cpi	r24, 0x03	; 3
+     a06:	00 f5       	brcc	.+64     	; 0xa48 <cbFetchData+0x62>
+    {
+        Get_Message_FromMbox( targetMailbox, &msg );
+     a08:	be 01       	movw	r22, r28
+     a0a:	6f 5f       	subi	r22, 0xFF	; 255
+     a0c:	7f 4f       	sbci	r23, 0xFF	; 255
+     a0e:	1d de       	rcall	.-966    	; 0x64a <Get_Message_FromMbox>
+        Get_MboxConfig( targetMailbox, &mailbox );
+     a10:	be 01       	movw	r22, r28
+     a12:	6f 5e       	subi	r22, 0xEF	; 239
+     a14:	7f 4f       	sbci	r23, 0xFF	; 255
+     a16:	80 91 00 01 	lds	r24, 0x0100
+     a1a:	25 de       	rcall	.-950    	; 0x666 <Get_MboxConfig>
+        len += msg.dlc;
+     a1c:	4b 81       	ldd	r20, Y+3	; 0x03
+     a1e:	50 e0       	ldi	r21, 0x00	; 0
+     a20:	60 e0       	ldi	r22, 0x00	; 0
+     a22:	70 e0       	ldi	r23, 0x00	; 0
+     a24:	4c 5f       	subi	r20, 0xFC	; 252
+     a26:	5f 4f       	sbci	r21, 0xFF	; 255
+     a28:	6f 4f       	sbci	r22, 0xFF	; 255
+     a2a:	7f 4f       	sbci	r23, 0xFF	; 255
+        if ( len  < DATA_LEN )
+     a2c:	4f 30       	cpi	r20, 0x0F	; 15
+     a2e:	51 05       	cpc	r21, r1
+     a30:	61 05       	cpc	r22, r1
+     a32:	71 05       	cpc	r23, r1
+     a34:	68 f4       	brcc	.+26     	; 0xa50 <cbFetchData+0x6a>
+        {
+            ret = cbBuildDataFrame( data, &msg, &mailbox );
+     a36:	ae 01       	movw	r20, r28
+     a38:	4f 5e       	subi	r20, 0xEF	; 239
+     a3a:	5f 4f       	sbci	r21, 0xFF	; 255
+     a3c:	be 01       	movw	r22, r28
+     a3e:	6f 5f       	subi	r22, 0xFF	; 255
+     a40:	7f 4f       	sbci	r23, 0xFF	; 255
+     a42:	c8 01       	movw	r24, r16
+     a44:	98 df       	rcall	.-208    	; 0x976 <cbBuildDataFrame>
+     a46:	07 c0       	rjmp	.+14     	; 0xa56 <cbFetchData+0x70>
+ *              this device.
+ * \return      uint32_t returns data length in bytes
+ *****************************************************************************/
+uint32_t cbFetchData( uint8_t* data )
+{
+    uint32_t ret        = 0;
+     a48:	60 e0       	ldi	r22, 0x00	; 0
+     a4a:	70 e0       	ldi	r23, 0x00	; 0
+     a4c:	cb 01       	movw	r24, r22
+     a4e:	03 c0       	rjmp	.+6      	; 0xa56 <cbFetchData+0x70>
+     a50:	60 e0       	ldi	r22, 0x00	; 0
+     a52:	70 e0       	ldi	r23, 0x00	; 0
+     a54:	cb 01       	movw	r24, r22
+        {
+            ret = cbBuildDataFrame( data, &msg, &mailbox );
+        }
+    }
+    return ret;
+}
+     a56:	a6 96       	adiw	r28, 0x26	; 38
+     a58:	0f b6       	in	r0, 0x3f	; 63
+     a5a:	f8 94       	cli
+     a5c:	de bf       	out	0x3e, r29	; 62
+     a5e:	0f be       	out	0x3f, r0	; 63
+     a60:	cd bf       	out	0x3d, r28	; 61
+     a62:	df 91       	pop	r29
+     a64:	cf 91       	pop	r28
+     a66:	1f 91       	pop	r17
+     a68:	0f 91       	pop	r16
+     a6a:	08 95       	ret
+
+00000a6c <cbSetupReply>:
+ * \param[in]
+ * \brief
+ * \return
+ *****************************************************************************/
+void cbSetupReply( uint8_t* in, uint8_t* out, uint32_t *len )
+{
+     a6c:	cf 92       	push	r12
+     a6e:	df 92       	push	r13
+     a70:	ef 92       	push	r14
+     a72:	ff 92       	push	r15
+     a74:	0f 93       	push	r16
+     a76:	1f 93       	push	r17
+     a78:	cf 93       	push	r28
+     a7a:	df 93       	push	r29
+     a7c:	8b 01       	movw	r16, r22
+     a7e:	ea 01       	movw	r28, r20
+    *len = 0;
+     a80:	18 82       	st	Y, r1
+     a82:	19 82       	std	Y+1, r1	; 0x01
+     a84:	1a 82       	std	Y+2, r1	; 0x02
+     a86:	1b 82       	std	Y+3, r1	; 0x03
+    uint8_t mailbox = 0;
+    uint8_t checksum = 0;
+    if ( in && out )
+     a88:	00 97       	sbiw	r24, 0x00	; 0
+     a8a:	d1 f1       	breq	.+116    	; 0xb00 <cbSetupReply+0x94>
+     a8c:	61 15       	cp	r22, r1
+     a8e:	71 05       	cpc	r23, r1
+     a90:	b9 f1       	breq	.+110    	; 0xb00 <cbSetupReply+0x94>
+    {
+        mailbox = GET_LOW_NIBBLE( *in );
+     a92:	fc 01       	movw	r30, r24
+     a94:	20 81       	ld	r18, Z
+     a96:	2f 70       	andi	r18, 0x0F	; 15
+        out[ ( *len )++ ] = CAT_NIBBLES( CAN_WRITE_REPLY, mailbox );
+     a98:	81 e0       	ldi	r24, 0x01	; 1
+     a9a:	90 e0       	ldi	r25, 0x00	; 0
+     a9c:	a0 e0       	ldi	r26, 0x00	; 0
+     a9e:	b0 e0       	ldi	r27, 0x00	; 0
+     aa0:	88 83       	st	Y, r24
+     aa2:	99 83       	std	Y+1, r25	; 0x01
+     aa4:	aa 83       	std	Y+2, r26	; 0x02
+     aa6:	bb 83       	std	Y+3, r27	; 0x03
+     aa8:	82 2f       	mov	r24, r18
+     aaa:	80 6d       	ori	r24, 0xD0	; 208
+     aac:	fb 01       	movw	r30, r22
+     aae:	80 83       	st	Z, r24
+        out[ ( *len )++ ] = TRUE;
+     ab0:	88 81       	ld	r24, Y
+     ab2:	99 81       	ldd	r25, Y+1	; 0x01
+     ab4:	aa 81       	ldd	r26, Y+2	; 0x02
+     ab6:	bb 81       	ldd	r27, Y+3	; 0x03
+     ab8:	ac 01       	movw	r20, r24
+     aba:	bd 01       	movw	r22, r26
+     abc:	4f 5f       	subi	r20, 0xFF	; 255
+     abe:	5f 4f       	sbci	r21, 0xFF	; 255
+     ac0:	6f 4f       	sbci	r22, 0xFF	; 255
+     ac2:	7f 4f       	sbci	r23, 0xFF	; 255
+     ac4:	48 83       	st	Y, r20
+     ac6:	59 83       	std	Y+1, r21	; 0x01
+     ac8:	6a 83       	std	Y+2, r22	; 0x02
+     aca:	7b 83       	std	Y+3, r23	; 0x03
+     acc:	e8 0f       	add	r30, r24
+     ace:	f9 1f       	adc	r31, r25
+     ad0:	21 e0       	ldi	r18, 0x01	; 1
+     ad2:	20 83       	st	Z, r18
+        checksum = cbCalculateChecksum( out, *len );
+     ad4:	c8 80       	ld	r12, Y
+     ad6:	d9 80       	ldd	r13, Y+1	; 0x01
+     ad8:	ea 80       	ldd	r14, Y+2	; 0x02
+     ada:	fb 80       	ldd	r15, Y+3	; 0x03
+     adc:	b7 01       	movw	r22, r14
+     ade:	a6 01       	movw	r20, r12
+     ae0:	c8 01       	movw	r24, r16
+     ae2:	34 df       	rcall	.-408    	; 0x94c <cbCalculateChecksum>
+        out[ ( *len )++ ] = checksum;
+     ae4:	b7 01       	movw	r22, r14
+     ae6:	a6 01       	movw	r20, r12
+     ae8:	4f 5f       	subi	r20, 0xFF	; 255
+     aea:	5f 4f       	sbci	r21, 0xFF	; 255
+     aec:	6f 4f       	sbci	r22, 0xFF	; 255
+     aee:	7f 4f       	sbci	r23, 0xFF	; 255
+     af0:	48 83       	st	Y, r20
+     af2:	59 83       	std	Y+1, r21	; 0x01
+     af4:	6a 83       	std	Y+2, r22	; 0x02
+     af6:	7b 83       	std	Y+3, r23	; 0x03
+     af8:	f8 01       	movw	r30, r16
+     afa:	ec 0d       	add	r30, r12
+     afc:	fd 1d       	adc	r31, r13
+     afe:	80 83       	st	Z, r24
+    }
+
+}
+     b00:	df 91       	pop	r29
+     b02:	cf 91       	pop	r28
+     b04:	1f 91       	pop	r17
+     b06:	0f 91       	pop	r16
+     b08:	ff 90       	pop	r15
+     b0a:	ef 90       	pop	r14
+     b0c:	df 90       	pop	r13
+     b0e:	cf 90       	pop	r12
+     b10:	08 95       	ret
+
+00000b12 <schedulerSetupItem>:
+ * \fn      void msgSchedulerEnableInterrupt( void )
+ * \return
+ *****************************************************************************/
+void schedulerEnableInterrupt( void )
+{
+    tmr0At90can128EnableInterrupts( SCHEDULER_INTERRUPT_EN );
+     b12:	27 e0       	ldi	r18, 0x07	; 7
+     b14:	82 9f       	mul	r24, r18
+     b16:	c0 01       	movw	r24, r0
+     b18:	11 24       	eor	r1, r1
+     b1a:	fc 01       	movw	r30, r24
+     b1c:	ef 5f       	subi	r30, 0xFF	; 255
+     b1e:	fe 4f       	sbci	r31, 0xFE	; 254
+     b20:	60 83       	st	Z, r22
+     b22:	50 e0       	ldi	r21, 0x00	; 0
+     b24:	44 0f       	add	r20, r20
+     b26:	55 1f       	adc	r21, r21
+     b28:	4f 58       	subi	r20, 0x8F	; 143
+     b2a:	5e 4f       	sbci	r21, 0xFE	; 254
+     b2c:	52 83       	std	Z+2, r21	; 0x02
+     b2e:	41 83       	std	Z+1, r20	; 0x01
+     b30:	08 95       	ret
+
+00000b32 <schedulerInit>:
+     b32:	41 e0       	ldi	r20, 0x01	; 1
+     b34:	62 e0       	ldi	r22, 0x02	; 2
+     b36:	85 e0       	ldi	r24, 0x05	; 5
+     b38:	7c d0       	rcall	.+248    	; 0xc32 <tmr0At90can128Init>
+     b3a:	8d e4       	ldi	r24, 0x4D	; 77
+     b3c:	96 d0       	rcall	.+300    	; 0xc6a <tmr0At90can128SetTop>
+     b3e:	80 e0       	ldi	r24, 0x00	; 0
+     b40:	92 d0       	rcall	.+292    	; 0xc66 <tmr0At90can128SetCount>
+     b42:	81 e0       	ldi	r24, 0x01	; 1
+     b44:	94 c0       	rjmp	.+296    	; 0xc6e <tmr0At90can128SetupOC0A>
+     b46:	08 95       	ret
+
+00000b48 <schedulerEventHandler>:
+/**************************************************************************//**
+ * \fn      void schedulerEventHandler( void )
+ * \return
+ *****************************************************************************/
+void schedulerEventHandler( void )
+{
+     b48:	4f 92       	push	r4
+     b4a:	5f 92       	push	r5
+     b4c:	6f 92       	push	r6
+     b4e:	7f 92       	push	r7
+     b50:	8f 92       	push	r8
+     b52:	9f 92       	push	r9
+     b54:	af 92       	push	r10
+     b56:	bf 92       	push	r11
+     b58:	cf 92       	push	r12
+     b5a:	df 92       	push	r13
+     b5c:	ef 92       	push	r14
+     b5e:	ff 92       	push	r15
+     b60:	0f 93       	push	r16
+     b62:	1f 93       	push	r17
+     b64:	cf 93       	push	r28
+     b66:	df 93       	push	r29
+                                    // should change.
+    uint8_t count = SCH_COUNT_INIT; // An item's current count.
+    uint8_t state = SCH_LOW_STATE;  // An item's current state;
+    // This function shall be called only if the interrupt is disabled but
+    // the flag must be active.
+	if ( !( tmr0At90can128areInterruptsEnabled( ) & SCHEDULER_INTERRUPT_EN )
+     b68:	7b d0       	rcall	.+246    	; 0xc60 <tmr0At90can128areInterruptsEnabled>
+     b6a:	81 fd       	sbrc	r24, 1
+     b6c:	51 c0       	rjmp	.+162    	; 0xc10 <schedulerEventHandler+0xc8>
+			&& ( tmr0At90can128isOCF0AOn( ) ) )
+     b6e:	85 d0       	rcall	.+266    	; 0xc7a <tmr0At90can128isOCF0AOn>
+     b70:	88 23       	and	r24, r24
+     b72:	09 f4       	brne	.+2      	; 0xb76 <schedulerEventHandler+0x2e>
+     b74:	4d c0       	rjmp	.+154    	; 0xc10 <schedulerEventHandler+0xc8>
+    {
+        tmr0At90can128ClearOCF0A( ); //turn off the interrupt flag.
+     b76:	84 d0       	rcall	.+264    	; 0xc80 <tmr0At90can128ClearOCF0A>
+     b78:	c1 e0       	ldi	r28, 0x01	; 1
+     b7a:	d1 e0       	ldi	r29, 0x01	; 1
+     b7c:	05 e0       	ldi	r16, 0x05	; 5
+     b7e:	11 e0       	ldi	r17, 0x01	; 1
+     b80:	0f 2e       	mov	r0, r31
+     b82:	f4 e0       	ldi	r31, 0x04	; 4
+     b84:	ef 2e       	mov	r14, r31
+     b86:	f1 e0       	ldi	r31, 0x01	; 1
+     b88:	ff 2e       	mov	r15, r31
+     b8a:	f0 2d       	mov	r31, r0
+     b8c:	0f 2e       	mov	r0, r31
+     b8e:	f5 e7       	ldi	r31, 0x75	; 117
+     b90:	af 2e       	mov	r10, r31
+     b92:	f1 e0       	ldi	r31, 0x01	; 1
+     b94:	bf 2e       	mov	r11, r31
+     b96:	f0 2d       	mov	r31, r0
+ *****************************************************************************/
+void schedulerEventHandler( void )
+{
+    uint8_t index = 0;              // Schedule index used to reference
+                                    // its items.
+    uint8_t timeElapsed = FALSE;    // States if the schedule item's state
+     b98:	71 2c       	mov	r7, r1
+                    break;
+            }
+            if ( timeElapsed )
+            {
+                count = SCH_COUNT_INIT;
+                state = !state;
+     b9a:	66 24       	eor	r6, r6
+     b9c:	63 94       	inc	r6
+                default:
+                    break;
+            }
+            if ( timeElapsed )
+            {
+                count = SCH_COUNT_INIT;
+     b9e:	51 2c       	mov	r5, r1
+			&& ( tmr0At90can128isOCF0AOn( ) ) )
+    {
+        tmr0At90can128ClearOCF0A( ); //turn off the interrupt flag.
+        for ( ; index < SCHEDULE_NUM_ITEMS; index++ )
+        {
+            if ( !schedule[ index ].active )
+     ba0:	88 81       	ld	r24, Y
+     ba2:	88 23       	and	r24, r24
+     ba4:	61 f1       	breq	.+88     	; 0xbfe <schedulerEventHandler+0xb6>
+     ba6:	68 01       	movw	r12, r16
+            {
+                continue;
+            }
+            count = schedule[ index ].count;
+     ba8:	d8 01       	movw	r26, r16
+     baa:	9c 91       	ld	r25, X
+     bac:	47 01       	movw	r8, r14
+            state = schedule[ index ].state;
+     bae:	d7 01       	movw	r26, r14
+     bb0:	8c 91       	ld	r24, X
+            switch ( state )
+     bb2:	88 23       	and	r24, r24
+     bb4:	51 f0       	breq	.+20     	; 0xbca <schedulerEventHandler+0x82>
+     bb6:	81 30       	cpi	r24, 0x01	; 1
+     bb8:	79 f4       	brne	.+30     	; 0xbd8 <schedulerEventHandler+0x90>
+            {
+                case SCH_HIGH_STATE:
+                    timeElapsed =
+                            ( schedule[ index ].dty_cycles->high_cycles
+     bba:	e9 81       	ldd	r30, Y+1	; 0x01
+     bbc:	fa 81       	ldd	r31, Y+2	; 0x02
+                              <= count );
+     bbe:	76 2c       	mov	r7, r6
+     bc0:	21 81       	ldd	r18, Z+1	; 0x01
+     bc2:	92 17       	cp	r25, r18
+     bc4:	48 f4       	brcc	.+18     	; 0xbd8 <schedulerEventHandler+0x90>
+     bc6:	75 2c       	mov	r7, r5
+                    break;
+     bc8:	07 c0       	rjmp	.+14     	; 0xbd8 <schedulerEventHandler+0x90>
+                case SCH_LOW_STATE:
+                    timeElapsed =
+                            ( schedule[ index ].dty_cycles->low_cycles
+     bca:	e9 81       	ldd	r30, Y+1	; 0x01
+     bcc:	fa 81       	ldd	r31, Y+2	; 0x02
+                              <= count );
+     bce:	76 2c       	mov	r7, r6
+     bd0:	20 81       	ld	r18, Z
+     bd2:	92 17       	cp	r25, r18
+     bd4:	08 f4       	brcc	.+2      	; 0xbd8 <schedulerEventHandler+0x90>
+     bd6:	75 2c       	mov	r7, r5
+                    break;
+                default:
+                    break;
+            }
+            if ( timeElapsed )
+     bd8:	77 20       	and	r7, r7
+     bda:	71 f0       	breq	.+28     	; 0xbf8 <schedulerEventHandler+0xb0>
+            {
+                count = SCH_COUNT_INIT;
+                state = !state;
+     bdc:	46 2c       	mov	r4, r6
+     bde:	81 11       	cpse	r24, r1
+     be0:	45 2c       	mov	r4, r5
+                if ( state )
+     be2:	44 20       	and	r4, r4
+     be4:	31 f0       	breq	.+12     	; 0xbf2 <schedulerEventHandler+0xaa>
+                {
+                    // At every positive edge transition the item's
+                    // function is called.
+                    ( schedule[ index ].function )(  );
+     be6:	d6 01       	movw	r26, r12
+     be8:	11 96       	adiw	r26, 0x01	; 1
+     bea:	ed 91       	ld	r30, X+
+     bec:	fc 91       	ld	r31, X
+     bee:	12 97       	sbiw	r26, 0x02	; 2
+     bf0:	09 95       	icall
+                }
+                schedule[ index ].state = state;
+     bf2:	f4 01       	movw	r30, r8
+     bf4:	40 82       	st	Z, r4
+                default:
+                    break;
+            }
+            if ( timeElapsed )
+            {
+                count = SCH_COUNT_INIT;
+     bf6:	95 2d       	mov	r25, r5
+                    // function is called.
+                    ( schedule[ index ].function )(  );
+                }
+                schedule[ index ].state = state;
+            }
+            count++;
+     bf8:	9f 5f       	subi	r25, 0xFF	; 255
+            schedule[ index ].count = count;
+     bfa:	d6 01       	movw	r26, r12
+     bfc:	9c 93       	st	X, r25
+     bfe:	27 96       	adiw	r28, 0x07	; 7
+     c00:	09 5f       	subi	r16, 0xF9	; 249
+     c02:	1f 4f       	sbci	r17, 0xFF	; 255
+     c04:	b7 e0       	ldi	r27, 0x07	; 7
+     c06:	eb 0e       	add	r14, r27
+     c08:	f1 1c       	adc	r15, r1
+    // the flag must be active.
+	if ( !( tmr0At90can128areInterruptsEnabled( ) & SCHEDULER_INTERRUPT_EN )
+			&& ( tmr0At90can128isOCF0AOn( ) ) )
+    {
+        tmr0At90can128ClearOCF0A( ); //turn off the interrupt flag.
+        for ( ; index < SCHEDULE_NUM_ITEMS; index++ )
+     c0a:	0a 15       	cp	r16, r10
+     c0c:	1b 05       	cpc	r17, r11
+     c0e:	41 f6       	brne	.-112    	; 0xba0 <schedulerEventHandler+0x58>
+            count++;
+            schedule[ index ].count = count;
+        }
+    }
+	return;
+}
+     c10:	df 91       	pop	r29
+     c12:	cf 91       	pop	r28
+     c14:	1f 91       	pop	r17
+     c16:	0f 91       	pop	r16
+     c18:	ff 90       	pop	r15
+     c1a:	ef 90       	pop	r14
+     c1c:	df 90       	pop	r13
+     c1e:	cf 90       	pop	r12
+     c20:	bf 90       	pop	r11
+     c22:	af 90       	pop	r10
+     c24:	9f 90       	pop	r9
+     c26:	8f 90       	pop	r8
+     c28:	7f 90       	pop	r7
+     c2a:	6f 90       	pop	r6
+     c2c:	5f 90       	pop	r5
+     c2e:	4f 90       	pop	r4
+     c30:	08 95       	ret
+
+00000c32 <tmr0At90can128Init>:
+	{
+        INPUT_T0( );
+	}
+	else
+	{
+		OUTPUT_T0( );
+     c32:	87 70       	andi	r24, 0x07	; 7
+     c34:	90 e1       	ldi	r25, 0x10	; 16
+     c36:	49 9f       	mul	r20, r25
+     c38:	a0 01       	movw	r20, r0
+     c3a:	11 24       	eor	r1, r1
+     c3c:	40 73       	andi	r20, 0x30	; 48
+     c3e:	63 30       	cpi	r22, 0x03	; 3
+     c40:	31 f0       	breq	.+12     	; 0xc4e <tmr0At90can128Init+0x1c>
+     c42:	62 30       	cpi	r22, 0x02	; 2
+     c44:	31 f0       	breq	.+12     	; 0xc52 <tmr0At90can128Init+0x20>
+     c46:	61 30       	cpi	r22, 0x01	; 1
+     c48:	31 f4       	brne	.+12     	; 0xc56 <tmr0At90can128Init+0x24>
+     c4a:	90 e4       	ldi	r25, 0x40	; 64
+     c4c:	05 c0       	rjmp	.+10     	; 0xc58 <tmr0At90can128Init+0x26>
+     c4e:	98 e4       	ldi	r25, 0x48	; 72
+     c50:	03 c0       	rjmp	.+6      	; 0xc58 <tmr0At90can128Init+0x26>
+     c52:	98 e0       	ldi	r25, 0x08	; 8
+     c54:	01 c0       	rjmp	.+2      	; 0xc58 <tmr0At90can128Init+0x26>
+     c56:	90 e0       	ldi	r25, 0x00	; 0
+     c58:	48 2b       	or	r20, r24
+     c5a:	49 2b       	or	r20, r25
+     c5c:	44 bd       	out	0x24, r20	; 36
+     c5e:	08 95       	ret
+
+00000c60 <tmr0At90can128areInterruptsEnabled>:
+     c60:	80 91 6e 00 	lds	r24, 0x006E
+     c64:	08 95       	ret
+
+00000c66 <tmr0At90can128SetCount>:
+     c66:	86 bd       	out	0x26, r24	; 38
+     c68:	08 95       	ret
+
+00000c6a <tmr0At90can128SetTop>:
+     c6a:	87 bd       	out	0x27, r24	; 39
+     c6c:	08 95       	ret
+
+00000c6e <tmr0At90can128SetupOC0A>:
+     c6e:	81 11       	cpse	r24, r1
+     c70:	02 c0       	rjmp	.+4      	; 0xc76 <tmr0At90can128SetupOC0A+0x8>
+     c72:	27 98       	cbi	0x04, 7	; 4
+     c74:	08 95       	ret
+     c76:	27 9a       	sbi	0x04, 7	; 4
+     c78:	08 95       	ret
+
+00000c7a <tmr0At90can128isOCF0AOn>:
+ *****************************************************************************/
+uint8_t tmr0At90can128isOCF0AOn( void )
+{
+    uint8_t ret = FALSE;
+
+    ret = TIFR0 & ( TRUE << ( OCF0A ) );
+     c7a:	85 b3       	in	r24, 0x15	; 21
+
+    return ret;
+}
+     c7c:	82 70       	andi	r24, 0x02	; 2
+     c7e:	08 95       	ret
+
+00000c80 <tmr0At90can128ClearOCF0A>:
+ * \brief
+ * \return
+ *****************************************************************************/
+void tmr0At90can128ClearOCF0A( void )
+{
+	TIFR0 |= ( TRUE << ( OCF0A ) );
+     c80:	a9 9a       	sbi	0x15, 1	; 21
+     c82:	08 95       	ret
+
+00000c84 <__vector_16>:
+ *          channels are available, thus a different vector name should
+ *          be referenced instead.
+ * \return
+ *****************************************************************************/
+ISR( TIMER0_COMP_vect )
+{
+     c84:	1f 92       	push	r1
+     c86:	0f 92       	push	r0
+     c88:	0f b6       	in	r0, 0x3f	; 63
+     c8a:	0f 92       	push	r0
+     c8c:	11 24       	eor	r1, r1
+
+}
+     c8e:	0f 90       	pop	r0
+     c90:	0f be       	out	0x3f, r0	; 63
+     c92:	0f 90       	pop	r0
+     c94:	1f 90       	pop	r1
+     c96:	18 95       	reti
+
+00000c98 <__vector_17>:
+ * \brief   This isr is called when TCNT0 passes from MAX to MIN.
+ * \note
+ * \return
+ *****************************************************************************/
+ISR( TIMER0_OVF_vect )
+{
+     c98:	1f 92       	push	r1
+     c9a:	0f 92       	push	r0
+     c9c:	0f b6       	in	r0, 0x3f	; 63
+     c9e:	0f 92       	push	r0
+     ca0:	11 24       	eor	r1, r1
+
+}
+     ca2:	0f 90       	pop	r0
+     ca4:	0f be       	out	0x3f, r0	; 63
+     ca6:	0f 90       	pop	r0
+     ca8:	1f 90       	pop	r1
+     caa:	18 95       	reti
+
+00000cac <twiAt90can128Init>:
+ * \return uint8_t Boolean value
+ *****************************************************************************/
+uint8_t twiAt90can128IsBusy( void )
+{
+    return twiInProgress;
+}
+     cac:	90 e0       	ldi	r25, 0x00	; 0
+     cae:	10 92 4c 02 	sts	0x024C, r1
+     cb2:	20 93 b9 00 	sts	0x00B9, r18
+     cb6:	40 93 b8 00 	sts	0x00B8, r20
+     cba:	66 23       	and	r22, r22
+     cbc:	19 f0       	breq	.+6      	; 0xcc4 <twiAt90can128Init+0x18>
+     cbe:	60 93 ba 00 	sts	0x00BA, r22
+     cc2:	03 c0       	rjmp	.+6      	; 0xcca <twiAt90can128Init+0x1e>
+     cc4:	29 e3       	ldi	r18, 0x39	; 57
+     cc6:	20 93 ba 00 	sts	0x00BA, r18
+     cca:	88 23       	and	r24, r24
+     ccc:	31 f0       	breq	.+12     	; 0xcda <twiAt90can128Init+0x2e>
+     cce:	ea eb       	ldi	r30, 0xBA	; 186
+     cd0:	f0 e0       	ldi	r31, 0x00	; 0
+     cd2:	80 81       	ld	r24, Z
+     cd4:	81 60       	ori	r24, 0x01	; 1
+     cd6:	80 83       	st	Z, r24
+     cd8:	05 c0       	rjmp	.+10     	; 0xce4 <twiAt90can128Init+0x38>
+     cda:	ea eb       	ldi	r30, 0xBA	; 186
+     cdc:	f0 e0       	ldi	r31, 0x00	; 0
+     cde:	80 81       	ld	r24, Z
+     ce0:	8e 7f       	andi	r24, 0xFE	; 254
+     ce2:	80 83       	st	Z, r24
+     ce4:	94 60       	ori	r25, 0x04	; 4
+     ce6:	90 64       	ori	r25, 0x40	; 64
+     ce8:	90 93 bc 00 	sts	0x00BC, r25
+     cec:	08 95       	ret
+
+00000cee <twiAt90can128EnableInterrupt>:
+     cee:	ec eb       	ldi	r30, 0xBC	; 188
+     cf0:	f0 e0       	ldi	r31, 0x00	; 0
+     cf2:	90 81       	ld	r25, Z
+     cf4:	80 fb       	bst	r24, 0
+     cf6:	90 f9       	bld	r25, 0
+     cf8:	90 68       	ori	r25, 0x80	; 128
+     cfa:	90 83       	st	Z, r25
+     cfc:	08 95       	ret
+
+00000cfe <twiAt90can128EvaluateStep>:
+ *  \brief  Decodes the current status to determine what to
+ *          write into the Control register.
+ *  \return uint8_t Returns the two wire interface current status
+ *****************************************************************************/
+uint8_t twiAt90can128EvaluateStep( void )
+{
+     cfe:	cf 92       	push	r12
+     d00:	df 92       	push	r13
+     d02:	ef 92       	push	r14
+     d04:	ff 92       	push	r15
+     d06:	0f 93       	push	r16
+     d08:	1f 93       	push	r17
+     d0a:	cf 93       	push	r28
+     d0c:	df 93       	push	r29
+    twcrBf tbf;
+    uint8_t ret = TW_STATUS;
+     d0e:	d0 91 b9 00 	lds	r29, 0x00B9
+     d12:	d8 7f       	andi	r29, 0xF8	; 248
+
+    tbf.byte = TWCR;
+     d14:	c0 91 bc 00 	lds	r28, 0x00BC
+    /**
+     * \par Behavior
+     */
+    switch ( ret )
+     d18:	4d 2f       	mov	r20, r29
+     d1a:	50 e0       	ldi	r21, 0x00	; 0
+     d1c:	49 3c       	cpi	r20, 0xC9	; 201
+     d1e:	51 05       	cpc	r21, r1
+     d20:	08 f0       	brcs	.+2      	; 0xd24 <twiAt90can128EvaluateStep+0x26>
+     d22:	d9 c1       	rjmp	.+946    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+     d24:	fa 01       	movw	r30, r20
+     d26:	e6 5b       	subi	r30, 0xB6	; 182
+     d28:	ff 4f       	sbci	r31, 0xFF	; 255
+     d2a:	53 c3       	rjmp	.+1702   	; 0x13d2 <__tablejump2__>
+    *        acquire control over the bus as the master.\n
+    *      - TWSTA must be clearing in software after sending it.\n
+    */
+    case TW_START:                    // 0x08
+    case TW_REP_START:                // 0x10
+        twiMasterDataIdx = 0;
+     d2c:	10 92 55 02 	sts	0x0255, r1
+     d30:	10 92 56 02 	sts	0x0256, r1
+     d34:	10 92 57 02 	sts	0x0257, r1
+     d38:	10 92 58 02 	sts	0x0258, r1
+        TWDR = twiSla;                // Sending Slave Address. TWDR is
+     d3c:	80 91 61 02 	lds	r24, 0x0261
+     d40:	80 93 bb 00 	sts	0x00BB, r24
+                                      // bidirectional.
+        tbf.bits.btwen  = TW_BIT_ON;  // Make sure the Interface is on.
+     d44:	c4 60       	ori	r28, 0x04	; 4
+        tbf.bits.btwsta = TW_BIT_OFF; // Start already sent, must be
+     d46:	cf 7d       	andi	r28, 0xDF	; 223
+                                      // cleared in software.
+        tbf.bits.btwsto = TW_BIT_OFF;
+     d48:	cf 7e       	andi	r28, 0xEF	; 239
+        tbf.bits.btwint = TW_BIT_ON;  // Must be cleared to proceed.
+     d4a:	c0 68       	ori	r28, 0x80	; 128
+        twiInProgress   = TRUE;
+     d4c:	81 e0       	ldi	r24, 0x01	; 1
+     d4e:	80 93 4c 02 	sts	0x024C, r24
+        break;
+     d52:	c1 c1       	rjmp	.+898    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+     *       otherwise it will not proceed to the next state.\n
+     *     - STOP bit condition TWSTO is cleared automatically.\n
+     */
+    case TW_MT_SLA_ACK:               // 0x18
+    case TW_MT_DATA_ACK:              // 0x28
+        if ( twiMasterDataIdx < twiMasterDataLen )
+     d54:	40 91 55 02 	lds	r20, 0x0255
+     d58:	50 91 56 02 	lds	r21, 0x0256
+     d5c:	60 91 57 02 	lds	r22, 0x0257
+     d60:	70 91 58 02 	lds	r23, 0x0258
+     d64:	00 91 59 02 	lds	r16, 0x0259
+     d68:	10 91 5a 02 	lds	r17, 0x025A
+     d6c:	20 91 5b 02 	lds	r18, 0x025B
+     d70:	30 91 5c 02 	lds	r19, 0x025C
+     d74:	40 17       	cp	r20, r16
+     d76:	51 07       	cpc	r21, r17
+     d78:	62 07       	cpc	r22, r18
+     d7a:	73 07       	cpc	r23, r19
+     d7c:	00 f5       	brcc	.+64     	; 0xdbe <twiAt90can128EvaluateStep+0xc0>
+        {
+            // Writing TWDR must be done while TWINT is high, if the TWDR
+            // is written when TWINT is low the TWWC bit in TWCR will be
+            // be set and the operation will be canceled.
+            TWDR = ( twiMasterDataBuffer )[ twiMasterDataIdx++ ];
+     d7e:	80 91 5f 02 	lds	r24, 0x025F
+     d82:	90 91 60 02 	lds	r25, 0x0260
+     d86:	8a 01       	movw	r16, r20
+     d88:	9b 01       	movw	r18, r22
+     d8a:	0f 5f       	subi	r16, 0xFF	; 255
+     d8c:	1f 4f       	sbci	r17, 0xFF	; 255
+     d8e:	2f 4f       	sbci	r18, 0xFF	; 255
+     d90:	3f 4f       	sbci	r19, 0xFF	; 255
+     d92:	00 93 55 02 	sts	0x0255, r16
+     d96:	10 93 56 02 	sts	0x0256, r17
+     d9a:	20 93 57 02 	sts	0x0257, r18
+     d9e:	30 93 58 02 	sts	0x0258, r19
+     da2:	fc 01       	movw	r30, r24
+     da4:	e4 0f       	add	r30, r20
+     da6:	f5 1f       	adc	r31, r21
+     da8:	80 81       	ld	r24, Z
+     daa:	80 93 bb 00 	sts	0x00BB, r24
+            tbf.bits.btwen  = TW_BIT_ON;  // Make sure the Interface is on.
+     dae:	c4 60       	ori	r28, 0x04	; 4
+            tbf.bits.btwsta = TW_BIT_OFF;
+     db0:	cf 7d       	andi	r28, 0xDF	; 223
+            tbf.bits.btwsto = TW_BIT_OFF;
+     db2:	cf 7e       	andi	r28, 0xEF	; 239
+            tbf.bits.btwint = TW_BIT_ON;  // Must be cleared to proceed.
+     db4:	c0 68       	ori	r28, 0x80	; 128
+            twiInProgress   = TRUE;
+     db6:	81 e0       	ldi	r24, 0x01	; 1
+     db8:	80 93 4c 02 	sts	0x024C, r24
+     dbc:	8c c1       	rjmp	.+792    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+        }
+        else // All data is already sent, complete the frame by sending the
+             // stop condition.
+        {
+            twiInProgress   = FALSE;
+     dbe:	10 92 4c 02 	sts	0x024C, r1
+            tbf.bits.btwen  = TW_BIT_ON;  // Make sure the Interface is on.
+     dc2:	c4 60       	ori	r28, 0x04	; 4
+            tbf.bits.btwsta = TW_BIT_OFF;
+     dc4:	cf 7d       	andi	r28, 0xDF	; 223
+            tbf.bits.btwsto = TW_BIT_ON;  // Stop condition send.
+     dc6:	c0 61       	ori	r28, 0x10	; 16
+            tbf.bits.btwea  = TW_BIT_ON;  // Allows address recognition.
+     dc8:	c0 64       	ori	r28, 0x40	; 64
+            tbf.bits.btwint = TW_BIT_ON;  // Must be cleared to proceed.
+     dca:	c0 68       	ori	r28, 0x80	; 128
+     dcc:	84 c1       	rjmp	.+776    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+     *    then continue sending the same data won't result on any change.\n
+     *    - Cancel the current operation by sending STOP condition.\n
+     *    - Returns to slave mode.\n
+     */
+    case TW_MT_DATA_NACK:             // 0x30
+        tbf.bits.btwen = TW_BIT_ON;   // Make sure the Interface is on.
+     dce:	c4 60       	ori	r28, 0x04	; 4
+        tbf.bits.btwsta = TW_BIT_OFF;
+     dd0:	cf 7d       	andi	r28, 0xDF	; 223
+        tbf.bits.btwsto = TW_BIT_ON;  // Stop condition send.
+     dd2:	c0 61       	ori	r28, 0x10	; 16
+        tbf.bits.btwea  = TW_BIT_ON;  // Allows address recognition.
+     dd4:	c0 64       	ori	r28, 0x40	; 64
+        tbf.bits.btwint = TW_BIT_ON;  // Must be cleared to proceed.
+     dd6:	c0 68       	ori	r28, 0x80	; 128
+        twiInProgress   = FALSE;
+     dd8:	10 92 4c 02 	sts	0x024C, r1
+        break;
+     ddc:	7c c1       	rjmp	.+760    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+     *    this state is reached.\n
+     *    - No action other than clearing TWINT is done, data will be read
+     *      at the next interruption.\n
+     */
+    case TW_MR_SLA_ACK:               // 0x40
+         tbf.bits.btwen  = TW_BIT_ON;
+     dde:	c4 60       	ori	r28, 0x04	; 4
+         tbf.bits.btwsta = TW_BIT_OFF;
+     de0:	cf 7d       	andi	r28, 0xDF	; 223
+         tbf.bits.btwsto = TW_BIT_OFF;
+     de2:	cf 7e       	andi	r28, 0xEF	; 239
+         tbf.bits.btwint = TW_BIT_ON; // Must be cleared to proceed.
+     de4:	c0 68       	ori	r28, 0x80	; 128
+         twiInProgress   = TRUE;
+     de6:	81 e0       	ldi	r24, 0x01	; 1
+     de8:	80 93 4c 02 	sts	0x024C, r24
+         break;
+     dec:	74 c1       	rjmp	.+744    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+     *    After SLA+R the slave will start sending data while the master
+     *    continues replying with an ACK. The last byte will be followed
+     *    by a NACK.\n
+     */
+    case TW_MR_DATA_ACK:              // 0x50
+        if ( twiMasterDataIdx < ( twiMasterDataLen - 1 ) )
+     dee:	00 91 59 02 	lds	r16, 0x0259
+     df2:	10 91 5a 02 	lds	r17, 0x025A
+     df6:	20 91 5b 02 	lds	r18, 0x025B
+     dfa:	30 91 5c 02 	lds	r19, 0x025C
+     dfe:	40 91 55 02 	lds	r20, 0x0255
+     e02:	50 91 56 02 	lds	r21, 0x0256
+     e06:	60 91 57 02 	lds	r22, 0x0257
+     e0a:	70 91 58 02 	lds	r23, 0x0258
+     e0e:	68 01       	movw	r12, r16
+     e10:	79 01       	movw	r14, r18
+     e12:	81 e0       	ldi	r24, 0x01	; 1
+     e14:	c8 1a       	sub	r12, r24
+     e16:	d1 08       	sbc	r13, r1
+     e18:	e1 08       	sbc	r14, r1
+     e1a:	f1 08       	sbc	r15, r1
+     e1c:	4c 15       	cp	r20, r12
+     e1e:	5d 05       	cpc	r21, r13
+     e20:	6e 05       	cpc	r22, r14
+     e22:	7f 05       	cpc	r23, r15
+     e24:	08 f5       	brcc	.+66     	; 0xe68 <twiAt90can128EvaluateStep+0x16a>
+        {
+            ( twiMasterDataBuffer )[ twiMasterDataIdx++ ] = TWDR;
+     e26:	80 91 5f 02 	lds	r24, 0x025F
+     e2a:	90 91 60 02 	lds	r25, 0x0260
+     e2e:	8a 01       	movw	r16, r20
+     e30:	9b 01       	movw	r18, r22
+     e32:	0f 5f       	subi	r16, 0xFF	; 255
+     e34:	1f 4f       	sbci	r17, 0xFF	; 255
+     e36:	2f 4f       	sbci	r18, 0xFF	; 255
+     e38:	3f 4f       	sbci	r19, 0xFF	; 255
+     e3a:	00 93 55 02 	sts	0x0255, r16
+     e3e:	10 93 56 02 	sts	0x0256, r17
+     e42:	20 93 57 02 	sts	0x0257, r18
+     e46:	30 93 58 02 	sts	0x0258, r19
+     e4a:	20 91 bb 00 	lds	r18, 0x00BB
+     e4e:	fc 01       	movw	r30, r24
+     e50:	e4 0f       	add	r30, r20
+     e52:	f5 1f       	adc	r31, r21
+     e54:	20 83       	st	Z, r18
+            tbf.bits.btwen  = TW_BIT_ON;
+     e56:	c4 60       	ori	r28, 0x04	; 4
+            tbf.bits.btwsta = TW_BIT_OFF;
+     e58:	cf 7d       	andi	r28, 0xDF	; 223
+            tbf.bits.btwsto = TW_BIT_OFF;
+     e5a:	cf 7e       	andi	r28, 0xEF	; 239
+            tbf.bits.btwea  = TW_BIT_ON;  // Master sends an ACK.
+     e5c:	c0 64       	ori	r28, 0x40	; 64
+            tbf.bits.btwint = TW_BIT_ON;  // Must be cleared to proceed.
+     e5e:	c0 68       	ori	r28, 0x80	; 128
+            twiInProgress   = TRUE;
+     e60:	81 e0       	ldi	r24, 0x01	; 1
+     e62:	80 93 4c 02 	sts	0x024C, r24
+     e66:	37 c1       	rjmp	.+622    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+        }
+        else if ( twiMasterDataIdx < twiMasterDataLen )
+     e68:	40 17       	cp	r20, r16
+     e6a:	51 07       	cpc	r21, r17
+     e6c:	62 07       	cpc	r22, r18
+     e6e:	73 07       	cpc	r23, r19
+     e70:	08 f0       	brcs	.+2      	; 0xe74 <twiAt90can128EvaluateStep+0x176>
+     e72:	31 c1       	rjmp	.+610    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+        {
+            ( twiMasterDataBuffer )[ twiMasterDataIdx++ ] = TWDR;
+     e74:	80 91 5f 02 	lds	r24, 0x025F
+     e78:	90 91 60 02 	lds	r25, 0x0260
+     e7c:	8a 01       	movw	r16, r20
+     e7e:	9b 01       	movw	r18, r22
+     e80:	0f 5f       	subi	r16, 0xFF	; 255
+     e82:	1f 4f       	sbci	r17, 0xFF	; 255
+     e84:	2f 4f       	sbci	r18, 0xFF	; 255
+     e86:	3f 4f       	sbci	r19, 0xFF	; 255
+     e88:	00 93 55 02 	sts	0x0255, r16
+     e8c:	10 93 56 02 	sts	0x0256, r17
+     e90:	20 93 57 02 	sts	0x0257, r18
+     e94:	30 93 58 02 	sts	0x0258, r19
+     e98:	20 91 bb 00 	lds	r18, 0x00BB
+     e9c:	fc 01       	movw	r30, r24
+     e9e:	e4 0f       	add	r30, r20
+     ea0:	f5 1f       	adc	r31, r21
+     ea2:	20 83       	st	Z, r18
+            tbf.bits.btwen  = TW_BIT_ON;
+     ea4:	c4 60       	ori	r28, 0x04	; 4
+            tbf.bits.btwsta = TW_BIT_OFF;
+     ea6:	cf 7d       	andi	r28, 0xDF	; 223
+            tbf.bits.btwsto = TW_BIT_OFF;
+     ea8:	cf 7e       	andi	r28, 0xEF	; 239
+            tbf.bits.btwea  = TW_BIT_OFF; // Master sends an NACK.
+     eaa:	cf 7b       	andi	r28, 0xBF	; 191
+            tbf.bits.btwint = TW_BIT_ON;  // Must be cleared to proceed.
+     eac:	c0 68       	ori	r28, 0x80	; 128
+            twiInProgress   = TRUE;
+     eae:	81 e0       	ldi	r24, 0x01	; 1
+     eb0:	80 93 4c 02 	sts	0x024C, r24
+     eb4:	10 c1       	rjmp	.+544    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+     *    o Returns back to slave mode.
+     *
+     */
+    case TW_MR_SLA_NACK:              // 0x48
+    case TW_MT_SLA_NACK:              // 0x20
+        tbf.bits.btwsto = TW_BIT_ON;  // STOP condition sent.
+     eb6:	c0 61       	ori	r28, 0x10	; 16
+     *    Returns to slave mode, awaiting to be addressed again.
+     *    - STOP condition bit is controlled by the master.
+     */
+        /* No break */
+    case TW_ST_LAST_DATA:             // 0xC8
+        tbf.bits.btwen  = TW_BIT_ON;
+     eb8:	c4 60       	ori	r28, 0x04	; 4
+        tbf.bits.btwsta = TW_BIT_OFF;
+     eba:	cf 7d       	andi	r28, 0xDF	; 223
+        tbf.bits.btwea  = TW_BIT_ON;  // Allows address recognition.
+     ebc:	c0 64       	ori	r28, 0x40	; 64
+        tbf.bits.btwint = TW_BIT_ON;  // Must be cleared to proceed.
+     ebe:	c0 68       	ori	r28, 0x80	; 128
+        twiInProgress   = FALSE;
+     ec0:	10 92 4c 02 	sts	0x024C, r1
+        break;
+     ec4:	08 c1       	rjmp	.+528    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+     *    - Returns to slave mode.
+     *
+     */
+    case TW_SR_ARB_LOST_GCALL_ACK:    // 0x78
+    case TW_SR_ARB_LOST_SLA_ACK:      // 0x68
+        tbf.bits.btwen  = TW_BIT_ON;
+     ec6:	c4 60       	ori	r28, 0x04	; 4
+        tbf.bits.btwsto = TW_BIT_OFF;
+     ec8:	cf 7e       	andi	r28, 0xEF	; 239
+        tbf.bits.btwea  = TW_BIT_ON;  // Allows ACK response.
+     eca:	c0 64       	ori	r28, 0x40	; 64
+        tbf.bits.btwint = TW_BIT_ON;  // Must be cleared to proceed.
+     ecc:	c0 68       	ori	r28, 0x80	; 128
+        twiInProgress   = TRUE;
+     ece:	81 e0       	ldi	r24, 0x01	; 1
+     ed0:	80 93 4c 02 	sts	0x024C, r24
+        break;
+     ed4:	00 c1       	rjmp	.+512    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+     *   - Clear TWINT to receive data and set TWEA to be able
+     *     to ACK it.\n
+     */
+    case TW_SR_GCALL_ACK:             // 0x70
+    case TW_SR_SLA_ACK:               // 0x60
+        tbf.bits.btwen  = TW_BIT_ON;
+     ed6:	c4 60       	ori	r28, 0x04	; 4
+        tbf.bits.btwsto = TW_BIT_OFF;
+     ed8:	cf 7e       	andi	r28, 0xEF	; 239
+        tbf.bits.btwea  = TW_BIT_ON;
+     eda:	c0 64       	ori	r28, 0x40	; 64
+        tbf.bits.btwint = TW_BIT_ON;
+     edc:	c0 68       	ori	r28, 0x80	; 128
+        twiSlaveDataIdx = 0;          // New data will arrive.
+     ede:	10 92 4d 02 	sts	0x024D, r1
+     ee2:	10 92 4e 02 	sts	0x024E, r1
+     ee6:	10 92 4f 02 	sts	0x024F, r1
+     eea:	10 92 50 02 	sts	0x0250, r1
+        // Allows an external module to handle the data queue.
+        cbSetRXBuffer( &twiSlaveDataBuffer, &twiSlaveDataLen );
+     eee:	61 e5       	ldi	r22, 0x51	; 81
+     ef0:	72 e0       	ldi	r23, 0x02	; 2
+     ef2:	8d e5       	ldi	r24, 0x5D	; 93
+     ef4:	92 e0       	ldi	r25, 0x02	; 2
+     ef6:	3b dc       	rcall	.-1930   	; 0x76e <cbSetRXBuffer>
+        twiInProgress   = TRUE;
+     ef8:	81 e0       	ldi	r24, 0x01	; 1
+     efa:	80 93 4c 02 	sts	0x024C, r24
+        break;
+     efe:	eb c0       	rjmp	.+470    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+    /** - Slave received data and sends ACK\n
+     */
+    case TW_SR_DATA_ACK:              // 0x80
+    case TW_SR_GCALL_DATA_ACK:        // 0x90
+        if ( twiSlaveDataIdx < twiSlaveDataLen )
+     f00:	40 91 4d 02 	lds	r20, 0x024D
+     f04:	50 91 4e 02 	lds	r21, 0x024E
+     f08:	60 91 4f 02 	lds	r22, 0x024F
+     f0c:	70 91 50 02 	lds	r23, 0x0250
+     f10:	00 91 51 02 	lds	r16, 0x0251
+     f14:	10 91 52 02 	lds	r17, 0x0252
+     f18:	20 91 53 02 	lds	r18, 0x0253
+     f1c:	30 91 54 02 	lds	r19, 0x0254
+     f20:	40 17       	cp	r20, r16
+     f22:	51 07       	cpc	r21, r17
+     f24:	62 07       	cpc	r22, r18
+     f26:	73 07       	cpc	r23, r19
+     f28:	00 f5       	brcc	.+64     	; 0xf6a <twiAt90can128EvaluateStep+0x26c>
+        {
+            twiSlaveDataBuffer[ twiSlaveDataIdx++ ] = TWDR;
+     f2a:	80 91 5d 02 	lds	r24, 0x025D
+     f2e:	90 91 5e 02 	lds	r25, 0x025E
+     f32:	8a 01       	movw	r16, r20
+     f34:	9b 01       	movw	r18, r22
+     f36:	0f 5f       	subi	r16, 0xFF	; 255
+     f38:	1f 4f       	sbci	r17, 0xFF	; 255
+     f3a:	2f 4f       	sbci	r18, 0xFF	; 255
+     f3c:	3f 4f       	sbci	r19, 0xFF	; 255
+     f3e:	00 93 4d 02 	sts	0x024D, r16
+     f42:	10 93 4e 02 	sts	0x024E, r17
+     f46:	20 93 4f 02 	sts	0x024F, r18
+     f4a:	30 93 50 02 	sts	0x0250, r19
+     f4e:	20 91 bb 00 	lds	r18, 0x00BB
+     f52:	fc 01       	movw	r30, r24
+     f54:	e4 0f       	add	r30, r20
+     f56:	f5 1f       	adc	r31, r21
+     f58:	20 83       	st	Z, r18
+            tbf.bits.btwen  = TW_BIT_ON;
+     f5a:	c4 60       	ori	r28, 0x04	; 4
+            tbf.bits.btwsto = TW_BIT_OFF;
+     f5c:	cf 7e       	andi	r28, 0xEF	; 239
+            tbf.bits.btwea  = TW_BIT_ON;
+     f5e:	c0 64       	ori	r28, 0x40	; 64
+            tbf.bits.btwint = TW_BIT_ON;
+     f60:	c0 68       	ori	r28, 0x80	; 128
+            twiInProgress   = TRUE;
+     f62:	81 e0       	ldi	r24, 0x01	; 1
+     f64:	80 93 4c 02 	sts	0x024C, r24
+     f68:	b6 c0       	rjmp	.+364    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+        }
+        else
+        {
+            tbf.bits.btwen  = TW_BIT_ON;
+     f6a:	c4 60       	ori	r28, 0x04	; 4
+            tbf.bits.btwsto = TW_BIT_OFF;
+     f6c:	cf 7e       	andi	r28, 0xEF	; 239
+            tbf.bits.btwea  = TW_BIT_OFF; // NACK, can't handle
+     f6e:	cf 7b       	andi	r28, 0xBF	; 191
+                                          // more data
+            tbf.bits.btwint = TW_BIT_ON;
+     f70:	c0 68       	ori	r28, 0x80	; 128
+            twiInProgress   = TRUE;
+     f72:	81 e0       	ldi	r24, 0x01	; 1
+     f74:	80 93 4c 02 	sts	0x024C, r24
+     f78:	ae c0       	rjmp	.+348    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+     *    - Restarts slave mode to idle state, until its
+     *    address is recognized again.\n
+     */
+
+    case TW_SR_STOP:                  // 0xA0
+	    cbDecodeReceivedData( twiSlaveDataBuffer, twiSlaveDataIdx );
+     f7a:	40 91 4d 02 	lds	r20, 0x024D
+     f7e:	50 91 4e 02 	lds	r21, 0x024E
+     f82:	60 91 4f 02 	lds	r22, 0x024F
+     f86:	70 91 50 02 	lds	r23, 0x0250
+     f8a:	80 91 5d 02 	lds	r24, 0x025D
+     f8e:	90 91 5e 02 	lds	r25, 0x025E
+     f92:	a8 dc       	rcall	.-1712   	; 0x8e4 <cbDecodeReceivedData>
+		/* No break */
+	case TW_SR_GCALL_DATA_NACK:       // 0x98
+    case TW_ST_DATA_NACK:             // 0xC0
+    case TW_SR_DATA_NACK:             // 0x88    
+        tbf.bits.btwen  = TW_BIT_ON;
+     f94:	c4 60       	ori	r28, 0x04	; 4
+        tbf.bits.btwsta = TW_BIT_OFF;
+     f96:	cf 7d       	andi	r28, 0xDF	; 223
+        tbf.bits.btwsto = TW_BIT_OFF;
+     f98:	cf 7e       	andi	r28, 0xEF	; 239
+        tbf.bits.btwea  = TW_BIT_ON;  // Allows address recognition
+     f9a:	c0 64       	ori	r28, 0x40	; 64
+        tbf.bits.btwint = TW_BIT_ON;    
+     f9c:	c0 68       	ori	r28, 0x80	; 128
+        twiInProgress   = FALSE;
+     f9e:	10 92 4c 02 	sts	0x024C, r1
+        break;
+     fa2:	99 c0       	rjmp	.+306    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+    case TW_ST_ARB_LOST_SLA_ACK:      // 0xB0
+        /* No break */
+    /** - Slave acknowledged the address, data transfer starts\n
+     */
+    case TW_ST_SLA_ACK:               // 0xA8
+        twiSlaveDataIdx    = 0;
+     fa4:	10 92 4d 02 	sts	0x024D, r1
+     fa8:	10 92 4e 02 	sts	0x024E, r1
+     fac:	10 92 4f 02 	sts	0x024F, r1
+     fb0:	10 92 50 02 	sts	0x0250, r1
+        cbSetTXBuffer( &twiSlaveDataBuffer, &twiSlaveDataLen );
+     fb4:	61 e5       	ldi	r22, 0x51	; 81
+     fb6:	72 e0       	ldi	r23, 0x02	; 2
+     fb8:	8d e5       	ldi	r24, 0x5D	; 93
+     fba:	92 e0       	ldi	r25, 0x02	; 2
+     fbc:	f1 db       	rcall	.-2078   	; 0x7a0 <cbSetTXBuffer>
+        twiSlaveDataLen = cbFetchData( twiSlaveDataBuffer );
+     fbe:	80 91 5d 02 	lds	r24, 0x025D
+     fc2:	90 91 5e 02 	lds	r25, 0x025E
+     fc6:	0f dd       	rcall	.-1506   	; 0x9e6 <cbFetchData>
+     fc8:	60 93 51 02 	sts	0x0251, r22
+     fcc:	70 93 52 02 	sts	0x0252, r23
+     fd0:	80 93 53 02 	sts	0x0253, r24
+     fd4:	90 93 54 02 	sts	0x0254, r25
+        /* No break */
+    case TW_ST_DATA_ACK:              // 0xB8
+        if ( ( twiSlaveDataLen ) && ( ( twiSlaveDataLen - 1 ) > twiSlaveDataIdx ) )
+     fd8:	40 91 51 02 	lds	r20, 0x0251
+     fdc:	50 91 52 02 	lds	r21, 0x0252
+     fe0:	60 91 53 02 	lds	r22, 0x0253
+     fe4:	70 91 54 02 	lds	r23, 0x0254
+     fe8:	41 15       	cp	r20, r1
+     fea:	51 05       	cpc	r21, r1
+     fec:	61 05       	cpc	r22, r1
+     fee:	71 05       	cpc	r23, r1
+     ff0:	09 f4       	brne	.+2      	; 0xff4 <twiAt90can128EvaluateStep+0x2f6>
+     ff2:	59 c0       	rjmp	.+178    	; 0x10a6 <twiAt90can128EvaluateStep+0x3a8>
+     ff4:	00 91 4d 02 	lds	r16, 0x024D
+     ff8:	10 91 4e 02 	lds	r17, 0x024E
+     ffc:	20 91 4f 02 	lds	r18, 0x024F
+    1000:	30 91 50 02 	lds	r19, 0x0250
+    1004:	6a 01       	movw	r12, r20
+    1006:	7b 01       	movw	r14, r22
+    1008:	81 e0       	ldi	r24, 0x01	; 1
+    100a:	c8 1a       	sub	r12, r24
+    100c:	d1 08       	sbc	r13, r1
+    100e:	e1 08       	sbc	r14, r1
+    1010:	f1 08       	sbc	r15, r1
+    1012:	0c 15       	cp	r16, r12
+    1014:	1d 05       	cpc	r17, r13
+    1016:	2e 05       	cpc	r18, r14
+    1018:	3f 05       	cpc	r19, r15
+    101a:	00 f5       	brcc	.+64     	; 0x105c <twiAt90can128EvaluateStep+0x35e>
+        {
+            TWDR = twiSlaveDataBuffer[ twiSlaveDataIdx++ ];
+    101c:	80 91 5d 02 	lds	r24, 0x025D
+    1020:	90 91 5e 02 	lds	r25, 0x025E
+    1024:	b9 01       	movw	r22, r18
+    1026:	a8 01       	movw	r20, r16
+    1028:	4f 5f       	subi	r20, 0xFF	; 255
+    102a:	5f 4f       	sbci	r21, 0xFF	; 255
+    102c:	6f 4f       	sbci	r22, 0xFF	; 255
+    102e:	7f 4f       	sbci	r23, 0xFF	; 255
+    1030:	40 93 4d 02 	sts	0x024D, r20
+    1034:	50 93 4e 02 	sts	0x024E, r21
+    1038:	60 93 4f 02 	sts	0x024F, r22
+    103c:	70 93 50 02 	sts	0x0250, r23
+    1040:	fc 01       	movw	r30, r24
+    1042:	e0 0f       	add	r30, r16
+    1044:	f1 1f       	adc	r31, r17
+    1046:	80 81       	ld	r24, Z
+    1048:	80 93 bb 00 	sts	0x00BB, r24
+            tbf.bits.btwen  = TW_BIT_ON;
+    104c:	c4 60       	ori	r28, 0x04	; 4
+            tbf.bits.btwsto = TW_BIT_OFF;
+    104e:	cf 7e       	andi	r28, 0xEF	; 239
+            tbf.bits.btwea  = TW_BIT_ON; // Allows ACK reply
+    1050:	c0 64       	ori	r28, 0x40	; 64
+            tbf.bits.btwint = TW_BIT_ON;
+    1052:	c0 68       	ori	r28, 0x80	; 128
+            twiInProgress   = TRUE;
+    1054:	81 e0       	ldi	r24, 0x01	; 1
+    1056:	80 93 4c 02 	sts	0x024C, r24
+    105a:	3d c0       	rjmp	.+122    	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+        }
+        else if ( twiSlaveDataLen > twiSlaveDataIdx )
+    105c:	04 17       	cp	r16, r20
+    105e:	15 07       	cpc	r17, r21
+    1060:	26 07       	cpc	r18, r22
+    1062:	37 07       	cpc	r19, r23
+    1064:	00 f5       	brcc	.+64     	; 0x10a6 <twiAt90can128EvaluateStep+0x3a8>
+        {
+            TWDR = twiSlaveDataBuffer[ twiSlaveDataIdx++ ];
+    1066:	80 91 5d 02 	lds	r24, 0x025D
+    106a:	90 91 5e 02 	lds	r25, 0x025E
+    106e:	b9 01       	movw	r22, r18
+    1070:	a8 01       	movw	r20, r16
+    1072:	4f 5f       	subi	r20, 0xFF	; 255
+    1074:	5f 4f       	sbci	r21, 0xFF	; 255
+    1076:	6f 4f       	sbci	r22, 0xFF	; 255
+    1078:	7f 4f       	sbci	r23, 0xFF	; 255
+    107a:	40 93 4d 02 	sts	0x024D, r20
+    107e:	50 93 4e 02 	sts	0x024E, r21
+    1082:	60 93 4f 02 	sts	0x024F, r22
+    1086:	70 93 50 02 	sts	0x0250, r23
+    108a:	fc 01       	movw	r30, r24
+    108c:	e0 0f       	add	r30, r16
+    108e:	f1 1f       	adc	r31, r17
+    1090:	80 81       	ld	r24, Z
+    1092:	80 93 bb 00 	sts	0x00BB, r24
+            tbf.bits.btwen  = TW_BIT_ON;
+    1096:	c4 60       	ori	r28, 0x04	; 4
+            tbf.bits.btwsto = TW_BIT_OFF;
+    1098:	cf 7e       	andi	r28, 0xEF	; 239
+            tbf.bits.btwea  = TW_BIT_OFF; // Last byte sends NACK
+    109a:	cf 7b       	andi	r28, 0xBF	; 191
+            tbf.bits.btwint = TW_BIT_ON;
+    109c:	c0 68       	ori	r28, 0x80	; 128
+            twiInProgress   = TRUE;
+    109e:	81 e0       	ldi	r24, 0x01	; 1
+    10a0:	80 93 4c 02 	sts	0x024C, r24
+    10a4:	18 c0       	rjmp	.+48     	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+        }
+        else
+        {
+			TWDR = 0x00;
+    10a6:	10 92 bb 00 	sts	0x00BB, r1
+            tbf.bits.btwen  = TW_BIT_ON;
+    10aa:	c4 60       	ori	r28, 0x04	; 4
+            tbf.bits.btwsto = TW_BIT_OFF;
+    10ac:	cf 7e       	andi	r28, 0xEF	; 239
+            tbf.bits.btwea  = TW_BIT_OFF; // Last byte sends NACK
+    10ae:	cf 7b       	andi	r28, 0xBF	; 191
+            tbf.bits.btwint = TW_BIT_ON;
+    10b0:	c0 68       	ori	r28, 0x80	; 128
+            twiInProgress   = TRUE;
+    10b2:	81 e0       	ldi	r24, 0x01	; 1
+    10b4:	80 93 4c 02 	sts	0x024C, r24
+    10b8:	0e c0       	rjmp	.+28     	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+     *    - Slave Mode entered\n
+     *    - Does not hold SCL low by clearing TWINT.\n
+     */
+    case TW_MT_ARB_LOST:              // 0x38
+//    case TW_MR_ARB_LOST:            // 0x38
+        tbf.bits.btwen  = TW_BIT_ON;
+    10ba:	c4 60       	ori	r28, 0x04	; 4
+        tbf.bits.btwsta = TW_BIT_OFF;
+    10bc:	cf 7d       	andi	r28, 0xDF	; 223
+        tbf.bits.btwsto = TW_BIT_OFF;
+    10be:	cf 7e       	andi	r28, 0xEF	; 239
+        tbf.bits.btwint = TW_BIT_ON;  // Must be cleared to proceed.
+    10c0:	c0 68       	ori	r28, 0x80	; 128
+        tbf.bits.btwea  = TW_BIT_ON;  // Allows address recognition.
+    10c2:	c0 64       	ori	r28, 0x40	; 64
+        twiInProgress   = FALSE;
+    10c4:	10 92 4c 02 	sts	0x024C, r1
+        break;
+    10c8:	06 c0       	rjmp	.+12     	; 0x10d6 <twiAt90can128EvaluateStep+0x3d8>
+     *    is sent at an illegal position, such as a data/address transfer,
+     *    or ACK transfer/reception.\n
+     *    - To recover from error sent STOP condition.\n
+     */
+    case TW_BUS_ERROR:                // 0x00
+        tbf.bits.btwsta = TW_BIT_OFF;
+    10ca:	cf 7d       	andi	r28, 0xDF	; 223
+        tbf.bits.btwsto = TW_BIT_ON;  // Sends STOP condition.
+    10cc:	c0 61       	ori	r28, 0x10	; 16
+        tbf.bits.btwea  = TW_BIT_ON;  // Allows address recognition.
+    10ce:	c0 64       	ori	r28, 0x40	; 64
+        tbf.bits.btwint = TW_BIT_ON;
+    10d0:	c0 68       	ori	r28, 0x80	; 128
+        twiInProgress   = FALSE;
+    10d2:	10 92 4c 02 	sts	0x024C, r1
+        break;
+
+
+    }
+
+    TWCR = tbf.byte;
+    10d6:	c0 93 bc 00 	sts	0x00BC, r28
+    return ret;
+}
+    10da:	8d 2f       	mov	r24, r29
+    10dc:	df 91       	pop	r29
+    10de:	cf 91       	pop	r28
+    10e0:	1f 91       	pop	r17
+    10e2:	0f 91       	pop	r16
+    10e4:	ff 90       	pop	r15
+    10e6:	ef 90       	pop	r14
+    10e8:	df 90       	pop	r13
+    10ea:	cf 90       	pop	r12
+    10ec:	08 95       	ret
+
+000010ee <__vector_35>:
+ *  \note   The interruption flag is cleared in software by writing a one
+ *          on it.
+ *  \return
+ *****************************************************************************/
+ISR( TWI_vect)
+{
+    10ee:	1f 92       	push	r1
+    10f0:	0f 92       	push	r0
+    10f2:	0f b6       	in	r0, 0x3f	; 63
+    10f4:	0f 92       	push	r0
+    10f6:	11 24       	eor	r1, r1
+    10f8:	0b b6       	in	r0, 0x3b	; 59
+    10fa:	0f 92       	push	r0
+    10fc:	2f 93       	push	r18
+    10fe:	3f 93       	push	r19
+    1100:	4f 93       	push	r20
+    1102:	5f 93       	push	r21
+    1104:	6f 93       	push	r22
+    1106:	7f 93       	push	r23
+    1108:	8f 93       	push	r24
+    110a:	9f 93       	push	r25
+    110c:	af 93       	push	r26
+    110e:	bf 93       	push	r27
+    1110:	ef 93       	push	r30
+    1112:	ff 93       	push	r31
+	twiAt90can128EvaluateStep();
+    1114:	f4 dd       	rcall	.-1048   	; 0xcfe <twiAt90can128EvaluateStep>
+}
+    1116:	ff 91       	pop	r31
+    1118:	ef 91       	pop	r30
+    111a:	bf 91       	pop	r27
+    111c:	af 91       	pop	r26
+    111e:	9f 91       	pop	r25
+    1120:	8f 91       	pop	r24
+    1122:	7f 91       	pop	r23
+    1124:	6f 91       	pop	r22
+    1126:	5f 91       	pop	r21
+    1128:	4f 91       	pop	r20
+    112a:	3f 91       	pop	r19
+    112c:	2f 91       	pop	r18
+    112e:	0f 90       	pop	r0
+    1130:	0b be       	out	0x3b, r0	; 59
+    1132:	0f 90       	pop	r0
+    1134:	0f be       	out	0x3f, r0	; 63
+    1136:	0f 90       	pop	r0
+    1138:	1f 90       	pop	r1
+    113a:	18 95       	reti
+
+0000113c <usart_enable_interrupts>:
+ *  \warning Warning.
+ *  \author Author
+ ****************************************************************************************/
+void UART_setBusy( uint8_t val )
+{
+    uart_in_progress = val;
+    113c:	e1 ec       	ldi	r30, 0xC1	; 193
+    113e:	f0 e0       	ldi	r31, 0x00	; 0
+    1140:	80 81       	ld	r24, Z
+    1142:	80 68       	ori	r24, 0x80	; 128
+    1144:	80 83       	st	Z, r24
+    1146:	08 95       	ret
+
+00001148 <usart_init>:
+    1148:	69 9a       	sbi	0x0d, 1	; 13
+    114a:	68 98       	cbi	0x0d, 0	; 13
+    114c:	90 e0       	ldi	r25, 0x00	; 0
+    114e:	fc 01       	movw	r30, r24
+    1150:	ee 0f       	add	r30, r30
+    1152:	ff 1f       	adc	r31, r31
+    1154:	e8 0f       	add	r30, r24
+    1156:	f9 1f       	adc	r31, r25
+    1158:	ef 5e       	subi	r30, 0xEF	; 239
+    115a:	fd 4f       	sbci	r31, 0xFD	; 253
+    115c:	80 81       	ld	r24, Z
+    115e:	91 81       	ldd	r25, Z+1	; 0x01
+    1160:	90 93 c5 00 	sts	0x00C5, r25
+    1164:	80 93 c4 00 	sts	0x00C4, r24
+    1168:	88 e1       	ldi	r24, 0x18	; 24
+    116a:	80 93 c1 00 	sts	0x00C1, r24
+    116e:	86 e0       	ldi	r24, 0x06	; 6
+    1170:	80 93 c2 00 	sts	0x00C2, r24
+    1174:	6f e6       	ldi	r22, 0x6F	; 111
+    1176:	72 e0       	ldi	r23, 0x02	; 2
+    1178:	80 91 75 02 	lds	r24, 0x0275
+    117c:	90 91 76 02 	lds	r25, 0x0276
+    1180:	0f db       	rcall	.-2530   	; 0x7a0 <cbSetTXBuffer>
+    1182:	6b e6       	ldi	r22, 0x6B	; 107
+    1184:	72 e0       	ldi	r23, 0x02	; 2
+    1186:	80 91 73 02 	lds	r24, 0x0273
+    118a:	90 91 74 02 	lds	r25, 0x0274
+    118e:	ef da       	rcall	.-2594   	; 0x76e <cbSetRXBuffer>
+    1190:	10 92 67 02 	sts	0x0267, r1
+    1194:	10 92 68 02 	sts	0x0268, r1
+    1198:	10 92 69 02 	sts	0x0269, r1
+    119c:	10 92 6a 02 	sts	0x026A, r1
+    11a0:	10 92 63 02 	sts	0x0263, r1
+    11a4:	10 92 64 02 	sts	0x0264, r1
+    11a8:	10 92 65 02 	sts	0x0265, r1
+    11ac:	10 92 66 02 	sts	0x0266, r1
+    11b0:	10 92 62 02 	sts	0x0262, r1
+    11b4:	c3 cf       	rjmp	.-122    	; 0x113c <usart_enable_interrupts>
+    11b6:	08 95       	ret
+
+000011b8 <UART_Receive>:
+    11b8:	80 91 c0 00 	lds	r24, 0x00C0
+    11bc:	88 23       	and	r24, r24
+    11be:	1c f4       	brge	.+6      	; 0x11c6 <UART_Receive+0xe>
+    11c0:	80 91 c6 00 	lds	r24, 0x00C6
+    11c4:	08 95       	ret
+    11c6:	80 e0       	ldi	r24, 0x00	; 0
+    11c8:	08 95       	ret
+
+000011ca <UART_Transmit>:
+    11ca:	e0 ec       	ldi	r30, 0xC0	; 192
+    11cc:	f0 e0       	ldi	r31, 0x00	; 0
+    11ce:	90 81       	ld	r25, Z
+    11d0:	95 ff       	sbrs	r25, 5
+    11d2:	fd cf       	rjmp	.-6      	; 0x11ce <UART_Transmit+0x4>
+    11d4:	80 93 c6 00 	sts	0x00C6, r24
+    11d8:	08 95       	ret
+
+000011da <UART_StreamTransmit>:
+    11da:	8f 92       	push	r8
+    11dc:	9f 92       	push	r9
+    11de:	af 92       	push	r10
+    11e0:	bf 92       	push	r11
+    11e2:	cf 92       	push	r12
+    11e4:	df 92       	push	r13
+    11e6:	ef 92       	push	r14
+    11e8:	ff 92       	push	r15
+    11ea:	cf 93       	push	r28
+    11ec:	df 93       	push	r29
+    11ee:	4a 01       	movw	r8, r20
+    11f0:	5b 01       	movw	r10, r22
+    11f2:	41 15       	cp	r20, r1
+    11f4:	51 05       	cpc	r21, r1
+    11f6:	61 05       	cpc	r22, r1
+    11f8:	71 05       	cpc	r23, r1
+    11fa:	89 f0       	breq	.+34     	; 0x121e <UART_StreamTransmit+0x44>
+    11fc:	c8 2f       	mov	r28, r24
+    11fe:	d9 2f       	mov	r29, r25
+    1200:	c1 2c       	mov	r12, r1
+    1202:	d1 2c       	mov	r13, r1
+    1204:	76 01       	movw	r14, r12
+    1206:	89 91       	ld	r24, Y+
+    1208:	e0 df       	rcall	.-64     	; 0x11ca <UART_Transmit>
+    120a:	8f ef       	ldi	r24, 0xFF	; 255
+    120c:	c8 1a       	sub	r12, r24
+    120e:	d8 0a       	sbc	r13, r24
+    1210:	e8 0a       	sbc	r14, r24
+    1212:	f8 0a       	sbc	r15, r24
+    1214:	c8 14       	cp	r12, r8
+    1216:	d9 04       	cpc	r13, r9
+    1218:	ea 04       	cpc	r14, r10
+    121a:	fb 04       	cpc	r15, r11
+    121c:	a1 f7       	brne	.-24     	; 0x1206 <UART_StreamTransmit+0x2c>
+    121e:	df 91       	pop	r29
+    1220:	cf 91       	pop	r28
+    1222:	ff 90       	pop	r15
+    1224:	ef 90       	pop	r14
+    1226:	df 90       	pop	r13
+    1228:	cf 90       	pop	r12
+    122a:	bf 90       	pop	r11
+    122c:	af 90       	pop	r10
+    122e:	9f 90       	pop	r9
+    1230:	8f 90       	pop	r8
+    1232:	08 95       	ret
+
+00001234 <__vector_21>:
+ *  \note First Implementation 9:05:16 AM Jul 13, 2015
+ *  \warning Warning.
+ *  \author Author
+ ****************************************************************************************/
+ISR( USART0_RX_vect )
+{
+    1234:	1f 92       	push	r1
+    1236:	0f 92       	push	r0
+    1238:	0f b6       	in	r0, 0x3f	; 63
+    123a:	0f 92       	push	r0
+    123c:	11 24       	eor	r1, r1
+    123e:	0b b6       	in	r0, 0x3b	; 59
+    1240:	0f 92       	push	r0
+    1242:	0f 93       	push	r16
+    1244:	1f 93       	push	r17
+    1246:	2f 93       	push	r18
+    1248:	3f 93       	push	r19
+    124a:	4f 93       	push	r20
+    124c:	5f 93       	push	r21
+    124e:	6f 93       	push	r22
+    1250:	7f 93       	push	r23
+    1252:	8f 93       	push	r24
+    1254:	9f 93       	push	r25
+    1256:	af 93       	push	r26
+    1258:	bf 93       	push	r27
+    125a:	cf 93       	push	r28
+    125c:	ef 93       	push	r30
+    125e:	ff 93       	push	r31
+    uint8_t data = 0;
+    uint8_t valid_buff = 0;
+
+    data = UART_Receive( );
+    1260:	ab df       	rcall	.-170    	; 0x11b8 <UART_Receive>
+    1262:	c8 2f       	mov	r28, r24
+    if ( !UART_IsBusy( ) )
+    1264:	80 91 62 02 	lds	r24, 0x0262
+    1268:	81 11       	cpse	r24, r1
+    126a:	34 c0       	rjmp	.+104    	; 0x12d4 <__vector_21+0xa0>
+    {
+        cbSetTXBuffer( &uart_tx_buffer, &uart_tx_len);
+    126c:	6f e6       	ldi	r22, 0x6F	; 111
+    126e:	72 e0       	ldi	r23, 0x02	; 2
+    1270:	85 e7       	ldi	r24, 0x75	; 117
+    1272:	92 e0       	ldi	r25, 0x02	; 2
+    1274:	95 da       	rcall	.-2774   	; 0x7a0 <cbSetTXBuffer>
+        cbSetRXBuffer( &uart_rx_buffer, &uart_rx_len);
+    1276:	6b e6       	ldi	r22, 0x6B	; 107
+    1278:	72 e0       	ldi	r23, 0x02	; 2
+    127a:	83 e7       	ldi	r24, 0x73	; 115
+    127c:	92 e0       	ldi	r25, 0x02	; 2
+    127e:	77 da       	rcall	.-2834   	; 0x76e <cbSetRXBuffer>
+        valid_buff = ( ( uart_rx_buffer ) && ( uart_rx_len ) );
+    1280:	80 91 73 02 	lds	r24, 0x0273
+    1284:	90 91 74 02 	lds	r25, 0x0274
+    1288:	89 2b       	or	r24, r25
+    128a:	09 f4       	brne	.+2      	; 0x128e <__vector_21+0x5a>
+    128c:	7d c0       	rjmp	.+250    	; 0x1388 <__vector_21+0x154>
+    128e:	40 91 6b 02 	lds	r20, 0x026B
+    1292:	50 91 6c 02 	lds	r21, 0x026C
+    1296:	60 91 6d 02 	lds	r22, 0x026D
+    129a:	70 91 6e 02 	lds	r23, 0x026E
+    129e:	45 2b       	or	r20, r21
+    12a0:	46 2b       	or	r20, r22
+    12a2:	47 2b       	or	r20, r23
+    12a4:	09 f0       	breq	.+2      	; 0x12a8 <__vector_21+0x74>
+    12a6:	5d c0       	rjmp	.+186    	; 0x1362 <__vector_21+0x12e>
+    12a8:	6f c0       	rjmp	.+222    	; 0x1388 <__vector_21+0x154>
+ *  \warning Warning.
+ *  \author Author
+ ****************************************************************************************/
+void UART_setBusy( uint8_t val )
+{
+    uart_in_progress = val;
+    12aa:	81 e0       	ldi	r24, 0x01	; 1
+    12ac:	80 93 62 02 	sts	0x0262, r24
+        valid_buff = ( ( uart_rx_buffer ) && ( uart_rx_len ) );
+        if ( valid_buff && cbStartOfFrame( data ) )
+        {
+            UART_setBusy( TRUE );
+            uart_rx_idx = 0;
+            uart_rx_buffer[ uart_rx_idx++ ] = data;
+    12b0:	e0 91 73 02 	lds	r30, 0x0273
+    12b4:	f0 91 74 02 	lds	r31, 0x0274
+    12b8:	41 e0       	ldi	r20, 0x01	; 1
+    12ba:	50 e0       	ldi	r21, 0x00	; 0
+    12bc:	60 e0       	ldi	r22, 0x00	; 0
+    12be:	70 e0       	ldi	r23, 0x00	; 0
+    12c0:	40 93 63 02 	sts	0x0263, r20
+    12c4:	50 93 64 02 	sts	0x0264, r21
+    12c8:	60 93 65 02 	sts	0x0265, r22
+    12cc:	70 93 66 02 	sts	0x0266, r23
+    12d0:	c0 83       	st	Z, r28
+    12d2:	5a c0       	rjmp	.+180    	; 0x1388 <__vector_21+0x154>
+        }
+    }
+    else
+    {
+        valid_buff = ( ( uart_rx_buffer ) && ( uart_rx_len ) );
+    12d4:	80 91 73 02 	lds	r24, 0x0273
+    12d8:	90 91 74 02 	lds	r25, 0x0274
+    12dc:	00 97       	sbiw	r24, 0x00	; 0
+    12de:	09 f4       	brne	.+2      	; 0x12e2 <__vector_21+0xae>
+    12e0:	3d c0       	rjmp	.+122    	; 0x135c <__vector_21+0x128>
+    12e2:	00 91 6b 02 	lds	r16, 0x026B
+    12e6:	10 91 6c 02 	lds	r17, 0x026C
+    12ea:	20 91 6d 02 	lds	r18, 0x026D
+    12ee:	30 91 6e 02 	lds	r19, 0x026E
+    12f2:	01 15       	cp	r16, r1
+    12f4:	11 05       	cpc	r17, r1
+    12f6:	21 05       	cpc	r18, r1
+    12f8:	31 05       	cpc	r19, r1
+    12fa:	c1 f5       	brne	.+112    	; 0x136c <__vector_21+0x138>
+    12fc:	2f c0       	rjmp	.+94     	; 0x135c <__vector_21+0x128>
+        if ( ( valid_buff ) && ( uart_rx_len > uart_rx_idx ) )
+        {
+            uart_rx_buffer[ uart_rx_idx++ ] = data;
+    12fe:	8a 01       	movw	r16, r20
+    1300:	9b 01       	movw	r18, r22
+    1302:	0f 5f       	subi	r16, 0xFF	; 255
+    1304:	1f 4f       	sbci	r17, 0xFF	; 255
+    1306:	2f 4f       	sbci	r18, 0xFF	; 255
+    1308:	3f 4f       	sbci	r19, 0xFF	; 255
+    130a:	00 93 63 02 	sts	0x0263, r16
+    130e:	10 93 64 02 	sts	0x0264, r17
+    1312:	20 93 65 02 	sts	0x0265, r18
+    1316:	30 93 66 02 	sts	0x0266, r19
+    131a:	fc 01       	movw	r30, r24
+    131c:	e4 0f       	add	r30, r20
+    131e:	f5 1f       	adc	r31, r21
+    1320:	c0 83       	st	Z, r28
+    1322:	32 c0       	rjmp	.+100    	; 0x1388 <__vector_21+0x154>
+        }
+        else if ( ( valid_buff ) && ( uart_rx_len <= uart_rx_idx ) )
+        {
+            cbCommitData( uart_rx_buffer, uart_rx_idx );
+    1324:	81 da       	rcall	.-2814   	; 0x828 <cbCommitData>
+ *  \warning Warning.
+ *  \author Author
+ ****************************************************************************************/
+void UART_setBusy( uint8_t val )
+{
+    uart_in_progress = val;
+    1326:	10 92 62 02 	sts	0x0262, r1
+        }
+        else if ( ( valid_buff ) && ( uart_rx_len <= uart_rx_idx ) )
+        {
+            cbCommitData( uart_rx_buffer, uart_rx_idx );
+            UART_setBusy( FALSE );
+            cbSetupReply( uart_rx_buffer, uart_tx_buffer, &uart_tx_idx);
+    132a:	60 91 75 02 	lds	r22, 0x0275
+    132e:	70 91 76 02 	lds	r23, 0x0276
+    1332:	47 e6       	ldi	r20, 0x67	; 103
+    1334:	52 e0       	ldi	r21, 0x02	; 2
+    1336:	80 91 73 02 	lds	r24, 0x0273
+    133a:	90 91 74 02 	lds	r25, 0x0274
+    133e:	96 db       	rcall	.-2260   	; 0xa6c <cbSetupReply>
+            UART_StreamTransmit( uart_tx_buffer, uart_tx_idx );
+    1340:	40 91 67 02 	lds	r20, 0x0267
+    1344:	50 91 68 02 	lds	r21, 0x0268
+    1348:	60 91 69 02 	lds	r22, 0x0269
+    134c:	70 91 6a 02 	lds	r23, 0x026A
+    1350:	80 91 75 02 	lds	r24, 0x0275
+    1354:	90 91 76 02 	lds	r25, 0x0276
+    1358:	40 df       	rcall	.-384    	; 0x11da <UART_StreamTransmit>
+    135a:	16 c0       	rjmp	.+44     	; 0x1388 <__vector_21+0x154>
+ *  \warning Warning.
+ *  \author Author
+ ****************************************************************************************/
+void UART_setBusy( uint8_t val )
+{
+    uart_in_progress = val;
+    135c:	10 92 62 02 	sts	0x0262, r1
+    1360:	13 c0       	rjmp	.+38     	; 0x1388 <__vector_21+0x154>
+    if ( !UART_IsBusy( ) )
+    {
+        cbSetTXBuffer( &uart_tx_buffer, &uart_tx_len);
+        cbSetRXBuffer( &uart_rx_buffer, &uart_rx_len);
+        valid_buff = ( ( uart_rx_buffer ) && ( uart_rx_len ) );
+        if ( valid_buff && cbStartOfFrame( data ) )
+    1362:	8c 2f       	mov	r24, r28
+    1364:	36 da       	rcall	.-2964   	; 0x7d2 <cbStartOfFrame>
+    1366:	88 23       	and	r24, r24
+    1368:	79 f0       	breq	.+30     	; 0x1388 <__vector_21+0x154>
+    136a:	9f cf       	rjmp	.-194    	; 0x12aa <__vector_21+0x76>
+        }
+    }
+    else
+    {
+        valid_buff = ( ( uart_rx_buffer ) && ( uart_rx_len ) );
+        if ( ( valid_buff ) && ( uart_rx_len > uart_rx_idx ) )
+    136c:	40 91 63 02 	lds	r20, 0x0263
+    1370:	50 91 64 02 	lds	r21, 0x0264
+    1374:	60 91 65 02 	lds	r22, 0x0265
+    1378:	70 91 66 02 	lds	r23, 0x0266
+    137c:	40 17       	cp	r20, r16
+    137e:	51 07       	cpc	r21, r17
+    1380:	62 07       	cpc	r22, r18
+    1382:	73 07       	cpc	r23, r19
+    1384:	78 f6       	brcc	.-98     	; 0x1324 <__vector_21+0xf0>
+    1386:	bb cf       	rjmp	.-138    	; 0x12fe <__vector_21+0xca>
+        else
+        {
+            UART_setBusy( FALSE );
+        }
+    }
+}
+    1388:	ff 91       	pop	r31
+    138a:	ef 91       	pop	r30
+    138c:	cf 91       	pop	r28
+    138e:	bf 91       	pop	r27
+    1390:	af 91       	pop	r26
+    1392:	9f 91       	pop	r25
+    1394:	8f 91       	pop	r24
+    1396:	7f 91       	pop	r23
+    1398:	6f 91       	pop	r22
+    139a:	5f 91       	pop	r21
+    139c:	4f 91       	pop	r20
+    139e:	3f 91       	pop	r19
+    13a0:	2f 91       	pop	r18
+    13a2:	1f 91       	pop	r17
+    13a4:	0f 91       	pop	r16
+    13a6:	0f 90       	pop	r0
+    13a8:	0b be       	out	0x3b, r0	; 59
+    13aa:	0f 90       	pop	r0
+    13ac:	0f be       	out	0x3f, r0	; 63
+    13ae:	0f 90       	pop	r0
+    13b0:	1f 90       	pop	r1
+    13b2:	18 95       	reti
+
+000013b4 <watchdog_reset>:
+ *  \warning Warning.
+ *  \author Author
+ ****************************************************************************************/
+void watchdog_off(void)
+{
+	wdt_disable();
+    13b4:	a8 95       	wdr
+    13b6:	08 95       	ret
+
+000013b8 <watchdog_on>:
+ *  \author Author
+ ****************************************************************************************/
+void watchdog_on(WATCHDOG_COMMON_TIMES param)
+{
+	/* Write logical one to WDCE and WDE */
+	wdt_enable(param);
+    13b8:	87 70       	andi	r24, 0x07	; 7
+    13ba:	88 60       	ori	r24, 0x08	; 8
+    13bc:	28 e1       	ldi	r18, 0x18	; 24
+    13be:	30 e0       	ldi	r19, 0x00	; 0
+    13c0:	0f b6       	in	r0, 0x3f	; 63
+    13c2:	f8 94       	cli
+    13c4:	a8 95       	wdr
+    13c6:	20 93 60 00 	sts	0x0060, r18
+    13ca:	0f be       	out	0x3f, r0	; 63
+    13cc:	80 93 60 00 	sts	0x0060, r24
+    13d0:	08 95       	ret
+
+000013d2 <__tablejump2__>:
+    13d2:	ee 0f       	add	r30, r30
+    13d4:	ff 1f       	adc	r31, r31
+
+000013d6 <__tablejump__>:
+    13d6:	05 90       	lpm	r0, Z+
+    13d8:	f4 91       	lpm	r31, Z
+    13da:	e0 2d       	mov	r30, r0
+    13dc:	09 94       	ijmp
+
+000013de <_exit>:
+    13de:	f8 94       	cli
+
+000013e0 <__stop_program>:
+    13e0:	ff cf       	rjmp	.-2      	; 0x13e0 <__stop_program>
