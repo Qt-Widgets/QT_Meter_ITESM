@@ -1,0 +1,306 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ASM_SRCS	.\Debug\sources.mk	/^ASM_SRCS := $/;"	m
+ASM_SRCS	.\Release\sources.mk	/^ASM_SRCS := $/;"	m
+CAN_DATA_MAX_SZ	.\raspi_candrv.h	38;"	d
+CAN_MSG_QUEUE_ERR	.\raspi_can_queue.h	11;"	d
+CAN_MSG_QUEUE_OK	.\raspi_can_queue.h	10;"	d
+CAN_QUEUE_SEM_NAME	.\raspi_can_queue.c	38;"	d	file:
+CAN_TH_POLL_RATE	.\raspi_can_queue.c	15;"	d	file:
+C_DEPS	.\Debug\sources.mk	/^C_DEPS := $/;"	m
+C_DEPS	.\Release\sources.mk	/^C_DEPS := $/;"	m
+C_SRCS	.\Debug\sources.mk	/^C_SRCS := $/;"	m
+C_SRCS	.\Release\sources.mk	/^C_SRCS := $/;"	m
+DLC	.\raspi_candrv.h	/^    char  DLC;$/;"	m	struct:__anon3
+EXECUTABLES	.\Debug\sources.mk	/^EXECUTABLES := $/;"	m
+EXECUTABLES	.\Release\sources.mk	/^EXECUTABLES := $/;"	m
+E_NOCLIENT	.\raspi_gui_ipc.h	10;"	d
+GAL	.\raspi_gui_ipc.h	33;"	d
+GAUGE	.\gauge.h	2;"	d
+Gauge	.\gauge.h	/^}Gauge;$/;"	t	typeref:struct:__anon1
+I2C_AVR_ENABLED_MBX	.\raspi_candrv.c	49;"	d	file:
+I2C_AVR_MAILBOX_0	.\raspi_i2c_defs.h	33;"	d
+I2C_AVR_MAILBOX_1	.\raspi_i2c_defs.h	34;"	d
+I2C_AVR_MAILBOX_10	.\raspi_i2c_defs.h	43;"	d
+I2C_AVR_MAILBOX_11	.\raspi_i2c_defs.h	44;"	d
+I2C_AVR_MAILBOX_12	.\raspi_i2c_defs.h	45;"	d
+I2C_AVR_MAILBOX_13	.\raspi_i2c_defs.h	46;"	d
+I2C_AVR_MAILBOX_14	.\raspi_i2c_defs.h	47;"	d
+I2C_AVR_MAILBOX_2	.\raspi_i2c_defs.h	35;"	d
+I2C_AVR_MAILBOX_3	.\raspi_i2c_defs.h	36;"	d
+I2C_AVR_MAILBOX_4	.\raspi_i2c_defs.h	37;"	d
+I2C_AVR_MAILBOX_5	.\raspi_i2c_defs.h	38;"	d
+I2C_AVR_MAILBOX_6	.\raspi_i2c_defs.h	39;"	d
+I2C_AVR_MAILBOX_7	.\raspi_i2c_defs.h	40;"	d
+I2C_AVR_MAILBOX_8	.\raspi_i2c_defs.h	41;"	d
+I2C_AVR_MAILBOX_9	.\raspi_i2c_defs.h	42;"	d
+I2C_BUSY	.\raspi_i2c_defs.h	14;"	d
+I2C_CAN_SLAVE_ADDR	.\raspi_i2c_defs.h	4;"	d
+I2C_CMD_MAILBOX_REQUEST	.\raspi_i2c_defs.h	21;"	d
+I2C_CMD_MAILBOX_RESPONSE	.\raspi_i2c_defs.h	22;"	d
+I2C_CMD_MLBREQ_FRAME_SZ	.\raspi_i2c_defs.h	24;"	d
+I2C_CMD_MLREQUEST_FRAME_SZ	.\raspi_candrv.c	18;"	d	file:
+I2C_CMD_MLRESPONSE_FRAME_SZ	.\raspi_candrv.c	19;"	d	file:
+I2C_CMD_MLRESPONSE_MIN_FRAME_SZ	.\raspi_candrv.c	21;"	d	file:
+I2C_DEV_NAME	.\raspi_i2c_defs.h	3;"	d
+I2C_ERROR	.\raspi_i2c_defs.h	15;"	d
+I2C_FRAME_DATA_IDX	.\raspi_candrv.c	269;"	d	file:
+I2C_FRAME_DLC_IDX	.\raspi_candrv.c	270;"	d	file:
+I2C_FUNCS	.\i2c-dev.h	46;"	d
+I2C_FUNC_10BIT_ADDR	.\i2c.h	84;"	d
+I2C_FUNC_I2C	.\i2c.h	83;"	d
+I2C_FUNC_PROTOCOL_MANGLING	.\i2c.h	85;"	d
+I2C_FUNC_SMBUS_BLOCK_DATA	.\i2c.h	107;"	d
+I2C_FUNC_SMBUS_BLOCK_PROC_CALL	.\i2c.h	87;"	d
+I2C_FUNC_SMBUS_BYTE	.\i2c.h	101;"	d
+I2C_FUNC_SMBUS_BYTE_DATA	.\i2c.h	103;"	d
+I2C_FUNC_SMBUS_EMUL	.\i2c.h	112;"	d
+I2C_FUNC_SMBUS_I2C_BLOCK	.\i2c.h	109;"	d
+I2C_FUNC_SMBUS_PEC	.\i2c.h	86;"	d
+I2C_FUNC_SMBUS_PROC_CALL	.\i2c.h	95;"	d
+I2C_FUNC_SMBUS_QUICK	.\i2c.h	88;"	d
+I2C_FUNC_SMBUS_READ_BLOCK_DATA	.\i2c.h	96;"	d
+I2C_FUNC_SMBUS_READ_BYTE	.\i2c.h	89;"	d
+I2C_FUNC_SMBUS_READ_BYTE_DATA	.\i2c.h	91;"	d
+I2C_FUNC_SMBUS_READ_I2C_BLOCK	.\i2c.h	98;"	d
+I2C_FUNC_SMBUS_READ_WORD_DATA	.\i2c.h	93;"	d
+I2C_FUNC_SMBUS_WORD_DATA	.\i2c.h	105;"	d
+I2C_FUNC_SMBUS_WRITE_BLOCK_DATA	.\i2c.h	97;"	d
+I2C_FUNC_SMBUS_WRITE_BYTE	.\i2c.h	90;"	d
+I2C_FUNC_SMBUS_WRITE_BYTE_DATA	.\i2c.h	92;"	d
+I2C_FUNC_SMBUS_WRITE_I2C_BLOCK	.\i2c.h	99;"	d
+I2C_FUNC_SMBUS_WRITE_WORD_DATA	.\i2c.h	94;"	d
+I2C_M_IGNORE_NAK	.\i2c.h	74;"	d
+I2C_M_NOSTART	.\i2c.h	72;"	d
+I2C_M_NO_RD_ACK	.\i2c.h	75;"	d
+I2C_M_RD	.\i2c.h	71;"	d
+I2C_M_RECV_LEN	.\i2c.h	76;"	d
+I2C_M_REV_DIR_ADDR	.\i2c.h	73;"	d
+I2C_M_TEN	.\i2c.h	70;"	d
+I2C_OK	.\raspi_i2c_defs.h	13;"	d
+I2C_PEC	.\i2c-dev.h	50;"	d
+I2C_RDRW_IOCTL_MAX_MSGS	.\i2c-dev.h	68;"	d
+I2C_RDWR	.\i2c-dev.h	48;"	d
+I2C_RETRIES	.\i2c-dev.h	34;"	d
+I2C_SLAVE	.\i2c-dev.h	41;"	d
+I2C_SLAVE_FORCE	.\i2c-dev.h	42;"	d
+I2C_SMBUS	.\i2c-dev.h	51;"	d
+I2C_SMBUS_BLOCK_DATA	.\i2c.h	143;"	d
+I2C_SMBUS_BLOCK_MAX	.\i2c.h	124;"	d
+I2C_SMBUS_BLOCK_PROC_CALL	.\i2c.h	145;"	d
+I2C_SMBUS_BYTE	.\i2c.h	139;"	d
+I2C_SMBUS_BYTE_DATA	.\i2c.h	140;"	d
+I2C_SMBUS_I2C_BLOCK_BROKEN	.\i2c.h	144;"	d
+I2C_SMBUS_I2C_BLOCK_DATA	.\i2c.h	146;"	d
+I2C_SMBUS_PROC_CALL	.\i2c.h	142;"	d
+I2C_SMBUS_QUICK	.\i2c.h	138;"	d
+I2C_SMBUS_READ	.\i2c.h	133;"	d
+I2C_SMBUS_WORD_DATA	.\i2c.h	141;"	d
+I2C_SMBUS_WRITE	.\i2c.h	134;"	d
+I2C_STATUS_ERROR	.\raspi_i2c_defs.h	29;"	d
+I2C_STATUS_TIMEOUT	.\raspi_i2c_defs.h	27;"	d
+I2C_STATUS_VALID	.\raspi_i2c_defs.h	28;"	d
+I2C_TENBIT	.\i2c-dev.h	44;"	d
+I2C_TIMEOUT	.\i2c-dev.h	36;"	d
+ID_GAGE_FUEL	.\raspi_gui_ipc.h	16;"	d
+ID_GAGE_SPEED	.\raspi_gui_ipc.h	14;"	d
+ID_GAGE_TACHO	.\raspi_gui_ipc.h	15;"	d
+ID_TURN_OFF	.\raspi_gui_ipc.h	21;"	d
+ID_TURN_ON	.\raspi_gui_ipc.h	20;"	d
+IGNF	.\gauge.h	/^char IGNF;$/;"	v
+IPC_DATA_IDX_H	.\raspi_ipc_defs.h	15;"	d
+IPC_DATA_IDX_L	.\raspi_ipc_defs.h	16;"	d
+IPC_GUI_MAX_CLIENTS	.\raspi_gui_ipc.c	12;"	d	file:
+IPC_ID_IDX	.\raspi_ipc_defs.h	14;"	d
+IPC_SET_GAGE_FRAME_SZ	.\raspi_ipc_defs.h	11;"	d
+IPC_SET_GAGE_SOF	.\raspi_ipc_defs.h	10;"	d
+IPC_UNIT_IDX	.\raspi_ipc_defs.h	17;"	d
+KPH	.\raspi_gui_ipc.h	25;"	d
+LIBS	.\Debug\objects.mk	/^LIBS := -lpthread$/;"	m
+LIBS	.\Release\objects.mk	/^LIBS := -lpthread$/;"	m
+LTS	.\raspi_gui_ipc.h	32;"	d
+MAX_I2C_BUFF	.\raspi_i2c_defs.h	7;"	d
+MAX_I2C_DATA_SZ	.\raspi_candrv.c	22;"	d	file:
+MAX_POLL_BUFF_SIZE	.\raspi_can_queue.h	14;"	d
+MAX_QUEUE_SIZE	.\raspi_can_queue.h	13;"	d
+MAX_SERVER_CONNECTIONS	.\raspi_ipc_defs.h	8;"	d
+MAX_TIMERS	.\raspi_timer.c	12;"	d	file:
+MG_CAN_ID_SYS_UNIT	.\raspi_candrv.h	32;"	d
+MPH	.\raspi_gui_ipc.h	26;"	d
+MSG_CAN_ID_FUEL	.\raspi_candrv.h	31;"	d
+MSG_CAN_ID_IGN_1	.\raspi_candrv.h	33;"	d
+MSG_CAN_ID_SPEED	.\raspi_candrv.h	29;"	d
+MSG_CAN_ID_TACHO	.\raspi_candrv.h	30;"	d
+OBJS	.\Debug\sources.mk	/^OBJS := $/;"	m
+OBJS	.\Release\sources.mk	/^OBJS := $/;"	m
+OBJ_SRCS	.\Debug\sources.mk	/^OBJ_SRCS := $/;"	m
+OBJ_SRCS	.\Release\sources.mk	/^OBJ_SRCS := $/;"	m
+OFF	.\raspi_gui_ipc.c	129;"	d	file:
+ON	.\raspi_gui_ipc.c	128;"	d	file:
+O_SRCS	.\Debug\sources.mk	/^O_SRCS := $/;"	m
+O_SRCS	.\Release\sources.mk	/^O_SRCS := $/;"	m
+RASPI_CANDRV_H_	.\raspi_candrv.h	7;"	d
+RASPI_CAN_BUSY	.\raspi_candrv.h	24;"	d
+RASPI_CAN_CLOSED	.\raspi_candrv.h	18;"	d
+RASPI_CAN_EMPTY	.\raspi_candrv.h	23;"	d
+RASPI_CAN_ERROR	.\raspi_candrv.h	20;"	d
+RASPI_CAN_OK	.\raspi_candrv.h	22;"	d
+RASPI_CAN_OPEN	.\raspi_candrv.h	19;"	d
+RASPI_CAN_QUEUE_H_	.\raspi_can_queue.h	6;"	d
+RASPI_GUI_IPC_	.\raspi_gui_ipc.h	8;"	d
+RASPI_I2C_DEV	.\raspi_i2c_defs.h	17;"	d
+RASPI_IPC_DEFS_H_	.\raspi_ipc_defs.h	2;"	d
+RPM	.\raspi_gui_ipc.h	29;"	d
+SOCKET_NAME_SERVER	.\raspi_ipc_defs.h	5;"	d
+SUBDIRS	.\Debug\sources.mk	/^SUBDIRS := \\$/;"	m
+SUBDIRS	.\Release\sources.mk	/^SUBDIRS := \\$/;"	m
+SUCCESS	.\main.c	10;"	d	file:
+SUCCESS	.\maintest.c	11;"	d	file:
+S_UPPER_SRCS	.\Debug\sources.mk	/^S_UPPER_SRCS := $/;"	m
+S_UPPER_SRCS	.\Release\sources.mk	/^S_UPPER_SRCS := $/;"	m
+TIMER_MAX_RES	.\raspi_timer.c	113;"	d	file:
+TIMER_SEM_NAME	.\raspi_timer.c	39;"	d	file:
+USER_OBJS	.\Debug\objects.mk	/^USER_OBJS :=$/;"	m
+USER_OBJS	.\Release\objects.mk	/^USER_OBJS :=$/;"	m
+WAIT_RESPONSE_US_DELAY	.\raspi_i2c_defs.h	9;"	d
+_LINUX_I2C_DEV_H	.\i2c-dev.h	23;"	d
+_LINUX_I2C_H	.\i2c.h	27;"	d
+_RASPI_TIMER_H_	.\raspi_timer.h	2;"	d
+addr	.\i2c.h	/^	__u16 addr;	\/* slave address			*\/$/;"	m	struct:i2c_msg
+avr_mlbx_poll_list	.\raspi_candrv.c	/^char avr_mlbx_poll_list[ I2C_AVR_ENABLED_MBX ] =$/;"	v
+bDisp	.\gauge.h	/^	char bDisp;$/;"	m	struct:__anon1
+bFLag	.\gauge.h	/^	char bFLag;$/;"	m	struct:__anon1
+block	.\i2c.h	/^	__u8 block[I2C_SMBUS_BLOCK_MAX + 2]; \/* block[0] is used for length *\/$/;"	m	union:i2c_smbus_data
+buf	.\i2c.h	/^	__u8 *buf;		\/* pointer to msg data			*\/$/;"	m	struct:i2c_msg
+byte	.\i2c.h	/^	__u8 byte;$/;"	m	union:i2c_smbus_data
+callback_t	.\raspi_timer.h	/^typedef int (* callback_t)( int id );$/;"	t
+canFd	.\raspi_candrv.h	/^    int canFd;$/;"	m	struct:__anon4
+can_msg	.\raspi_candrv.h	/^}can_msg;$/;"	t	typeref:struct:__anon3
+chksum	.\raspi_candrv.c	/^    char  chksum;$/;"	m	struct:__anon2	file:
+cliCtx	.\raspi_gui_ipc.c	/^clientContext cliCtx;$/;"	v
+cli_sock	.\raspi_gui_ipc.c	/^    int cli_sock;$/;"	m	struct:__anon7	file:
+clientContext	.\raspi_gui_ipc.c	/^}clientContext;$/;"	t	typeref:struct:__anon7	file:
+client_sock	.\raspi_gui_ipc.c	/^    int client_sock[ IPC_GUI_MAX_CLIENTS ]; $/;"	m	struct:__anon6	file:
+command	.\i2c-dev.h	/^	__u8 command;$/;"	m	struct:i2c_smbus_ioctl_data
+command	.\raspi_candrv.c	/^    char  command;$/;"	m	struct:__anon2	file:
+count	.\raspi_timer.c	/^    unsigned long count;$/;"	m	struct:__anon8	file:
+ctx	.\raspi_can_queue.c	/^    raspi_can_ctx ctx;$/;"	m	struct:__anon5	file:
+curClientIdx	.\raspi_gui_ipc.c	/^    int curClientIdx;$/;"	m	struct:__anon6	file:
+data	.\i2c-dev.h	/^	union i2c_smbus_data *data;$/;"	m	struct:i2c_smbus_ioctl_data	typeref:union:i2c_smbus_ioctl_data::i2c_smbus_data
+data	.\raspi_candrv.c	/^    char  data[MAX_I2C_DATA_SZ];$/;"	m	struct:__anon2	file:
+data	.\raspi_candrv.h	/^    char  data[ CAN_DATA_MAX_SZ ];$/;"	m	struct:__anon3
+dataProcessing	.\gauge.c	/^void dataProcessing(can_msg* msg){$/;"	f
+dataSampling	.\main.c	/^void dataSampling(){$/;"	f
+data_sz	.\raspi_candrv.c	/^    char  data_sz;$/;"	m	struct:__anon2	file:
+displayValue	.\gauge.h	/^	int displayValue;$/;"	m	struct:__anon1
+enable	.\raspi_timer.c	/^    int enable;$/;"	m	struct:gtimer	file:
+enabled	.\raspi_timer.c	/^    int enabled;$/;"	m	struct:__anon8	file:
+errFlag	.\gauge.h	/^	char errFlag;$/;"	m	struct:__anon1
+false	.\raspi_can_queue.c	19;"	d	file:
+false	.\raspi_timer.c	15;"	d	file:
+fastSpeed	.\gauge.h	/^	char fastSpeed;$/;"	m	struct:__anon1
+flags	.\i2c.h	/^	__u16 flags;$/;"	m	struct:i2c_msg
+fptr	.\raspi_timer.c	/^    callback_t fptr;$/;"	m	struct:__anon8	file:
+g_ctx	.\raspi_candrv.c	/^raspi_can_ctx g_ctx = $/;"	v
+g_raspi_timerCtx	.\raspi_timer.c	/^}g_raspi_timerCtx;$/;"	v	typeref:struct:gtimer
+gaugeAnimate	.\main.c	/^int gaugeAnimate(int id){$/;"	f
+gaugeInit	.\gauge.c	/^void gaugeInit(Gauge *g){$/;"	f
+getData	.\gauge.c	/^void getData(can_msg* msg){$/;"	f
+gtimer	.\raspi_timer.c	/^struct gtimer$/;"	s	file:
+i2c_msg	.\i2c.h	/^struct i2c_msg {$/;"	s
+i2c_msg	.\raspi_candrv.c	/^}i2c_msg;$/;"	t	typeref:struct:__anon2	file:
+i2c_rdwr_ioctl_data	.\i2c-dev.h	/^struct i2c_rdwr_ioctl_data {$/;"	s
+i2c_slave_addr	.\raspi_candrv.h	/^    int i2c_slave_addr;$/;"	m	struct:__anon4
+i2c_smbus_data	.\i2c.h	/^union i2c_smbus_data {$/;"	u
+i2c_smbus_ioctl_data	.\i2c-dev.h	/^struct i2c_smbus_ioctl_data {$/;"	s
+id	.\raspi_timer.c	/^    int id;$/;"	m	struct:__anon8	file:
+idT	.\gauge.c	/^char idT,idTOFF;$/;"	v
+idTOFF	.\gauge.c	/^char idT,idTOFF;$/;"	v
+id_Timer_Animate	.\main.c	/^char id_Timer_Animate;$/;"	v
+id_Timer_Animate	.\maintest.c	/^char id_Timer_Animate;$/;"	v
+ignProcess	.\gauge.c	/^void ignProcess(int data){$/;"	f
+init	.\main.c	/^char init(){$/;"	f
+keep_going	.\main.c	/^int keep_going = 1;$/;"	v
+keep_going	.\maintest.c	/^int keep_going = 1;$/;"	v
+len	.\i2c.h	/^	__u16 len;		\/* msg length				*\/$/;"	m	struct:i2c_msg
+local_servaddr	.\raspi_gui_ipc.c	/^    struct sockaddr_un local_servaddr;  $/;"	m	struct:__anon7	typeref:struct:__anon7::sockaddr_un	file:
+localaddr	.\raspi_gui_ipc.c	/^    struct sockaddr_un localaddr;$/;"	m	struct:__anon6	typeref:struct:__anon6::sockaddr_un	file:
+mailbox	.\raspi_candrv.c	/^    char  mailbox;$/;"	m	struct:__anon2	file:
+main	.\main.c	/^int main(void) {$/;"	f
+main	.\maintest.c	/^int main(void) {$/;"	f
+msg	.\main.c	/^can_msg msg;$/;"	v
+msg	.\maintest.c	/^can_msg msg;$/;"	v
+msgID	.\raspi_candrv.h	/^    short int msgID;$/;"	m	struct:__anon3
+msgId	.\gauge.h	/^	short msgId;$/;"	m	struct:__anon1
+msgQueue	.\raspi_can_queue.c	/^msgQueue_t msgQueue;$/;"	v
+msgQueueIdx	.\raspi_can_queue.c	/^    int msgQueueIdx;$/;"	m	struct:__anon5	file:
+msgQueue_t	.\raspi_can_queue.c	/^}msgQueue_t;$/;"	t	typeref:struct:__anon5	file:
+msgs	.\i2c-dev.h	/^	struct i2c_msg *msgs;	\/* pointers to i2c_msgs *\/$/;"	m	struct:i2c_rdwr_ioctl_data	typeref:struct:i2c_rdwr_ioctl_data::i2c_msg
+nmsgs	.\i2c-dev.h	/^	__u32 nmsgs;			\/* number of i2c_msgs *\/$/;"	m	struct:i2c_rdwr_ioctl_data
+num_timers	.\raspi_timer.c	/^    int num_timers;$/;"	m	struct:gtimer	file:
+period	.\raspi_candrv.h	/^    int   period;$/;"	m	struct:__anon3
+pollThread	.\raspi_can_queue.c	/^    pthread_t pollThread; $/;"	m	struct:__anon5	file:
+queue	.\raspi_can_queue.c	/^    can_msg queue[MAX_QUEUE_SIZE];$/;"	m	struct:__anon5	file:
+queueSem	.\raspi_can_queue.c	/^    sem_t* queueSem;$/;"	m	struct:__anon5	file:
+rapspi_can_msg_queue_start	.\raspi_can_queue.c	/^int rapspi_can_msg_queue_start( void )$/;"	f
+raspi_can_close	.\raspi_candrv.c	/^void raspi_can_close( raspi_can_ctx* ctx )$/;"	f
+raspi_can_ctx	.\raspi_candrv.h	/^}raspi_can_ctx;$/;"	t	typeref:struct:__anon4
+raspi_can_init	.\raspi_candrv.c	/^int raspi_can_init( raspi_can_ctx* ctx )$/;"	f
+raspi_can_msg_dequeue	.\raspi_can_queue.c	/^int raspi_can_msg_dequeue( can_msg* msg )$/;"	f
+raspi_can_msg_enqueue	.\raspi_can_queue.c	/^static int raspi_can_msg_enqueue( can_msg* msg )$/;"	f	file:
+raspi_can_msg_queue_init	.\raspi_can_queue.c	/^int raspi_can_msg_queue_init( void )$/;"	f
+raspi_can_msg_queue_size	.\raspi_can_queue.c	/^int raspi_can_msg_queue_size( void )$/;"	f
+raspi_can_msg_queue_stop	.\raspi_can_queue.c	/^void raspi_can_msg_queue_stop( void )$/;"	f
+raspi_can_poll	.\raspi_candrv.c	/^int raspi_can_poll( raspi_can_ctx* ctx, int size, can_msg* msg )$/;"	f
+raspi_can_poll_thr	.\raspi_can_queue.c	/^static void* raspi_can_poll_thr( void* arg )$/;"	f	file:
+raspi_get_mailbox	.\raspi_candrv.c	/^static int raspi_get_mailbox(raspi_can_ctx* ctx, char mailNo, i2c_msg* response )$/;"	f	file:
+raspi_gui_client_close	.\raspi_gui_ipc.c	/^void raspi_gui_client_close( void )$/;"	f
+raspi_gui_client_connect	.\raspi_gui_ipc.c	/^int raspi_gui_client_connect( void )$/;"	f
+raspi_gui_client_init	.\raspi_gui_ipc.c	/^int raspi_gui_client_init( void )$/;"	f
+raspi_gui_client_recv	.\raspi_gui_ipc.c	/^int raspi_gui_client_recv( char* buffer, int size )$/;"	f
+raspi_gui_server_accept	.\raspi_gui_ipc.c	/^int raspi_gui_server_accept( void )$/;"	f
+raspi_gui_server_close	.\raspi_gui_ipc.c	/^void raspi_gui_server_close( void )$/;"	f
+raspi_gui_server_init	.\raspi_gui_ipc.c	/^int raspi_gui_server_init( void )$/;"	f
+raspi_gui_server_send	.\raspi_gui_ipc.c	/^int raspi_gui_server_send( char* buffer, int size )$/;"	f
+raspi_gui_server_send_gauge	.\raspi_gui_ipc.c	/^int raspi_gui_server_send_gauge( unsigned char id, unsigned short value, unsigned char unit  )$/;"	f
+raspi_gui_server_send_ignition	.\raspi_gui_ipc.c	/^int raspi_gui_server_send_ignition( unsigned char IG )$/;"	f
+raspi_i2cPdu_toi2cmsg	.\raspi_candrv.c	/^static int raspi_i2cPdu_toi2cmsg( int size , char* buffer, i2c_msg* i2c  )$/;"	f	file:
+raspi_i2c_recv	.\raspi_candrv.c	/^static int raspi_i2c_recv( raspi_can_ctx* ctx, int sz, char* buff )$/;"	f	file:
+raspi_i2c_snd	.\raspi_candrv.c	/^static int raspi_i2c_snd( raspi_can_ctx* ctx, int sz, char* buff )$/;"	f	file:
+raspi_i2c_to_can	.\raspi_candrv.c	/^static int raspi_i2c_to_can( i2c_msg* i2c, can_msg* can )$/;"	f	file:
+raspi_i2cmsg_to_i2cPdu	.\raspi_candrv.c	/^static int raspi_i2cmsg_to_i2cPdu( i2c_msg* i2c,  int size, char* buffer   )$/;"	f	file:
+raspi_timer_close_framework	.\raspi_timer.c	/^void raspi_timer_close_framework( void )$/;"	f
+raspi_timer_create	.\raspi_timer.c	/^int raspi_timer_create( unsigned long  msec, callback_t f_ptr )$/;"	f
+raspi_timer_init_framework	.\raspi_timer.c	/^int raspi_timer_init_framework( void )$/;"	f
+raspi_timer_start	.\raspi_timer.c	/^int  raspi_timer_start( int tmrID )$/;"	f
+raspi_timer_stop	.\raspi_timer.c	/^int  raspi_timer_stop( int tmrID )$/;"	f
+raspi_timer_thread	.\raspi_timer.c	/^static void* raspi_timer_thread( void* arg )$/;"	f	file:
+read_write	.\i2c-dev.h	/^	__u8 read_write;$/;"	m	struct:i2c_smbus_ioctl_data
+remote_sock	.\raspi_gui_ipc.c	/^    struct sockaddr_un remote_sock[ IPC_GUI_MAX_CLIENTS ];$/;"	m	struct:__anon6	typeref:struct:__anon6::sockaddr_un	file:
+servCtx	.\raspi_gui_ipc.c	/^serverContext servCtx;$/;"	v
+serv_sock	.\raspi_gui_ipc.c	/^    int serv_sock;$/;"	m	struct:__anon6	file:
+serverContext	.\raspi_gui_ipc.c	/^}serverContext;$/;"	t	typeref:struct:__anon6	file:
+set	.\raspi_timer.c	/^    unsigned long set;$/;"	m	struct:__anon8	file:
+sigStop	.\raspi_can_queue.c	/^    int sigStop;$/;"	m	struct:__anon5	file:
+size	.\i2c-dev.h	/^	__u32 size;$/;"	m	struct:i2c_smbus_ioctl_data
+status	.\raspi_candrv.c	/^    char  status;$/;"	m	struct:__anon2	file:
+status	.\raspi_candrv.h	/^    int status;$/;"	m	struct:__anon4
+stop	.\raspi_timer.c	/^    int stop;$/;"	m	struct:gtimer	file:
+tacho	.\gauge.h	/^Gauge tacho;$/;"	v
+tachoProcess	.\gauge.c	/^void tachoProcess(int data, Gauge *tacho){$/;"	f
+tachoTimeOFF	.\gauge.c	/^int tachoTimeOFF(int id){$/;"	f
+tachoTimeOut	.\gauge.c	/^int tachoTimeOut(int id){$/;"	f
+targetValue	.\gauge.h	/^	int targetValue;$/;"	m	struct:__anon1
+timeOutFlag	.\gauge.h	/^	char timeOutFlag;$/;"	m	struct:__anon1
+timeStamp	.\gauge.h	/^	int timeStamp;$/;"	m	struct:__anon1
+timerSem	.\raspi_timer.c	/^    sem_t* timerSem;$/;"	m	struct:gtimer	file:
+timerThreadId	.\raspi_timer.c	/^    pthread_t timerThreadId;$/;"	m	struct:gtimer	file:
+timer_data	.\raspi_timer.c	/^} timer_data;$/;"	t	typeref:struct:__anon8	file:
+timers	.\raspi_timer.c	/^    timer_data timers[ MAX_TIMERS ];$/;"	m	struct:gtimer	file:
+true	.\raspi_can_queue.c	18;"	d	file:
+true	.\raspi_timer.c	14;"	d	file:
+word	.\i2c.h	/^	__u16 word;$/;"	m	union:i2c_smbus_data
