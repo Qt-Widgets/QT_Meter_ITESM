@@ -1,0 +1,130 @@
+\hypertarget{raspi__candrv_8h}{}\section{raspi\+\_\+candrv.\+h File Reference}
+\label{raspi__candrv_8h}\index{raspi\+\_\+candrv.\+h@{raspi\+\_\+candrv.\+h}}
+
+
+I2\+C to C\+A\+N message user space driver A\+P\+I header file.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcan__msg}{can\+\_\+msg}
+\item 
+struct \hyperlink{structraspi__can__ctx}{raspi\+\_\+can\+\_\+ctx}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{raspi__candrv_8h_ab6db4b656876032bfe3e3d228b215be9}{}\#define {\bfseries R\+A\+S\+P\+I\+\_\+\+C\+A\+N\+\_\+\+C\+L\+O\+S\+E\+D}~1\label{raspi__candrv_8h_ab6db4b656876032bfe3e3d228b215be9}
+
+\item 
+\hypertarget{raspi__candrv_8h_a60ca57dbc868fe4c95968f093f275710}{}\#define {\bfseries R\+A\+S\+P\+I\+\_\+\+C\+A\+N\+\_\+\+O\+P\+E\+N}~0\label{raspi__candrv_8h_a60ca57dbc868fe4c95968f093f275710}
+
+\item 
+\hypertarget{raspi__candrv_8h_acbb111df3ee4ee5c58ec5ed0d035af49}{}\#define {\bfseries R\+A\+S\+P\+I\+\_\+\+C\+A\+N\+\_\+\+E\+R\+R\+O\+R}~-\/1\label{raspi__candrv_8h_acbb111df3ee4ee5c58ec5ed0d035af49}
+
+\item 
+\hypertarget{raspi__candrv_8h_aeddd0f900c8e15a7e04127fe86002707}{}\#define {\bfseries R\+A\+S\+P\+I\+\_\+\+C\+A\+N\+\_\+\+O\+K}~0\label{raspi__candrv_8h_aeddd0f900c8e15a7e04127fe86002707}
+
+\item 
+\hypertarget{raspi__candrv_8h_adfedad91d314cc345d3b0771a14ff54c}{}\#define {\bfseries R\+A\+S\+P\+I\+\_\+\+C\+A\+N\+\_\+\+E\+M\+P\+T\+Y}~1\label{raspi__candrv_8h_adfedad91d314cc345d3b0771a14ff54c}
+
+\item 
+\hypertarget{raspi__candrv_8h_a381f5391b547f16d8ca1f4b51f45adb4}{}\#define {\bfseries R\+A\+S\+P\+I\+\_\+\+C\+A\+N\+\_\+\+B\+U\+S\+Y}~2\label{raspi__candrv_8h_a381f5391b547f16d8ca1f4b51f45adb4}
+
+\item 
+\hypertarget{raspi__candrv_8h_a261f30bc2473a65a8f0798724207eccc}{}\#define {\bfseries M\+S\+G\+\_\+\+C\+A\+N\+\_\+\+I\+D\+\_\+\+S\+P\+E\+E\+D}~0x101\label{raspi__candrv_8h_a261f30bc2473a65a8f0798724207eccc}
+
+\item 
+\hypertarget{raspi__candrv_8h_a017c73b120fef3de18c1fbee55873778}{}\#define {\bfseries M\+S\+G\+\_\+\+C\+A\+N\+\_\+\+I\+D\+\_\+\+T\+A\+C\+H\+O}~0x224\label{raspi__candrv_8h_a017c73b120fef3de18c1fbee55873778}
+
+\item 
+\hypertarget{raspi__candrv_8h_a372979459ddd063ffd42782939fd4d35}{}\#define {\bfseries M\+S\+G\+\_\+\+C\+A\+N\+\_\+\+I\+D\+\_\+\+F\+U\+E\+L}~0x1\+B\+A\label{raspi__candrv_8h_a372979459ddd063ffd42782939fd4d35}
+
+\item 
+\hypertarget{raspi__candrv_8h_a191e815439e2df774dce3ce32d87622e}{}\#define {\bfseries M\+G\+\_\+\+C\+A\+N\+\_\+\+I\+D\+\_\+\+S\+Y\+S\+\_\+\+U\+N\+I\+T}~0x34\+A\label{raspi__candrv_8h_a191e815439e2df774dce3ce32d87622e}
+
+\item 
+\hypertarget{raspi__candrv_8h_a12da2ee560023f401cd73abae1d944d1}{}\#define {\bfseries M\+S\+G\+\_\+\+C\+A\+N\+\_\+\+I\+D\+\_\+\+I\+G\+N\+\_\+1}~0x24\+B\label{raspi__candrv_8h_a12da2ee560023f401cd73abae1d944d1}
+
+\item 
+\hypertarget{raspi__candrv_8h_a1a911d989dcbc0fcac33172fc551cafb}{}\#define {\bfseries C\+A\+N\+\_\+\+D\+A\+T\+A\+\_\+\+M\+A\+X\+\_\+\+S\+Z}~10\label{raspi__candrv_8h_a1a911d989dcbc0fcac33172fc551cafb}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{raspi__candrv_8h_aa1e9109d9025f8f0ca1475a402b1f04d}{raspi\+\_\+can\+\_\+init} (\hyperlink{structraspi__can__ctx}{raspi\+\_\+can\+\_\+ctx} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em initialize raspberry i2c interface and prepare for receive msg as I2c bus master receiver \end{DoxyCompactList}\item 
+int \hyperlink{raspi__candrv_8h_ad88b1f333cfb4baf9a77267be9e90fa3}{raspi\+\_\+can\+\_\+poll} (\hyperlink{structraspi__can__ctx}{raspi\+\_\+can\+\_\+ctx} $\ast$ctx, int size, \hyperlink{structcan__msg}{can\+\_\+msg} $\ast$msg)
+\begin{DoxyCompactList}\small\item\em poll pre-\/configured mailboxes this will translate into master reques and then a slave response \end{DoxyCompactList}\item 
+void \hyperlink{raspi__candrv_8h_a694ef9727c46ae491b952abdb8f321b1}{raspi\+\_\+can\+\_\+close} (\hyperlink{structraspi__can__ctx}{raspi\+\_\+can\+\_\+ctx} $\ast$ctx)
+\begin{DoxyCompactList}\small\item\em release resources allocated during i2c module initialization \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I2\+C to C\+A\+N message user space driver A\+P\+I header file. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{raspi__candrv_8h_a694ef9727c46ae491b952abdb8f321b1}{}\index{raspi\+\_\+candrv.\+h@{raspi\+\_\+candrv.\+h}!raspi\+\_\+can\+\_\+close@{raspi\+\_\+can\+\_\+close}}
+\index{raspi\+\_\+can\+\_\+close@{raspi\+\_\+can\+\_\+close}!raspi\+\_\+candrv.\+h@{raspi\+\_\+candrv.\+h}}
+\subsubsection[{raspi\+\_\+can\+\_\+close(raspi\+\_\+can\+\_\+ctx $\ast$ctx)}]{\setlength{\rightskip}{0pt plus 5cm}void raspi\+\_\+can\+\_\+close (
+\begin{DoxyParamCaption}
+\item[{{\bf raspi\+\_\+can\+\_\+ctx} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}\label{raspi__candrv_8h_a694ef9727c46ae491b952abdb8f321b1}
+
+
+release resources allocated during i2c module initialization 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & structure holds current i2c module configuration \\
+\hline
+\end{DoxyParams}
+\hypertarget{raspi__candrv_8h_aa1e9109d9025f8f0ca1475a402b1f04d}{}\index{raspi\+\_\+candrv.\+h@{raspi\+\_\+candrv.\+h}!raspi\+\_\+can\+\_\+init@{raspi\+\_\+can\+\_\+init}}
+\index{raspi\+\_\+can\+\_\+init@{raspi\+\_\+can\+\_\+init}!raspi\+\_\+candrv.\+h@{raspi\+\_\+candrv.\+h}}
+\subsubsection[{raspi\+\_\+can\+\_\+init(raspi\+\_\+can\+\_\+ctx $\ast$ctx)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+can\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf raspi\+\_\+can\+\_\+ctx} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}\label{raspi__candrv_8h_aa1e9109d9025f8f0ca1475a402b1f04d}
+
+
+initialize raspberry i2c interface and prepare for receive msg as I2c bus master receiver 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & structure holds current i2c module low level configuration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+initialization result 0 -\/$>$ good -\/1 -\/$>$ fail 
+\end{DoxyReturn}
+\hypertarget{raspi__candrv_8h_ad88b1f333cfb4baf9a77267be9e90fa3}{}\index{raspi\+\_\+candrv.\+h@{raspi\+\_\+candrv.\+h}!raspi\+\_\+can\+\_\+poll@{raspi\+\_\+can\+\_\+poll}}
+\index{raspi\+\_\+can\+\_\+poll@{raspi\+\_\+can\+\_\+poll}!raspi\+\_\+candrv.\+h@{raspi\+\_\+candrv.\+h}}
+\subsubsection[{raspi\+\_\+can\+\_\+poll(raspi\+\_\+can\+\_\+ctx $\ast$ctx, int size, can\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+can\+\_\+poll (
+\begin{DoxyParamCaption}
+\item[{{\bf raspi\+\_\+can\+\_\+ctx} $\ast$}]{ctx, }
+\item[{int}]{size, }
+\item[{{\bf can\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\label{raspi__candrv_8h_ad88b1f333cfb4baf9a77267be9e90fa3}
+
+
+poll pre-\/configured mailboxes this will translate into master reques and then a slave response 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & structure holds current i2c module low level configuration \\
+\hline
+{\em size} & maximum number of messages to be retreived from can mailboxes \\
+\hline
+{\em msg} & pointer to can message buffer ( please be sure enough space for all messages will be available ) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of received messages \+: -\/1 $>$ error 
+\end{DoxyReturn}

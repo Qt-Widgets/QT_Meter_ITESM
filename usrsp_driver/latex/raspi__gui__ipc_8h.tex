@@ -1,0 +1,220 @@
+\hypertarget{raspi__gui__ipc_8h}{}\section{raspi\+\_\+gui\+\_\+ipc.\+h File Reference}
+\label{raspi__gui__ipc_8h}\index{raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}}
+
+
+Inter process communication A\+P\+I. Methods implemented here will enable I\+P\+C betwen application code and G\+U\+I application.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{raspi__gui__ipc_8h_afe08abbaa7fb0428d3578a13d7a3e12f}{}\#define {\bfseries E\+\_\+\+N\+O\+C\+L\+I\+E\+N\+T}~-\/2\label{raspi__gui__ipc_8h_afe08abbaa7fb0428d3578a13d7a3e12f}
+
+\item 
+\hypertarget{raspi__gui__ipc_8h_ab90a6b9a1e0e444184e9a73078270eb2}{}\#define {\bfseries I\+D\+\_\+\+G\+A\+G\+E\+\_\+\+S\+P\+E\+E\+D}~1\label{raspi__gui__ipc_8h_ab90a6b9a1e0e444184e9a73078270eb2}
+
+\item 
+\hypertarget{raspi__gui__ipc_8h_ae01e8961f85bd61130cfac6383dc8a85}{}\#define {\bfseries I\+D\+\_\+\+G\+A\+G\+E\+\_\+\+T\+A\+C\+H\+O}~2\label{raspi__gui__ipc_8h_ae01e8961f85bd61130cfac6383dc8a85}
+
+\item 
+\hypertarget{raspi__gui__ipc_8h_af0aed73bddc633d1b830a4be3cbbeac8}{}\#define {\bfseries I\+D\+\_\+\+G\+A\+G\+E\+\_\+\+F\+U\+E\+L}~3\label{raspi__gui__ipc_8h_af0aed73bddc633d1b830a4be3cbbeac8}
+
+\item 
+\hypertarget{raspi__gui__ipc_8h_aa4959c147f93c1faf5d5419a47059462}{}\#define {\bfseries I\+D\+\_\+\+T\+U\+R\+N\+\_\+\+O\+N}~0\label{raspi__gui__ipc_8h_aa4959c147f93c1faf5d5419a47059462}
+
+\item 
+\hypertarget{raspi__gui__ipc_8h_a0e58d037c7efafde4701b531d3f0b1fd}{}\#define {\bfseries I\+D\+\_\+\+T\+U\+R\+N\+\_\+\+O\+F\+F}~125\label{raspi__gui__ipc_8h_a0e58d037c7efafde4701b531d3f0b1fd}
+
+\item 
+\hypertarget{raspi__gui__ipc_8h_adaa5a233822f5598c7bb3ce5d090c755}{}\#define {\bfseries K\+P\+H}~0\label{raspi__gui__ipc_8h_adaa5a233822f5598c7bb3ce5d090c755}
+
+\item 
+\hypertarget{raspi__gui__ipc_8h_a8d564ca38d9165967d68a1d1df43a6ab}{}\#define {\bfseries M\+P\+H}~1\label{raspi__gui__ipc_8h_a8d564ca38d9165967d68a1d1df43a6ab}
+
+\item 
+\hypertarget{raspi__gui__ipc_8h_a4e26e2cffb6043421a57ed275829c11f}{}\#define {\bfseries R\+P\+M}~0\label{raspi__gui__ipc_8h_a4e26e2cffb6043421a57ed275829c11f}
+
+\item 
+\hypertarget{raspi__gui__ipc_8h_affdbc3d92087aa22d3c30b2d68bb5c6f}{}\#define {\bfseries L\+T\+S}~0\label{raspi__gui__ipc_8h_affdbc3d92087aa22d3c30b2d68bb5c6f}
+
+\item 
+\hypertarget{raspi__gui__ipc_8h_af5800eb75cb86f6f8b6d1174577490a3}{}\#define {\bfseries G\+A\+L}~1\label{raspi__gui__ipc_8h_af5800eb75cb86f6f8b6d1174577490a3}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{raspi__gui__ipc_8h_af4738fa21e44392b1b4067f7665ff3f8}{raspi\+\_\+gui\+\_\+server\+\_\+init} (void)
+\begin{DoxyCompactList}\small\item\em perform inter process communication framework initialization. must be called before accepting client conections \end{DoxyCompactList}\item 
+int \hyperlink{raspi__gui__ipc_8h_ac431bdec4e9e405cd3461e41dc07bbaa}{raspi\+\_\+gui\+\_\+server\+\_\+accept} (void)
+\begin{DoxyCompactList}\small\item\em start listening for incoming client connections. warning!! this is a blocking call. Block forever until connection is available \end{DoxyCompactList}\item 
+int \hyperlink{raspi__gui__ipc_8h_adb61ce45e7c9ac234ce06eddec3c3f21}{raspi\+\_\+gui\+\_\+server\+\_\+send} (char $\ast$buffer, int size)
+\begin{DoxyCompactList}\small\item\em send array over via server connection. This is low level call, maybe not needed. \end{DoxyCompactList}\item 
+int \hyperlink{raspi__gui__ipc_8h_ae99f97f3cbbeca6e7a657b4026a34638}{raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+gauge} (unsigned char id, unsigned short value, unsigned char unit)
+\begin{DoxyCompactList}\small\item\em send new gauge value over to server. Connection needs to be setup first. \end{DoxyCompactList}\item 
+int \hyperlink{raspi__gui__ipc_8h_a70f4712b876acae3dd88108973147f67}{raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+ignition} (unsigned char I\+G)
+\begin{DoxyCompactList}\small\item\em send ignition event to gage client \end{DoxyCompactList}\item 
+\hypertarget{raspi__gui__ipc_8h_a448ffa8649ade5a09d39ec5858999dda}{}void \hyperlink{raspi__gui__ipc_8h_a448ffa8649ade5a09d39ec5858999dda}{raspi\+\_\+gui\+\_\+server\+\_\+close} (void)\label{raspi__gui__ipc_8h_a448ffa8649ade5a09d39ec5858999dda}
+
+\begin{DoxyCompactList}\small\item\em close server connection \end{DoxyCompactList}\item 
+int \hyperlink{raspi__gui__ipc_8h_ac9e7a5bbf2bb7773ce5ddaaeb030d4fb}{raspi\+\_\+gui\+\_\+client\+\_\+init} (void)
+\begin{DoxyCompactList}\small\item\em initialize client connection. This will leave ground ready for raspi\+\_\+client\+\_\+connect() call. \end{DoxyCompactList}\item 
+int \hyperlink{raspi__gui__ipc_8h_afd97e860b6f6f46b67ff3ebb716962ae}{raspi\+\_\+gui\+\_\+client\+\_\+connect} (void)
+\begin{DoxyCompactList}\small\item\em initialize client connection. This will leave ground ready for raspi\+\_\+client\+\_\+connect() call. \end{DoxyCompactList}\item 
+int \hyperlink{raspi__gui__ipc_8h_ae8b16310860e3b863e1876fb7fb2fa2f}{raspi\+\_\+gui\+\_\+client\+\_\+recv} (char $\ast$buffer, int size)
+\begin{DoxyCompactList}\small\item\em receive data from server, allocate into buffer \end{DoxyCompactList}\item 
+\hypertarget{raspi__gui__ipc_8h_a422620ba3eecba2e26f5cd920fdb62c8}{}void \hyperlink{raspi__gui__ipc_8h_a422620ba3eecba2e26f5cd920fdb62c8}{raspi\+\_\+gui\+\_\+client\+\_\+close} (void)\label{raspi__gui__ipc_8h_a422620ba3eecba2e26f5cd920fdb62c8}
+
+\begin{DoxyCompactList}\small\item\em close client connection \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Inter process communication A\+P\+I. Methods implemented here will enable I\+P\+C betwen application code and G\+U\+I application. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{raspi__gui__ipc_8h_afd97e860b6f6f46b67ff3ebb716962ae}{}\index{raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}!raspi\+\_\+gui\+\_\+client\+\_\+connect@{raspi\+\_\+gui\+\_\+client\+\_\+connect}}
+\index{raspi\+\_\+gui\+\_\+client\+\_\+connect@{raspi\+\_\+gui\+\_\+client\+\_\+connect}!raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}}
+\subsubsection[{raspi\+\_\+gui\+\_\+client\+\_\+connect(void)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+gui\+\_\+client\+\_\+connect (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{raspi__gui__ipc_8h_afd97e860b6f6f46b67ff3ebb716962ae}
+
+
+initialize client connection. This will leave ground ready for raspi\+\_\+client\+\_\+connect() call. 
+
+\begin{DoxyReturn}{Returns}
+0\+: success -\/1\+: fail 
+\end{DoxyReturn}
+\hypertarget{raspi__gui__ipc_8h_ac9e7a5bbf2bb7773ce5ddaaeb030d4fb}{}\index{raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}!raspi\+\_\+gui\+\_\+client\+\_\+init@{raspi\+\_\+gui\+\_\+client\+\_\+init}}
+\index{raspi\+\_\+gui\+\_\+client\+\_\+init@{raspi\+\_\+gui\+\_\+client\+\_\+init}!raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}}
+\subsubsection[{raspi\+\_\+gui\+\_\+client\+\_\+init(void)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+gui\+\_\+client\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{raspi__gui__ipc_8h_ac9e7a5bbf2bb7773ce5ddaaeb030d4fb}
+
+
+initialize client connection. This will leave ground ready for raspi\+\_\+client\+\_\+connect() call. 
+
+\begin{DoxyReturn}{Returns}
+0\+: success -\/1\+: fail 
+\end{DoxyReturn}
+\hypertarget{raspi__gui__ipc_8h_ae8b16310860e3b863e1876fb7fb2fa2f}{}\index{raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}!raspi\+\_\+gui\+\_\+client\+\_\+recv@{raspi\+\_\+gui\+\_\+client\+\_\+recv}}
+\index{raspi\+\_\+gui\+\_\+client\+\_\+recv@{raspi\+\_\+gui\+\_\+client\+\_\+recv}!raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}}
+\subsubsection[{raspi\+\_\+gui\+\_\+client\+\_\+recv(char $\ast$buffer, int size)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+gui\+\_\+client\+\_\+recv (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\label{raspi__gui__ipc_8h_ae8b16310860e3b863e1876fb7fb2fa2f}
+
+
+receive data from server, allocate into buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer.} & bytes will be allocated here. \\
+\hline
+{\em size.} & maximum number of bytes to be allocated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$>$ 0 \+: Number of bytes received ; -\/1 \+: fail 
+\end{DoxyReturn}
+\hypertarget{raspi__gui__ipc_8h_ac431bdec4e9e405cd3461e41dc07bbaa}{}\index{raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}!raspi\+\_\+gui\+\_\+server\+\_\+accept@{raspi\+\_\+gui\+\_\+server\+\_\+accept}}
+\index{raspi\+\_\+gui\+\_\+server\+\_\+accept@{raspi\+\_\+gui\+\_\+server\+\_\+accept}!raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}}
+\subsubsection[{raspi\+\_\+gui\+\_\+server\+\_\+accept(void)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+gui\+\_\+server\+\_\+accept (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{raspi__gui__ipc_8h_ac431bdec4e9e405cd3461e41dc07bbaa}
+
+
+start listening for incoming client connections. warning!! this is a blocking call. Block forever until connection is available 
+
+\begin{DoxyReturn}{Returns}
+client socket descriptor 
+\end{DoxyReturn}
+\hypertarget{raspi__gui__ipc_8h_af4738fa21e44392b1b4067f7665ff3f8}{}\index{raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}!raspi\+\_\+gui\+\_\+server\+\_\+init@{raspi\+\_\+gui\+\_\+server\+\_\+init}}
+\index{raspi\+\_\+gui\+\_\+server\+\_\+init@{raspi\+\_\+gui\+\_\+server\+\_\+init}!raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}}
+\subsubsection[{raspi\+\_\+gui\+\_\+server\+\_\+init(void)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+gui\+\_\+server\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{raspi__gui__ipc_8h_af4738fa21e44392b1b4067f7665ff3f8}
+
+
+perform inter process communication framework initialization. must be called before accepting client conections 
+
+\begin{DoxyReturn}{Returns}
+0 -\/$>$ suzzes -\/1 -\/$>$ fail 
+\end{DoxyReturn}
+\hypertarget{raspi__gui__ipc_8h_adb61ce45e7c9ac234ce06eddec3c3f21}{}\index{raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}!raspi\+\_\+gui\+\_\+server\+\_\+send@{raspi\+\_\+gui\+\_\+server\+\_\+send}}
+\index{raspi\+\_\+gui\+\_\+server\+\_\+send@{raspi\+\_\+gui\+\_\+server\+\_\+send}!raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}}
+\subsubsection[{raspi\+\_\+gui\+\_\+server\+\_\+send(char $\ast$buffer, int size)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+gui\+\_\+server\+\_\+send (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\label{raspi__gui__ipc_8h_adb61ce45e7c9ac234ce06eddec3c3f21}
+
+
+send array over via server connection. This is low level call, maybe not needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & array to be sent \\
+\hline
+{\em size} & number of bytes to be sent from buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of bytes sent \+: -\/1 error 
+\end{DoxyReturn}
+\hypertarget{raspi__gui__ipc_8h_ae99f97f3cbbeca6e7a657b4026a34638}{}\index{raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}!raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+gauge@{raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+gauge}}
+\index{raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+gauge@{raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+gauge}!raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}}
+\subsubsection[{raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+gauge(unsigned char id, unsigned short value, unsigned char unit)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+gauge (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{id, }
+\item[{unsigned short}]{value, }
+\item[{unsigned char}]{unit}
+\end{DoxyParamCaption}
+)}\label{raspi__gui__ipc_8h_ae99f97f3cbbeca6e7a657b4026a34638}
+
+
+send new gauge value over to server. Connection needs to be setup first. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & gage id number, where new value should be reflected. \\
+\hline
+{\em value} & new gage value, range value depends on gage implementation (G\+U\+I side) \\
+\hline
+{\em unit} & gage unit value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 \+: success -\/1 \+: fail 
+\end{DoxyReturn}
+\hypertarget{raspi__gui__ipc_8h_a70f4712b876acae3dd88108973147f67}{}\index{raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}!raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+ignition@{raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+ignition}}
+\index{raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+ignition@{raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+ignition}!raspi\+\_\+gui\+\_\+ipc.\+h@{raspi\+\_\+gui\+\_\+ipc.\+h}}
+\subsubsection[{raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+ignition(unsigned char I\+G)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+gui\+\_\+server\+\_\+send\+\_\+ignition (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{id}
+\end{DoxyParamCaption}
+)}\label{raspi__gui__ipc_8h_a70f4712b876acae3dd88108973147f67}
+
+
+send ignition event to gage client 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I\+G} & Ignition state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 \+: success -\/1 \+: fail 
+\end{DoxyReturn}

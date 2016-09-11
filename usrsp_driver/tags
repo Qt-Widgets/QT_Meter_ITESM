@@ -1,0 +1,505 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+0	html/search/searchdata.js	/^  0: "All",$/;"	p	class:indexSectionLabels
+0	html/search/searchdata.js	/^  0: "all",$/;"	p	class:indexSectionNames
+0	html/search/searchdata.js	/^  0: "cr",$/;"	p	class:indexSectionsWithContent
+1	html/search/searchdata.js	/^  1: "Classes",$/;"	p	class:indexSectionLabels
+1	html/search/searchdata.js	/^  1: "classes",$/;"	p	class:indexSectionNames
+1	html/search/searchdata.js	/^  1: "cr",$/;"	p	class:indexSectionsWithContent
+2	html/search/searchdata.js	/^  2: "Files",$/;"	p	class:indexSectionLabels
+2	html/search/searchdata.js	/^  2: "files",$/;"	p	class:indexSectionNames
+2	html/search/searchdata.js	/^  2: "r",$/;"	p	class:indexSectionsWithContent
+3	html/search/searchdata.js	/^  3: "Functions"$/;"	p	class:indexSectionLabels
+3	html/search/searchdata.js	/^  3: "functions"$/;"	p	class:indexSectionNames
+3	html/search/searchdata.js	/^  3: "r"$/;"	p	class:indexSectionsWithContent
+Activate	html/search/search.js	/^  this.Activate = function(isActive)$/;"	m	class:SearchBox
+CAN_DATA_MAX_SZ	raspi_candrv.h	38;"	d
+CAN_MSG_GAGE_VALH_IDX	can_test.c	367;"	d	file:
+CAN_MSG_GAGE_VALL_IDX	can_test.c	368;"	d	file:
+CAN_MSG_QUEUE_ERR	raspi_can_queue.h	11;"	d
+CAN_MSG_QUEUE_OK	raspi_can_queue.h	10;"	d
+CAN_QUEUE_SEM_NAME	raspi_can_queue.c	38;"	d	file:
+CAN_TH_POLL_RATE	raspi_can_queue.c	15;"	d	file:
+CC	Makefile	/^CC=gcc$/;"	m
+CC_PREFIX	Makefile	/^CC_PREFIX=arm-linux-gnueabihf$/;"	m
+CFLAGS	Makefile	/^CFLAGS= $(LIB_PATHS) $(INCLUDE_PATHS) $(DEBUG_FLAGS) -Wall -O0 -pthread #--sysroot=$(SYS_ROOT)$/;"	m
+CH_VAL_HIGH	can_test.c	251;"	d	file:
+CH_VAL_LOW	can_test.c	252;"	d	file:
+Class Documentation	latex/refman.tex	/^\\chapter{Class Documentation}$/;"	c
+Class Index	latex/refman.tex	/^\\chapter{Class Index}$/;"	c
+Class List	latex/annotated.tex	/^\\section{Class List}$/;"	s
+Classes	latex/raspi__candrv_8h.tex	/^\\subsection*{Classes}$/;"	u
+CloseResultsWindow	html/search/search.js	/^  this.CloseResultsWindow = function()$/;"	m	class:SearchBox
+CloseSelectionWindow	html/search/search.js	/^  this.CloseSelectionWindow = function()$/;"	m	class:SearchBox
+DEBUG_FLAGS	Makefile	/^DEBUG_FLAGS=-g$/;"	m
+DIRS	Makefile	/^DIRS=$(OUT_DIR)$/;"	m
+DLC	raspi_candrv.h	/^    char  DLC;$/;"	m	struct:__anon4
+DOMPopupSearchResults	html/search/search.js	/^  this.DOMPopupSearchResults = function()$/;"	m	class:SearchBox
+DOMPopupSearchResultsWindow	html/search/search.js	/^  this.DOMPopupSearchResultsWindow = function()$/;"	m	class:SearchBox
+DOMSearchBox	html/search/search.js	/^  this.DOMSearchBox = function()$/;"	m	class:SearchBox
+DOMSearchClose	html/search/search.js	/^  this.DOMSearchClose = function()$/;"	m	class:SearchBox
+DOMSearchField	html/search/search.js	/^  this.DOMSearchField = function()$/;"	m	class:SearchBox
+DOMSearchSelect	html/search/search.js	/^  this.DOMSearchSelect = function()$/;"	m	class:SearchBox
+DOMSearchSelectWindow	html/search/search.js	/^  this.DOMSearchSelectWindow = function()$/;"	m	class:SearchBox
+Detailed Description	latex/raspi__candrv_8h.tex	/^\\subsection{Detailed Description}$/;"	u
+Detailed Description	latex/raspi__gui__ipc_8h.tex	/^\\subsection{Detailed Description}$/;"	u
+E_NOCLIENT	raspi_gui_ipc.h	10;"	d
+FAKE_MSGS	can_test.c	12;"	d	file:
+FAKE_MSGS	can_test.c	26;"	d	file:
+FAKE_READ_DATA_SZ	can_test.c	25;"	d	file:
+FALSE	can_test.c	155;"	d	file:
+File Documentation	latex/refman.tex	/^\\chapter{File Documentation}$/;"	c
+File Index	latex/refman.tex	/^\\chapter{File Index}$/;"	c
+File List	latex/files.tex	/^\\section{File List}$/;"	s
+FindChildElement	html/search/search.js	/^    this.FindChildElement = function(id)$/;"	m	class:SearchResults
+Function Documentation	latex/raspi__candrv_8h.tex	/^\\subsection{Function Documentation}$/;"	u
+Function Documentation	latex/raspi__gui__ipc_8h.tex	/^\\subsection{Function Documentation}$/;"	u
+Functions	latex/raspi__candrv_8h.tex	/^\\subsection*{Functions}$/;"	u
+Functions	latex/raspi__gui__ipc_8h.tex	/^\\subsection*{Functions}$/;"	u
+GAL	raspi_gui_ipc.h	33;"	d
+I2C_AVR_ENABLED_MBX	raspi_candrv.c	49;"	d	file:
+I2C_AVR_MAILBOX_0	raspi_i2c_defs.h	33;"	d
+I2C_AVR_MAILBOX_1	raspi_i2c_defs.h	34;"	d
+I2C_AVR_MAILBOX_10	raspi_i2c_defs.h	43;"	d
+I2C_AVR_MAILBOX_11	raspi_i2c_defs.h	44;"	d
+I2C_AVR_MAILBOX_12	raspi_i2c_defs.h	45;"	d
+I2C_AVR_MAILBOX_13	raspi_i2c_defs.h	46;"	d
+I2C_AVR_MAILBOX_14	raspi_i2c_defs.h	47;"	d
+I2C_AVR_MAILBOX_2	raspi_i2c_defs.h	35;"	d
+I2C_AVR_MAILBOX_3	raspi_i2c_defs.h	36;"	d
+I2C_AVR_MAILBOX_4	raspi_i2c_defs.h	37;"	d
+I2C_AVR_MAILBOX_5	raspi_i2c_defs.h	38;"	d
+I2C_AVR_MAILBOX_6	raspi_i2c_defs.h	39;"	d
+I2C_AVR_MAILBOX_7	raspi_i2c_defs.h	40;"	d
+I2C_AVR_MAILBOX_8	raspi_i2c_defs.h	41;"	d
+I2C_AVR_MAILBOX_9	raspi_i2c_defs.h	42;"	d
+I2C_BUSY	raspi_i2c_defs.h	14;"	d
+I2C_CAN_SLAVE_ADDR	raspi_i2c_defs.h	4;"	d
+I2C_CMD_MAILBOX_REQUEST	raspi_i2c_defs.h	21;"	d
+I2C_CMD_MAILBOX_RESPONSE	raspi_i2c_defs.h	22;"	d
+I2C_CMD_MLBREQ_FRAME_SZ	raspi_i2c_defs.h	24;"	d
+I2C_CMD_MLREQUEST_FRAME_SZ	raspi_candrv.c	18;"	d	file:
+I2C_CMD_MLRESPONSE_FRAME_SZ	raspi_candrv.c	19;"	d	file:
+I2C_CMD_MLRESPONSE_MIN_FRAME_SZ	raspi_candrv.c	21;"	d	file:
+I2C_DEV_NAME	raspi_i2c_defs.h	3;"	d
+I2C_ERROR	raspi_i2c_defs.h	15;"	d
+I2C_FRAME_DATA_IDX	raspi_candrv.c	270;"	d	file:
+I2C_FRAME_DLC_IDX	raspi_candrv.c	271;"	d	file:
+I2C_FUNCS	i2c-dev.h	46;"	d
+I2C_FUNC_10BIT_ADDR	i2c.h	84;"	d
+I2C_FUNC_I2C	i2c.h	83;"	d
+I2C_FUNC_PROTOCOL_MANGLING	i2c.h	85;"	d
+I2C_FUNC_SMBUS_BLOCK_DATA	i2c.h	107;"	d
+I2C_FUNC_SMBUS_BLOCK_PROC_CALL	i2c.h	87;"	d
+I2C_FUNC_SMBUS_BYTE	i2c.h	101;"	d
+I2C_FUNC_SMBUS_BYTE_DATA	i2c.h	103;"	d
+I2C_FUNC_SMBUS_EMUL	i2c.h	112;"	d
+I2C_FUNC_SMBUS_I2C_BLOCK	i2c.h	109;"	d
+I2C_FUNC_SMBUS_PEC	i2c.h	86;"	d
+I2C_FUNC_SMBUS_PROC_CALL	i2c.h	95;"	d
+I2C_FUNC_SMBUS_QUICK	i2c.h	88;"	d
+I2C_FUNC_SMBUS_READ_BLOCK_DATA	i2c.h	96;"	d
+I2C_FUNC_SMBUS_READ_BYTE	i2c.h	89;"	d
+I2C_FUNC_SMBUS_READ_BYTE_DATA	i2c.h	91;"	d
+I2C_FUNC_SMBUS_READ_I2C_BLOCK	i2c.h	98;"	d
+I2C_FUNC_SMBUS_READ_WORD_DATA	i2c.h	93;"	d
+I2C_FUNC_SMBUS_WORD_DATA	i2c.h	105;"	d
+I2C_FUNC_SMBUS_WRITE_BLOCK_DATA	i2c.h	97;"	d
+I2C_FUNC_SMBUS_WRITE_BYTE	i2c.h	90;"	d
+I2C_FUNC_SMBUS_WRITE_BYTE_DATA	i2c.h	92;"	d
+I2C_FUNC_SMBUS_WRITE_I2C_BLOCK	i2c.h	99;"	d
+I2C_FUNC_SMBUS_WRITE_WORD_DATA	i2c.h	94;"	d
+I2C_M_IGNORE_NAK	i2c.h	74;"	d
+I2C_M_NOSTART	i2c.h	72;"	d
+I2C_M_NO_RD_ACK	i2c.h	75;"	d
+I2C_M_RD	i2c.h	71;"	d
+I2C_M_RECV_LEN	i2c.h	76;"	d
+I2C_M_REV_DIR_ADDR	i2c.h	73;"	d
+I2C_M_TEN	i2c.h	70;"	d
+I2C_OK	raspi_i2c_defs.h	13;"	d
+I2C_PEC	i2c-dev.h	50;"	d
+I2C_RDRW_IOCTL_MAX_MSGS	i2c-dev.h	68;"	d
+I2C_RDWR	i2c-dev.h	48;"	d
+I2C_RETRIES	i2c-dev.h	34;"	d
+I2C_SLAVE	i2c-dev.h	41;"	d
+I2C_SLAVE_FORCE	i2c-dev.h	42;"	d
+I2C_SMBUS	i2c-dev.h	51;"	d
+I2C_SMBUS_BLOCK_DATA	i2c.h	143;"	d
+I2C_SMBUS_BLOCK_MAX	i2c.h	124;"	d
+I2C_SMBUS_BLOCK_PROC_CALL	i2c.h	145;"	d
+I2C_SMBUS_BYTE	i2c.h	139;"	d
+I2C_SMBUS_BYTE_DATA	i2c.h	140;"	d
+I2C_SMBUS_I2C_BLOCK_BROKEN	i2c.h	144;"	d
+I2C_SMBUS_I2C_BLOCK_DATA	i2c.h	146;"	d
+I2C_SMBUS_PROC_CALL	i2c.h	142;"	d
+I2C_SMBUS_QUICK	i2c.h	138;"	d
+I2C_SMBUS_READ	i2c.h	133;"	d
+I2C_SMBUS_WORD_DATA	i2c.h	141;"	d
+I2C_SMBUS_WRITE	i2c.h	134;"	d
+I2C_STATUS_ERROR	raspi_i2c_defs.h	29;"	d
+I2C_STATUS_TIMEOUT	raspi_i2c_defs.h	27;"	d
+I2C_STATUS_VALID	raspi_i2c_defs.h	28;"	d
+I2C_TENBIT	i2c-dev.h	44;"	d
+I2C_TIMEOUT	i2c-dev.h	36;"	d
+ID_GAGE_FUEL	raspi_gui_ipc.h	16;"	d
+ID_GAGE_SPEED	raspi_gui_ipc.h	14;"	d
+ID_GAGE_TACHO	raspi_gui_ipc.h	15;"	d
+ID_IDX	can_test.c	244;"	d	file:
+ID_TURN_OFF	raspi_gui_ipc.h	21;"	d
+ID_TURN_ON	raspi_gui_ipc.h	20;"	d
+IN_SZ	can_test.c	11;"	d	file:
+IPC_DATA_IDX_H	raspi_ipc_defs.h	15;"	d
+IPC_DATA_IDX_L	raspi_ipc_defs.h	16;"	d
+IPC_FRAME_SOF	can_test.c	464;"	d	file:
+IPC_FRAME_SZ	can_test.c	249;"	d	file:
+IPC_GUI_MAX_CLIENTS	raspi_gui_ipc.c	12;"	d	file:
+IPC_ID_IDX	raspi_ipc_defs.h	14;"	d
+IPC_SET_GAGE_FRAME_SZ	raspi_ipc_defs.h	11;"	d
+IPC_SET_GAGE_SOF	raspi_ipc_defs.h	10;"	d
+IPC_UNIT_IDX	raspi_ipc_defs.h	17;"	d
+KPH	raspi_gui_ipc.h	25;"	d
+LTS	raspi_gui_ipc.h	32;"	d
+MAX_I2C_BUFF	raspi_i2c_defs.h	7;"	d
+MAX_I2C_DATA_SZ	raspi_candrv.c	22;"	d	file:
+MAX_POLL_BUFF_SIZE	raspi_can_queue.h	14;"	d
+MAX_QUEUE_SIZE	raspi_can_queue.h	13;"	d
+MAX_RECV_BUFF_SZ	can_test.c	588;"	d	file:
+MAX_SERVER_CONNECTIONS	raspi_ipc_defs.h	8;"	d
+MG_CAN_ID_SYS_UNIT	raspi_candrv.h	32;"	d
+MPH	raspi_gui_ipc.h	26;"	d
+MSG_CAN_ID_FUEL	raspi_candrv.h	31;"	d
+MSG_CAN_ID_IGN_1	raspi_candrv.h	33;"	d
+MSG_CAN_ID_SPEED	raspi_candrv.h	29;"	d
+MSG_CAN_ID_TACHO	raspi_candrv.h	30;"	d
+Macros	latex/raspi__candrv_8h.tex	/^\\subsection*{Macros}$/;"	u
+Macros	latex/raspi__gui__ipc_8h.tex	/^\\subsection*{Macros}$/;"	u
+Nav	html/search/search.js	/^    this.Nav = function(evt,itemIndex)$/;"	m	class:SearchResults
+NavChild	html/search/search.js	/^    this.NavChild = function(evt,itemIndex,childIndex)$/;"	m	class:SearchResults
+NavNext	html/search/search.js	/^    this.NavNext = function(index)$/;"	m	class:SearchResults
+NavPrev	html/search/search.js	/^    this.NavPrev = function(index)$/;"	m	class:SearchResults
+OFF	raspi_gui_ipc.c	129;"	d	file:
+ON	raspi_gui_ipc.c	128;"	d	file:
+OUT_DIR	Makefile	/^OUT_DIR=obj$/;"	m
+OnSearchFieldChange	html/search/search.js	/^  this.OnSearchFieldChange = function(evt)$/;"	m	class:SearchBox
+OnSearchFieldFocus	html/search/search.js	/^  this.OnSearchFieldFocus = function(isActive)$/;"	m	class:SearchBox
+OnSearchSelectHide	html/search/search.js	/^  this.OnSearchSelectHide = function()$/;"	m	class:SearchBox
+OnSearchSelectKey	html/search/search.js	/^  this.OnSearchSelectKey = function(evt)$/;"	m	class:SearchBox
+OnSearchSelectShow	html/search/search.js	/^  this.OnSearchSelectShow = function()$/;"	m	class:SearchBox
+OnSelectItem	html/search/search.js	/^  this.OnSelectItem = function(id)$/;"	m	class:SearchBox
+ProcessKeys	html/search/search.js	/^    this.ProcessKeys = function(e)$/;"	m	class:SearchResults
+Public Attributes	latex/structcan__msg.tex	/^\\subsection*{Public Attributes}$/;"	u
+Public Attributes	latex/structraspi__can__ctx.tex	/^\\subsection*{Public Attributes}$/;"	u
+RASPICAN_LIB_OBJ	Makefile	/^RASPICAN_LIB_OBJ=$(RASPICAN_LIB_SRC:%.c=$(OUT_DIR)\/%.o)$/;"	m
+RASPICAN_LIB_SRC	Makefile	/^RASPICAN_LIB_SRC=raspi_candrv.c raspi_gui_ipc.c$/;"	m
+RASPICAN_TEST_OBJ	Makefile	/^RASPICAN_TEST_OBJ=$(RASPICAN_TEST_SRC:%.c=$(OUT_DIR)\/%.o)$/;"	m
+RASPICAN_TEST_SRC	Makefile	/^RASPICAN_TEST_SRC=can_test.c$/;"	m
+RASPI_CANDRV_H_	raspi_candrv.h	7;"	d
+RASPI_CAN_BUSY	raspi_candrv.h	24;"	d
+RASPI_CAN_CLOSED	raspi_candrv.h	18;"	d
+RASPI_CAN_EMPTY	raspi_candrv.h	23;"	d
+RASPI_CAN_ERROR	raspi_candrv.h	20;"	d
+RASPI_CAN_OK	raspi_candrv.h	22;"	d
+RASPI_CAN_OPEN	raspi_candrv.h	19;"	d
+RASPI_CAN_QUEUE_H_	raspi_can_queue.h	6;"	d
+RASPI_GUI_IPC_	raspi_gui_ipc.h	8;"	d
+RASPI_I2C_DEV	raspi_i2c_defs.h	17;"	d
+RASPI_IPC_DEFS_H_	raspi_ipc_defs.h	2;"	d
+RASPI_QUEUE_OBJ	Makefile	/^RASPI_QUEUE_OBJ=$(RASPI_QUEUE_SRC:%.c=$(OUT_DIR)\/%.o)$/;"	m
+RASPI_QUEUE_SRC	Makefile	/^RASPI_QUEUE_SRC=raspi_can_queue.c$/;"	m
+RASPI_TEST_ITER	can_test.c	365;"	d	file:
+RCV_TST_BUFF_SZ	can_test.c	641;"	d	file:
+RPM	raspi_gui_ipc.h	29;"	d
+SOCKET_NAME_SERVER	raspi_ipc_defs.h	6;"	d
+SYS_ROOT	Makefile	/^SYS_ROOT=\/home\/sergio\/ITESMSemanaI\/raspbianSysRoot$/;"	m
+Search	html/search/search.js	/^    this.Search = function(search)$/;"	m	class:SearchResults
+Search	html/search/search.js	/^  this.Search = function()$/;"	m	class:SearchBox
+SearchBox	html/search/search.js	/^function SearchBox(name, resultsPath, inFrame, label)$/;"	c
+SearchResults	html/search/search.js	/^function SearchResults(name)$/;"	c
+SelectItemCount	html/search/search.js	/^  this.SelectItemCount = function(id)$/;"	m	class:SearchBox
+SelectItemSet	html/search/search.js	/^  this.SelectItemSet = function(id)$/;"	m	class:SearchBox
+TARGETS	Makefile	/^TARGETS=raspi_can_test libraspi_can.a  #libraspi_can.so$/;"	m
+TARGETS_OUT	Makefile	/^TARGETS_OUT=$(TARGETS:%=$(OUT_DIR)\/%)$/;"	m
+TEST_CLIENT_RECEIVE	can_test.c	138;"	d	file:
+TEST_COMPLETE_INTEGRATION_TEST	can_test.c	140;"	d	file:
+TEST_DRIVER_RECEIVE	can_test.c	134;"	d	file:
+TEST_DRIVER_SEND	can_test.c	135;"	d	file:
+TEST_GAUGE_CONTROL_TEST	can_test.c	139;"	d	file:
+TEST_QUEUE_RECEIVE	can_test.c	136;"	d	file:
+TEST_SERVER_SEND	can_test.c	137;"	d	file:
+TRUE	can_test.c	154;"	d	file:
+Toggle	html/search/search.js	/^    this.Toggle = function(id)$/;"	m	class:SearchResults
+UNIT_IDX	can_test.c	247;"	d	file:
+VALUEH_IDX	can_test.c	246;"	d	file:
+VALUEL_IDX	can_test.c	245;"	d	file:
+WAIT_RESPONSE_US_DELAY	raspi_i2c_defs.h	9;"	d
+_LINUX_I2C_DEV_H	i2c-dev.h	23;"	d
+_LINUX_I2C_H	i2c.h	27;"	d
+addr	i2c.h	/^	__u16 addr;	\/* slave address			*\/$/;"	m	struct:i2c_msg
+avr_mlbx_poll_list	raspi_candrv.c	/^char avr_mlbx_poll_list[ I2C_AVR_ENABLED_MBX ] =$/;"	v
+block	i2c.h	/^	__u8 block[I2C_SMBUS_BLOCK_MAX + 2]; \/* block[0] is used for length *\/$/;"	m	union:i2c_smbus_data
+buf	i2c.h	/^	__u8 *buf;		\/* pointer to msg data			*\/$/;"	m	struct:i2c_msg
+byte	i2c.h	/^	__u8 byte;$/;"	m	union:i2c_smbus_data
+can    _   msg Struct Reference	latex/structcan__msg.tex	/^\\hypertarget{structcan__msg}{}\\section{can\\+\\_\\+msg Struct Reference}$/;"	s
+canFd	raspi_candrv.h	/^    int canFd;$/;"	m	struct:__anon5
+can_msg	raspi_candrv.h	/^}can_msg;$/;"	t	typeref:struct:__anon4
+chksum	raspi_candrv.c	/^    char  chksum;$/;"	m	struct:__anon1	file:
+cliCtx	raspi_gui_ipc.c	/^clientContext cliCtx;$/;"	v
+cli_sock	raspi_gui_ipc.c	/^    int cli_sock;$/;"	m	struct:__anon3	file:
+clientContext	raspi_gui_ipc.c	/^}clientContext;$/;"	t	typeref:struct:__anon3	file:
+client_sock	raspi_gui_ipc.c	/^    int client_sock[ IPC_GUI_MAX_CLIENTS ]; $/;"	m	struct:__anon2	file:
+command	i2c-dev.h	/^	__u8 command;$/;"	m	struct:i2c_smbus_ioctl_data
+command	raspi_candrv.c	/^    char  command;$/;"	m	struct:__anon1	file:
+convertToId	html/search/search.js	/^function convertToId(search)$/;"	f
+createResults	html/search/search.js	/^function createResults()$/;"	f
+ctx	raspi_can_queue.c	/^    raspi_can_ctx ctx;$/;"	m	struct:__anon6	file:
+curClientIdx	raspi_gui_ipc.c	/^    int curClientIdx;$/;"	m	struct:__anon2	file:
+data	i2c-dev.h	/^	union i2c_smbus_data *data;$/;"	m	struct:i2c_smbus_ioctl_data	typeref:union:i2c_smbus_ioctl_data::i2c_smbus_data
+data	raspi_candrv.c	/^    char  data[MAX_I2C_DATA_SZ];$/;"	m	struct:__anon1	file:
+data	raspi_candrv.h	/^    char  data[ CAN_DATA_MAX_SZ ];$/;"	m	struct:__anon4
+data_sz	raspi_candrv.c	/^    char  data_sz;$/;"	m	struct:__anon1	file:
+define-members	html/raspi__can__queue_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"><\/a>$/;"	a
+define-members	html/raspi__candrv_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"><\/a>$/;"	a
+define-members	html/raspi__gui__ipc_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"><\/a>$/;"	a
+details	html/raspi__can__queue_8h.html	/^<a name="details" id="details"><\/a><h2 class="groupheader">Detailed Description<\/h2>$/;"	a
+details	html/raspi__candrv_8h.html	/^<a name="details" id="details"><\/a><h2 class="groupheader">Detailed Description<\/h2>$/;"	a
+details	html/raspi__gui__ipc_8h.html	/^<a name="details" id="details"><\/a><h2 class="groupheader">Detailed Description<\/h2>$/;"	a
+fake_read	can_test.c	/^int fake_read( int fd , char* bytes , int num)$/;"	f
+fake_read_mailbox_data	can_test.c	/^char fake_read_mailbox_data[ FAKE_MSGS ][ FAKE_READ_DATA_SZ ] =$/;"	v
+fake_read_wrong_mlbx_data	can_test.c	/^char fake_read_wrong_mlbx_data[ FAKE_MSGS ] [ FAKE_READ_DATA_SZ] = $/;"	v
+fake_write	can_test.c	/^int fake_write( int fd,  char* bytes, int num )$/;"	f
+false	raspi_can_queue.c	19;"	d	file:
+flags	i2c.h	/^	__u16 flags;$/;"	m	struct:i2c_msg
+func-members	html/raspi__can__queue_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"><\/a>$/;"	a
+func-members	html/raspi__candrv_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"><\/a>$/;"	a
+func-members	html/raspi__gui__ipc_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"><\/a>$/;"	a
+g_ctx	raspi_candrv.c	/^raspi_can_ctx g_ctx = $/;"	v
+getXPos	html/search/search.js	/^function getXPos(item)$/;"	f
+getYPos	html/search/search.js	/^function getYPos(item)$/;"	f
+i2c_msg	i2c.h	/^struct i2c_msg {$/;"	s
+i2c_msg	raspi_candrv.c	/^}i2c_msg;$/;"	t	typeref:struct:__anon1	file:
+i2c_rdwr_ioctl_data	i2c-dev.h	/^struct i2c_rdwr_ioctl_data {$/;"	s
+i2c_slave_addr	raspi_candrv.h	/^    int i2c_slave_addr;$/;"	m	struct:__anon5
+i2c_smbus_data	i2c.h	/^union i2c_smbus_data {$/;"	u
+i2c_smbus_ioctl_data	i2c-dev.h	/^struct i2c_smbus_ioctl_data {$/;"	s
+init_search	html/search/search.js	/^function init_search()$/;"	f
+integration_test_app	can_test.c	/^static int integration_test_app( can_msg* msg )$/;"	f	file:
+l00001	html/raspi__can__queue_8h_source.html	/^<a href="raspi__can__queue_8h.html">Go to the documentation of this file.<\/a><div class="fragment"><div class="line"><a name="l00001"><\/a><span class="lineno">    1<\/span>&#160;<\/div>$/;"	a
+l00001	html/raspi__candrv_8h_source.html	/^<a href="raspi__candrv_8h.html">Go to the documentation of this file.<\/a><div class="fragment"><div class="line"><a name="l00001"><\/a><span class="lineno">    1<\/span>&#160;<\/div>$/;"	a
+l00001	html/raspi__gui__ipc_8h_source.html	/^<a href="raspi__gui__ipc_8h.html">Go to the documentation of this file.<\/a><div class="fragment"><div class="line"><a name="l00001"><\/a><span class="lineno">    1<\/span>&#160;<\/div>$/;"	a
+l00005	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00005"><\/a><span class="lineno">    5<\/span>&#160;<span class="preprocessor">#ifndef RASPI_CAN_QUEUE_H_<\/span><\/div>$/;"	a
+l00006	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00006"><\/a><span class="lineno">    6<\/span>&#160;<span class="preprocessor">#define  RASPI_CAN_QUEUE_H_<\/span><\/div>$/;"	a
+l00006	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00006"><\/a><span class="lineno">    6<\/span>&#160;<span class="preprocessor">#ifndef RASPI_CANDRV_H_<\/span><\/div>$/;"	a
+l00007	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00007"><\/a><span class="lineno">    7<\/span>&#160;<\/div>$/;"	a
+l00007	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00007"><\/a><span class="lineno">    7<\/span>&#160;<span class="preprocessor">#define RASPI_CANDRV_H_<\/span><\/div>$/;"	a
+l00007	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00007"><\/a><span class="lineno">    7<\/span>&#160;<span class="preprocessor">#ifndef RASPI_GUI_IPC_<\/span><\/div>$/;"	a
+l00008	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00008"><\/a><span class="lineno">    8<\/span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="raspi__candrv_8h.html">raspi_candrv.h<\/a>&quot;<\/span><\/div>$/;"	a
+l00008	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00008"><\/a><span class="lineno">    8<\/span>&#160;<\/div>$/;"	a
+l00008	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00008"><\/a><span class="lineno">    8<\/span>&#160;<span class="preprocessor">#define RASPI_GUI_IPC_<\/span><\/div>$/;"	a
+l00009	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00009"><\/a><span class="lineno">    9<\/span>&#160;<\/div>$/;"	a
+l00009	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00009"><\/a><span class="lineno">    9<\/span>&#160;<span class="comment">\/\/ ************ ENABLE FOR DEBUGGING!!! ***************<\/span><\/div>$/;"	a
+l00009	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00009"><\/a><span class="lineno">    9<\/span>&#160;<\/div>$/;"	a
+l00010	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00010"><\/a><span class="lineno">   10<\/span>&#160;<span class="preprocessor">#define CAN_MSG_QUEUE_OK     0<\/span><\/div>$/;"	a
+l00010	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00010"><\/a><span class="lineno">   10<\/span>&#160;<\/div>$/;"	a
+l00010	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00010"><\/a><span class="lineno">   10<\/span>&#160;<span class="preprocessor">#define E_NOCLIENT  -2<\/span><\/div>$/;"	a
+l00011	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00011"><\/a><span class="lineno">   11<\/span>&#160;<span class="preprocessor">#define CAN_MSG_QUEUE_ERR    -1<\/span><\/div>$/;"	a
+l00011	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00011"><\/a><span class="lineno">   11<\/span>&#160;<span class="comment">\/\/#define USE_FAKE_INIT<\/span><\/div>$/;"	a
+l00011	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00011"><\/a><span class="lineno">   11<\/span>&#160;<\/div>$/;"	a
+l00012	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00012"><\/a><span class="lineno">   12<\/span>&#160;<\/div>$/;"	a
+l00012	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00012"><\/a><span class="lineno">   12<\/span>&#160;<span class="comment">\/\/#define USE_FAKE_READ<\/span><\/div>$/;"	a
+l00012	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00012"><\/a><span class="lineno">   12<\/span>&#160;<span class="comment">\/\/ use thesei gage ids when setting gage type <\/span><\/div>$/;"	a
+l00013	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00013"><\/a><span class="lineno">   13<\/span>&#160;<span class="preprocessor">#define MAX_QUEUE_SIZE 250<\/span><\/div>$/;"	a
+l00013	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00013"><\/a><span class="lineno">   13<\/span>&#160;<span class="comment">\/\/#define USE_FAKE_WRITE<\/span><\/div>$/;"	a
+l00013	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00013"><\/a><span class="lineno">   13<\/span>&#160;<span class="comment">\/\/********************************************<\/span><\/div>$/;"	a
+l00014	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00014"><\/a><span class="lineno">   14<\/span>&#160;<span class="preprocessor">#define MAX_POLL_BUFF_SIZE 5<\/span><\/div>$/;"	a
+l00014	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00014"><\/a><span class="lineno">   14<\/span>&#160;<\/div>$/;"	a
+l00014	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00014"><\/a><span class="lineno">   14<\/span>&#160;<span class="preprocessor">#define ID_GAGE_SPEED   1<\/span><\/div>$/;"	a
+l00015	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00015"><\/a><span class="lineno">   15<\/span>&#160;<\/div>$/;"	a
+l00015	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00015"><\/a><span class="lineno">   15<\/span>&#160;<span class="comment">\/\/*****************************************************<\/span><\/div>$/;"	a
+l00015	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00015"><\/a><span class="lineno">   15<\/span>&#160;<span class="preprocessor">#define ID_GAGE_TACHO   2<\/span><\/div>$/;"	a
+l00016	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00016"><\/a><span class="lineno">   16<\/span>&#160;<\/div>$/;"	a
+l00016	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00016"><\/a><span class="lineno">   16<\/span>&#160;<span class="preprocessor">#define ID_GAGE_FUEL    3<\/span><\/div>$/;"	a
+l00017	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00017"><\/a><span class="lineno">   17<\/span>&#160;<span class="comment">\/\/ can driver return codes<\/span><\/div>$/;"	a
+l00017	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00017"><\/a><span class="lineno">   17<\/span>&#160;<\/div>$/;"	a
+l00018	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00018"><\/a><span class="lineno">   18<\/span>&#160;<span class="preprocessor">#define RASPI_CAN_CLOSED    1<\/span><\/div>$/;"	a
+l00018	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00018"><\/a><span class="lineno">   18<\/span>&#160;<span class="comment">\/\/ Use these unit definitions when setting unit ype<\/span><\/div>$/;"	a
+l00019	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00019"><\/a><span class="lineno">   19<\/span>&#160;<span class="preprocessor">#define RASPI_CAN_OPEN      0<\/span><\/div>$/;"	a
+l00019	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00019"><\/a><span class="lineno">   19<\/span>&#160;<span class="comment">\/\/ *****************************************<\/span><\/div>$/;"	a
+l00020	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00020"><\/a><span class="lineno">   20<\/span>&#160;<span class="preprocessor">#define RASPI_CAN_ERROR      -1<\/span><\/div>$/;"	a
+l00020	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00020"><\/a><span class="lineno">   20<\/span>&#160;<span class="comment">\/\/ speed units<\/span><\/div>$/;"	a
+l00021	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00021"><\/a><span class="lineno">   21<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__can__queue_8h.html#abe80539fcb7c5e648e4d07162388056b">raspi_can_msg_queue_init<\/a>( <span class="keywordtype">void<\/span> );<\/div>$/;"	a
+l00021	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00021"><\/a><span class="lineno">   21<\/span>&#160;<\/div>$/;"	a
+l00021	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00021"><\/a><span class="lineno">   21<\/span>&#160;<span class="preprocessor">#define KPH   0<\/span><\/div>$/;"	a
+l00022	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00022"><\/a><span class="lineno">   22<\/span>&#160;<\/div>$/;"	a
+l00022	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00022"><\/a><span class="lineno">   22<\/span>&#160;<span class="preprocessor">#define RASPI_CAN_OK        0<\/span><\/div>$/;"	a
+l00022	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00022"><\/a><span class="lineno">   22<\/span>&#160;<span class="preprocessor">#define MPH   1<\/span><\/div>$/;"	a
+l00023	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00023"><\/a><span class="lineno">   23<\/span>&#160;<span class="preprocessor">#define RASPI_CAN_EMPTY     1<\/span><\/div>$/;"	a
+l00023	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00023"><\/a><span class="lineno">   23<\/span>&#160;<\/div>$/;"	a
+l00024	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00024"><\/a><span class="lineno">   24<\/span>&#160;<span class="preprocessor">#define RASPI_CAN_BUSY      2<\/span><\/div>$/;"	a
+l00024	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00024"><\/a><span class="lineno">   24<\/span>&#160;<span class="comment">\/\/ tacho units<\/span><\/div>$/;"	a
+l00025	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00025"><\/a><span class="lineno">   25<\/span>&#160;<\/div>$/;"	a
+l00025	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00025"><\/a><span class="lineno">   25<\/span>&#160;<span class="preprocessor">#define RPM   0<\/span><\/div>$/;"	a
+l00026	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00026"><\/a><span class="lineno">   26<\/span>&#160;<span class="preprocessor">#define CAN_DATA_MAX_SZ    10<\/span><\/div>$/;"	a
+l00026	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00026"><\/a><span class="lineno">   26<\/span>&#160;<\/div>$/;"	a
+l00027	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00027"><\/a><span class="lineno">   27<\/span>&#160;<\/div>$/;"	a
+l00027	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00027"><\/a><span class="lineno">   27<\/span>&#160;<span class="comment">\/\/ fuel units<\/span><\/div>$/;"	a
+l00028	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00028"><\/a><span class="lineno">   28<\/span>&#160;<span class="preprocessor">#define MSG_ID_SPEED    0x0081<\/span><\/div>$/;"	a
+l00028	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00028"><\/a><span class="lineno">   28<\/span>&#160;<span class="preprocessor">#define LTS   0<\/span><\/div>$/;"	a
+l00029	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00029"><\/a><span class="lineno">   29<\/span>&#160;<span class="preprocessor">#define MSG_ID_TACHO    0x0093<\/span><\/div>$/;"	a
+l00029	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00029"><\/a><span class="lineno">   29<\/span>&#160;<span class="preprocessor">#define GAL   1<\/span><\/div>$/;"	a
+l00030	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00030"><\/a><span class="lineno">   30<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__can__queue_8h.html#a5b73a15816e6b2939a9738643c9af23d">rapspi_can_msg_queue_start<\/a>( <span class="keywordtype">void<\/span> );<\/div>$/;"	a
+l00030	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00030"><\/a><span class="lineno">   30<\/span>&#160;<span class="preprocessor">#define MSG_ID_FUEL     0x0160<\/span><\/div>$/;"	a
+l00030	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00030"><\/a><span class="lineno">   30<\/span>&#160;<span class="comment">\/\/*******************************************<\/span><\/div>$/;"	a
+l00031	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00031"><\/a><span class="lineno">   31<\/span>&#160;<\/div>$/;"	a
+l00031	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00031"><\/a><span class="lineno">   31<\/span>&#160;<\/div>$/;"	a
+l00031	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00031"><\/a><span class="lineno">   31<\/span>&#160;<\/div>$/;"	a
+l00032	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00032"><\/a><span class="lineno">   32<\/span>&#160;<\/div>$/;"	a
+l00033	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00033"><\/a><span class="lineno"><a class="line" href="structcan__msg.html">   33<\/a><\/span>&#160;<span class="keyword">typedef<\/span> <span class="keyword">struct<\/span><\/div>$/;"	a
+l00034	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00034"><\/a><span class="lineno">   34<\/span>&#160;{<\/div>$/;"	a
+l00035	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00035"><\/a><span class="lineno">   35<\/span>&#160;    <span class="keywordtype">short<\/span> <span class="keywordtype">int<\/span> msgID;<\/div>$/;"	a
+l00036	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00036"><\/a><span class="lineno">   36<\/span>&#160;    <span class="keywordtype">char<\/span>  DLC;<\/div>$/;"	a
+l00037	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00037"><\/a><span class="lineno">   37<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">void<\/span> <a class="code" href="raspi__can__queue_8h.html#ab60b4ff28b258d50674036c9f1ab6f02">raspi_can_msg_queue_stop<\/a>( <span class="keywordtype">void<\/span> );<\/div>$/;"	a
+l00037	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00037"><\/a><span class="lineno">   37<\/span>&#160;    <span class="keywordtype">char<\/span>  data[ CAN_DATA_MAX_SZ ];<\/div>$/;"	a
+l00037	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00037"><\/a><span class="lineno">   37<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__gui__ipc_8h.html#af4738fa21e44392b1b4067f7665ff3f8">raspi_gui_server_init<\/a>( <span class="keywordtype">void<\/span> );<\/div>$/;"	a
+l00038	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00038"><\/a><span class="lineno">   38<\/span>&#160;<\/div>$/;"	a
+l00038	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00038"><\/a><span class="lineno">   38<\/span>&#160;    <span class="keywordtype">int<\/span>   period;<\/div>$/;"	a
+l00039	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00039"><\/a><span class="lineno">   39<\/span>&#160;}<a class="code" href="structcan__msg.html">can_msg<\/a>;<\/div>$/;"	a
+l00040	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00040"><\/a><span class="lineno">   40<\/span>&#160;<\/div>$/;"	a
+l00041	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00041"><\/a><span class="lineno">   41<\/span>&#160;<\/div>$/;"	a
+l00042	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00042"><\/a><span class="lineno"><a class="line" href="structraspi__can__ctx.html">   42<\/a><\/span>&#160;<span class="keyword">typedef<\/span> <span class="keyword">struct<\/span><\/div>$/;"	a
+l00043	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00043"><\/a><span class="lineno">   43<\/span>&#160;{<\/div>$/;"	a
+l00044	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00044"><\/a><span class="lineno">   44<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__can__queue_8h.html#a06fa8b20ccb5a9b60227aa7bcc1cec28">raspi_can_msg_queue_size<\/a>( <span class="keywordtype">void<\/span> );<\/div>$/;"	a
+l00044	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00044"><\/a><span class="lineno">   44<\/span>&#160;    <span class="keywordtype">int<\/span> canFd;<\/div>$/;"	a
+l00044	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00044"><\/a><span class="lineno">   44<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__gui__ipc_8h.html#ac431bdec4e9e405cd3461e41dc07bbaa">raspi_gui_server_accept<\/a>( <span class="keywordtype">void<\/span> );<\/div>$/;"	a
+l00045	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00045"><\/a><span class="lineno">   45<\/span>&#160;<\/div>$/;"	a
+l00045	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00045"><\/a><span class="lineno">   45<\/span>&#160;    <span class="keywordtype">int<\/span> i2c_slave_addr;<\/div>$/;"	a
+l00046	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00046"><\/a><span class="lineno">   46<\/span>&#160;    <span class="keywordtype">int<\/span> status;<\/div>$/;"	a
+l00047	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00047"><\/a><span class="lineno">   47<\/span>&#160;}<a class="code" href="structraspi__can__ctx.html">raspi_can_ctx<\/a>;<\/div>$/;"	a
+l00048	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00048"><\/a><span class="lineno">   48<\/span>&#160;<\/div>$/;"	a
+l00052	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00052"><\/a><span class="lineno">   52<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__gui__ipc_8h.html#adb61ce45e7c9ac234ce06eddec3c3f21">raspi_gui_server_send<\/a>( <span class="keywordtype">char<\/span>* buffer, <span class="keywordtype">int<\/span> size );<\/div>$/;"	a
+l00054	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00054"><\/a><span class="lineno">   54<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__can__queue_8h.html#abbcd93117bfb1944bd23f8a016dc61c3">raspi_can_msg_dequeue<\/a>( <a class="code" href="structcan__msg.html">can_msg<\/a>* msg );<\/div>$/;"	a
+l00055	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00055"><\/a><span class="lineno">   55<\/span>&#160;<\/div>$/;"	a
+l00055	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00055"><\/a><span class="lineno">   55<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__candrv_8h.html#aa1e9109d9025f8f0ca1475a402b1f04d">raspi_can_init<\/a>( <a class="code" href="structraspi__can__ctx.html">raspi_can_ctx<\/a>* ctx );<\/div>$/;"	a
+l00056	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00056"><\/a><span class="lineno">   56<\/span>&#160;<\/div>$/;"	a
+l00056	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00056"><\/a><span class="lineno">   56<\/span>&#160;<\/div>$/;"	a
+l00057	html/raspi__can__queue_8h_source.html	/^<div class="line"><a name="l00057"><\/a><span class="lineno">   57<\/span>&#160;<span class="preprocessor">#endif<\/span><\/div>$/;"	a
+l00060	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00060"><\/a><span class="lineno">   60<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__gui__ipc_8h.html#ae99f97f3cbbeca6e7a657b4026a34638">raspi_gui_server_send_gauge<\/a>( <span class="keywordtype">unsigned<\/span> <span class="keywordtype">char<\/span> <span class="keywordtype">id<\/span>, <span class="keywordtype">unsigned<\/span> <span class="keywordtype">short<\/span> value, <span class="keywordtype">unsigned<\/span> <span class="keywordtype">char<\/span> unit );<\/div>$/;"	a
+l00064	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00064"><\/a><span class="lineno">   64<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">void<\/span> <a class="code" href="raspi__gui__ipc_8h.html#a448ffa8649ade5a09d39ec5858999dda">raspi_gui_server_close<\/a>( <span class="keywordtype">void<\/span> );<\/div>$/;"	a
+l00065	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00065"><\/a><span class="lineno">   65<\/span>&#160;<\/div>$/;"	a
+l00066	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00066"><\/a><span class="lineno">   66<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__candrv_8h.html#ad88b1f333cfb4baf9a77267be9e90fa3">raspi_can_poll<\/a>( <a class="code" href="structraspi__can__ctx.html">raspi_can_ctx<\/a>* ctx, <span class="keywordtype">int<\/span> size, <a class="code" href="structcan__msg.html">can_msg<\/a>* msg );<\/div>$/;"	a
+l00066	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00066"><\/a><span class="lineno">   66<\/span>&#160;<span class="comment">\/\/ ****** client api, test purpose only ********<\/span><\/div>$/;"	a
+l00067	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00067"><\/a><span class="lineno">   67<\/span>&#160;<\/div>$/;"	a
+l00067	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00067"><\/a><span class="lineno">   67<\/span>&#160;<\/div>$/;"	a
+l00068	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00068"><\/a><span class="lineno">   68<\/span>&#160;<\/div>$/;"	a
+l00072	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00072"><\/a><span class="lineno">   72<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">void<\/span> <a class="code" href="raspi__candrv_8h.html#a694ef9727c46ae491b952abdb8f321b1">raspi_can_close<\/a>( <a class="code" href="structraspi__can__ctx.html">raspi_can_ctx<\/a>* ctx );<\/div>$/;"	a
+l00073	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00073"><\/a><span class="lineno">   73<\/span>&#160;<\/div>$/;"	a
+l00074	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00074"><\/a><span class="lineno">   74<\/span>&#160;<span class="comment">\/\/TODO: currently not supported, mmaybe add later<\/span><\/div>$/;"	a
+l00074	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00074"><\/a><span class="lineno">   74<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__gui__ipc_8h.html#ac9e7a5bbf2bb7773ce5ddaaeb030d4fb">raspi_gui_client_init<\/a>( <span class="keywordtype">void<\/span> );<\/div>$/;"	a
+l00075	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00075"><\/a><span class="lineno">   75<\/span>&#160;<span class="comment">\/\/int raspi_can_send( raspi_can_ctx* ctx, can_msg* msg );<\/span><\/div>$/;"	a
+l00075	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00075"><\/a><span class="lineno">   75<\/span>&#160;<\/div>$/;"	a
+l00076	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00076"><\/a><span class="lineno">   76<\/span>&#160;<\/div>$/;"	a
+l00077	html/raspi__candrv_8h_source.html	/^<div class="line"><a name="l00077"><\/a><span class="lineno">   77<\/span>&#160;<span class="preprocessor">#endif<\/span><\/div>$/;"	a
+l00081	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00081"><\/a><span class="lineno">   81<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__gui__ipc_8h.html#afd97e860b6f6f46b67ff3ebb716962ae">raspi_gui_client_connect<\/a>( <span class="keywordtype">void<\/span> );<\/div>$/;"	a
+l00082	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00082"><\/a><span class="lineno">   82<\/span>&#160;<\/div>$/;"	a
+l00089	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00089"><\/a><span class="lineno">   89<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">int<\/span> <a class="code" href="raspi__gui__ipc_8h.html#ae8b16310860e3b863e1876fb7fb2fa2f">raspi_gui_client_recv<\/a>( <span class="keywordtype">char<\/span>* buffer, <span class="keywordtype">int<\/span> size );<\/div>$/;"	a
+l00090	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00090"><\/a><span class="lineno">   90<\/span>&#160;<\/div>$/;"	a
+l00094	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00094"><\/a><span class="lineno">   94<\/span>&#160;<span class="keyword">extern<\/span> <span class="keywordtype">void<\/span> <a class="code" href="raspi__gui__ipc_8h.html#a422620ba3eecba2e26f5cd920fdb62c8">raspi_gui_client_close<\/a>( <span class="keywordtype">void<\/span> );<\/div>$/;"	a
+l00095	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00095"><\/a><span class="lineno">   95<\/span>&#160;<\/div>$/;"	a
+l00096	html/raspi__gui__ipc_8h_source.html	/^<div class="line"><a name="l00096"><\/a><span class="lineno">   96<\/span>&#160;<span class="preprocessor">#endif<\/span><\/div>$/;"	a
+latex_count	latex/Makefile	/^	latex_count=8 ; \\$/;"	m
+len	i2c.h	/^	__u16 len;		\/* msg length				*\/$/;"	m	struct:i2c_msg
+letter_c	html/classes.html	/^<tr><td rowspan="2" valign="bottom"><a name="letter_c"><\/a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;c&#160;&#160;<\/div><\/td><\/tr><\/table>$/;"	a
+letter_r	html/classes.html	/^<\/td><td rowspan="2" valign="bottom"><a name="letter_r"><\/a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;r&#160;&#160;<\/div><\/td><\/tr><\/table>$/;"	a
+local_servaddr	raspi_gui_ipc.c	/^    struct sockaddr_un local_servaddr;  $/;"	m	struct:__anon3	typeref:struct:__anon3::sockaddr_un	file:
+localaddr	raspi_gui_ipc.c	/^    struct sockaddr_un localaddr;$/;"	m	struct:__anon2	typeref:struct:__anon2::sockaddr_un	file:
+mailbox	raspi_candrv.c	/^    char  mailbox;$/;"	m	struct:__anon1	file:
+main	can_test.c	/^int main( int num, char** args  )$/;"	f
+msgID	raspi_candrv.h	/^    short int msgID;$/;"	m	struct:__anon4
+msgQueue	raspi_can_queue.c	/^msgQueue_t msgQueue;$/;"	v
+msgQueueIdx	raspi_can_queue.c	/^    int msgQueueIdx;$/;"	m	struct:__anon6	file:
+msgQueue_t	raspi_can_queue.c	/^}msgQueue_t;$/;"	t	typeref:struct:__anon6	file:
+msgs	i2c-dev.h	/^	struct i2c_msg *msgs;	\/* pointers to i2c_msgs *\/$/;"	m	struct:i2c_rdwr_ioctl_data	typeref:struct:i2c_rdwr_ioctl_data::i2c_msg
+nested-classes	html/raspi__candrv_8h.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"><\/a>$/;"	a
+nmsgs	i2c-dev.h	/^	__u32 nmsgs;			\/* number of i2c_msgs *\/$/;"	m	struct:i2c_rdwr_ioctl_data
+period	raspi_candrv.h	/^    int   period;$/;"	m	struct:__anon4
+pollThread	raspi_can_queue.c	/^    pthread_t pollThread; $/;"	m	struct:__anon6	file:
+pub-attribs	html/structcan__msg.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"><\/a>$/;"	a
+pub-attribs	html/structraspi__can__ctx.html	/^<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"><\/a>$/;"	a
+queue	raspi_can_queue.c	/^    can_msg queue[MAX_QUEUE_SIZE];$/;"	m	struct:__anon6	file:
+queueSem	raspi_can_queue.c	/^    sem_t* queueSem;$/;"	m	struct:__anon6	file:
+rapspi_can_msg_queue_start	raspi_can_queue.c	/^int rapspi_can_msg_queue_start( void )$/;"	f
+raspi    _   can    _   ctx Struct Reference	latex/structraspi__can__ctx.tex	/^\\hypertarget{structraspi__can__ctx}{}\\section{raspi\\+\\_\\+can\\+\\_\\+ctx Struct Reference}$/;"	s
+raspi    _   can    _   queue.   h File Reference	latex/raspi__can__queue_8h.tex	/^\\hypertarget{raspi__can__queue_8h}{}\\section{raspi\\+\\_\\+can\\+\\_\\+queue.\\+h File Reference}$/;"	s
+raspi    _   candrv.   h File Reference	latex/raspi__candrv_8h.tex	/^\\hypertarget{raspi__candrv_8h}{}\\section{raspi\\+\\_\\+candrv.\\+h File Reference}$/;"	s
+raspi    _   gui    _   ipc.   h File Reference	latex/raspi__gui__ipc_8h.tex	/^\\hypertarget{raspi__gui__ipc_8h}{}\\section{raspi\\+\\_\\+gui\\+\\_\\+ipc.\\+h File Reference}$/;"	s
+raspi _ can _ close raspi _ can _ ctx $ ast$ctx	latex/raspi__candrv_8h.tex	/^\\subsubsection[{raspi\\+\\_\\+can\\+\\_\\+close(raspi\\+\\_\\+can\\+\\_\\+ctx $\\ast$ctx)}]{\\setlength{\\rightskip}{0pt plus 5cm}void raspi\\+\\_\\+can\\+\\_\\+close ($/;"	b
+raspi _ can _ init raspi _ can _ ctx $ ast$ctx	latex/raspi__candrv_8h.tex	/^\\subsubsection[{raspi\\+\\_\\+can\\+\\_\\+init(raspi\\+\\_\\+can\\+\\_\\+ctx $\\ast$ctx)}]{\\setlength{\\rightskip}{0pt plus 5cm}int raspi\\+\\_\\+can\\+\\_\\+init ($/;"	b
+raspi _ can _ poll raspi _ can _ ctx $ ast$ctx int size can _ msg $ ast$msg	latex/raspi__candrv_8h.tex	/^\\subsubsection[{raspi\\+\\_\\+can\\+\\_\\+poll(raspi\\+\\_\\+can\\+\\_\\+ctx $\\ast$ctx, int size, can\\+\\_\\+msg $\\ast$msg)}]{\\setlength{\\rightskip}{0pt plus 5cm}int raspi\\+\\_\\+can\\+\\_\\+poll ($/;"	b
+raspi _ gui _ client _ connect void	latex/raspi__gui__ipc_8h.tex	/^\\subsubsection[{raspi\\+\\_\\+gui\\+\\_\\+client\\+\\_\\+connect(void)}]{\\setlength{\\rightskip}{0pt plus 5cm}int raspi\\+\\_\\+gui\\+\\_\\+client\\+\\_\\+connect ($/;"	b
+raspi _ gui _ client _ init void	latex/raspi__gui__ipc_8h.tex	/^\\subsubsection[{raspi\\+\\_\\+gui\\+\\_\\+client\\+\\_\\+init(void)}]{\\setlength{\\rightskip}{0pt plus 5cm}int raspi\\+\\_\\+gui\\+\\_\\+client\\+\\_\\+init ($/;"	b
+raspi _ gui _ client _ recv char $ ast$buffer int size	latex/raspi__gui__ipc_8h.tex	/^\\subsubsection[{raspi\\+\\_\\+gui\\+\\_\\+client\\+\\_\\+recv(char $\\ast$buffer, int size)}]{\\setlength{\\rightskip}{0pt plus 5cm}int raspi\\+\\_\\+gui\\+\\_\\+client\\+\\_\\+recv ($/;"	b
+raspi _ gui _ server _ accept void	latex/raspi__gui__ipc_8h.tex	/^\\subsubsection[{raspi\\+\\_\\+gui\\+\\_\\+server\\+\\_\\+accept(void)}]{\\setlength{\\rightskip}{0pt plus 5cm}int raspi\\+\\_\\+gui\\+\\_\\+server\\+\\_\\+accept ($/;"	b
+raspi _ gui _ server _ init void	latex/raspi__gui__ipc_8h.tex	/^\\subsubsection[{raspi\\+\\_\\+gui\\+\\_\\+server\\+\\_\\+init(void)}]{\\setlength{\\rightskip}{0pt plus 5cm}int raspi\\+\\_\\+gui\\+\\_\\+server\\+\\_\\+init ($/;"	b
+raspi _ gui _ server _ send _ gauge unsigned char id unsigned short value unsigned char unit	latex/raspi__gui__ipc_8h.tex	/^\\subsubsection[{raspi\\+\\_\\+gui\\+\\_\\+server\\+\\_\\+send\\+\\_\\+gauge(unsigned char id, unsigned short value, unsigned char unit)}]{\\setlength{\\rightskip}{0pt plus 5cm}int raspi\\+\\_\\+gui\\+\\_\\+server\\+\\_\\+send\\+\\_\\+gauge ($/;"	b
+raspi _ gui _ server _ send char $ ast$buffer int size	latex/raspi__gui__ipc_8h.tex	/^\\subsubsection[{raspi\\+\\_\\+gui\\+\\_\\+server\\+\\_\\+send(char $\\ast$buffer, int size)}]{\\setlength{\\rightskip}{0pt plus 5cm}int raspi\\+\\_\\+gui\\+\\_\\+server\\+\\_\\+send ($/;"	b
+raspi_can_close	raspi_candrv.c	/^void raspi_can_close( raspi_can_ctx* ctx )$/;"	f
+raspi_can_ctx	raspi_candrv.h	/^}raspi_can_ctx;$/;"	t	typeref:struct:__anon5
+raspi_can_driver_recv_test	can_test.c	/^static void raspi_can_driver_recv_test( void )$/;"	f	file:
+raspi_can_driver_send_test	can_test.c	/^static void raspi_can_driver_send_test( void )$/;"	f	file:
+raspi_can_init	raspi_candrv.c	/^int raspi_can_init( raspi_can_ctx* ctx )$/;"	f
+raspi_can_msg_dequeue	raspi_can_queue.c	/^int raspi_can_msg_dequeue( can_msg* msg )$/;"	f
+raspi_can_msg_enqueue	raspi_can_queue.c	/^static int raspi_can_msg_enqueue( can_msg* msg )$/;"	f	file:
+raspi_can_msg_queue_init	raspi_can_queue.c	/^int raspi_can_msg_queue_init( void )$/;"	f
+raspi_can_msg_queue_size	raspi_can_queue.c	/^int raspi_can_msg_queue_size( void )$/;"	f
+raspi_can_msg_queue_stop	raspi_can_queue.c	/^void raspi_can_msg_queue_stop( void )$/;"	f
+raspi_can_poll	raspi_candrv.c	/^int raspi_can_poll( raspi_can_ctx* ctx, int size, can_msg* msg )$/;"	f
+raspi_can_poll_thr	raspi_can_queue.c	/^static void* raspi_can_poll_thr( void* arg )$/;"	f	file:
+raspi_can_queue_test	can_test.c	/^static void raspi_can_queue_test( void )$/;"	f	file:
+raspi_client_receive_test	can_test.c	/^static void raspi_client_receive_test( void )$/;"	f	file:
+raspi_function_test	can_test.c	/^static void raspi_function_test( int test_num )$/;"	f	file:
+raspi_gauge_control_test	can_test.c	/^static void raspi_gauge_control_test( void )$/;"	f	file:
+raspi_get_mailbox	raspi_candrv.c	/^static int raspi_get_mailbox(raspi_can_ctx* ctx, char mailNo, i2c_msg* response )$/;"	f	file:
+raspi_gui_client_close	raspi_gui_ipc.c	/^void raspi_gui_client_close( void )$/;"	f
+raspi_gui_client_connect	raspi_gui_ipc.c	/^int raspi_gui_client_connect( void )$/;"	f
+raspi_gui_client_init	raspi_gui_ipc.c	/^int raspi_gui_client_init( void )$/;"	f
+raspi_gui_client_recv	raspi_gui_ipc.c	/^int raspi_gui_client_recv( char* buffer, int size )$/;"	f
+raspi_gui_server_accept	raspi_gui_ipc.c	/^int raspi_gui_server_accept( void )$/;"	f
+raspi_gui_server_close	raspi_gui_ipc.c	/^void raspi_gui_server_close( void )$/;"	f
+raspi_gui_server_init	raspi_gui_ipc.c	/^int raspi_gui_server_init( void )$/;"	f
+raspi_gui_server_send	raspi_gui_ipc.c	/^int raspi_gui_server_send( char* buffer, int size )$/;"	f
+raspi_gui_server_send_gauge	raspi_gui_ipc.c	/^int raspi_gui_server_send_gauge( unsigned char id, unsigned short value, unsigned char unit  )$/;"	f
+raspi_gui_server_send_ignition	raspi_gui_ipc.c	/^int raspi_gui_server_send_ignition( unsigned char IG )$/;"	f
+raspi_i2cPdu_toi2cmsg	raspi_candrv.c	/^static int raspi_i2cPdu_toi2cmsg( int size , char* buffer, i2c_msg* i2c  )$/;"	f	file:
+raspi_i2c_recv	raspi_candrv.c	/^static int raspi_i2c_recv( raspi_can_ctx* ctx, int sz, char* buff )$/;"	f	file:
+raspi_i2c_snd	raspi_candrv.c	/^static int raspi_i2c_snd( raspi_can_ctx* ctx, int sz, char* buff )$/;"	f	file:
+raspi_i2c_to_can	raspi_candrv.c	/^static int raspi_i2c_to_can( i2c_msg* i2c, can_msg* can )$/;"	f	file:
+raspi_i2cmsg_to_i2cPdu	raspi_candrv.c	/^static int raspi_i2cmsg_to_i2cPdu( i2c_msg* i2c,  int size, char* buffer   )$/;"	f	file:
+raspi_integration_test	can_test.c	/^static void raspi_integration_test( void )$/;"	f	file:
+raspi_server_send_test	can_test.c	/^static void raspi_server_send_test( void )$/;"	f	file:
+read_write	i2c-dev.h	/^	__u8 read_write;$/;"	m	struct:i2c_smbus_ioctl_data
+remote_sock	raspi_gui_ipc.c	/^    struct sockaddr_un remote_sock[ IPC_GUI_MAX_CLIENTS ];$/;"	m	struct:__anon2	typeref:struct:__anon2::sockaddr_un	file:
+searchData	html/search/all_0.js	/^var searchData=$/;"	v
+searchData	html/search/all_1.js	/^var searchData=$/;"	v
+searchData	html/search/classes_0.js	/^var searchData=$/;"	v
+searchData	html/search/classes_1.js	/^var searchData=$/;"	v
+searchData	html/search/files_0.js	/^var searchData=$/;"	v
+searchData	html/search/functions_0.js	/^var searchData=$/;"	v
+servCtx	raspi_gui_ipc.c	/^serverContext servCtx;$/;"	v
+serv_sock	raspi_gui_ipc.c	/^    int serv_sock;$/;"	m	struct:__anon2	file:
+serverContext	raspi_gui_ipc.c	/^}serverContext;$/;"	t	typeref:struct:__anon2	file:
+setClassAttr	html/search/search.js	/^function setClassAttr(elem,attr)$/;"	f
+setKeyActions	html/search/search.js	/^function setKeyActions(elem,action)$/;"	f
+sigStop	raspi_can_queue.c	/^    int sigStop;$/;"	m	struct:__anon6	file:
+size	i2c-dev.h	/^	__u32 size;$/;"	m	struct:i2c_smbus_ioctl_data
+status	raspi_candrv.c	/^    char  status;$/;"	m	struct:__anon1	file:
+status	raspi_candrv.h	/^    int status;$/;"	m	struct:__anon5
+toggleFolder	html/dynsections.js	/^function toggleFolder(id)$/;"	f
+toggleInherit	html/dynsections.js	/^function toggleInherit(id)$/;"	f
+toggleLevel	html/dynsections.js	/^function toggleLevel(level)$/;"	f
+toggleVisibility	html/dynsections.js	/^function toggleVisibility(linkObj)$/;"	f
+true	raspi_can_queue.c	18;"	d	file:
+updateStripes	html/dynsections.js	/^function updateStripes()$/;"	f
+word	i2c.h	/^	__u16 word;$/;"	m	union:i2c_smbus_data

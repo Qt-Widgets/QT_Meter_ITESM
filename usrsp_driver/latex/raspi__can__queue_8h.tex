@@ -1,0 +1,119 @@
+\hypertarget{raspi__can__queue_8h}{}\section{raspi\+\_\+can\+\_\+queue.\+h File Reference}
+\label{raspi__can__queue_8h}\index{raspi\+\_\+can\+\_\+queue.\+h@{raspi\+\_\+can\+\_\+queue.\+h}}
+
+
+Implementation of polling queue for can messages.  
+
+
+{\ttfamily \#include \char`\"{}raspi\+\_\+candrv.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{raspi__can__queue_8h_a3d4499ef2bf99b0761e4fa68d133bca6}{}\#define {\bfseries C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+O\+K}~0\label{raspi__can__queue_8h_a3d4499ef2bf99b0761e4fa68d133bca6}
+
+\item 
+\hypertarget{raspi__can__queue_8h_abe3d461f1e926a657ac78b82cfabfabe}{}\#define {\bfseries C\+A\+N\+\_\+\+M\+S\+G\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+E\+R\+R}~-\/1\label{raspi__can__queue_8h_abe3d461f1e926a657ac78b82cfabfabe}
+
+\item 
+\hypertarget{raspi__can__queue_8h_a623ec78b7909090dbedac4af1d52abb4}{}\#define {\bfseries M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+Z\+E}~50000\label{raspi__can__queue_8h_a623ec78b7909090dbedac4af1d52abb4}
+
+\item 
+\hypertarget{raspi__can__queue_8h_a2740dad1fbb618001309992b49566cf7}{}\#define {\bfseries M\+A\+X\+\_\+\+P\+O\+L\+L\+\_\+\+B\+U\+F\+F\+\_\+\+S\+I\+Z\+E}~10\label{raspi__can__queue_8h_a2740dad1fbb618001309992b49566cf7}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{raspi__can__queue_8h_abe80539fcb7c5e648e4d07162388056b}{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+init} (void)
+\begin{DoxyCompactList}\small\item\em prepare internal queue for message reception \end{DoxyCompactList}\item 
+int \hyperlink{raspi__can__queue_8h_a5b73a15816e6b2939a9738643c9af23d}{rapspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+start} (void)
+\begin{DoxyCompactList}\small\item\em start i2c message polling, this is spawn a thread that will take control with i2c hardware and will start communication with i2c slave to get new can mailbox data \end{DoxyCompactList}\item 
+void \hyperlink{raspi__can__queue_8h_ab60b4ff28b258d50674036c9f1ab6f02}{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+stop} (void)
+\begin{DoxyCompactList}\small\item\em stop polling for i2c data from slave and stop enqueuing of can messages \end{DoxyCompactList}\item 
+int \hyperlink{raspi__can__queue_8h_a06fa8b20ccb5a9b60227aa7bcc1cec28}{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+size} (void)
+\begin{DoxyCompactList}\small\item\em retreive queue size so far. Total queue size will be that of M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+Z\+E definition \end{DoxyCompactList}\item 
+int \hyperlink{raspi__can__queue_8h_abbcd93117bfb1944bd23f8a016dc61c3}{raspi\+\_\+can\+\_\+msg\+\_\+dequeue} (\hyperlink{structcan__msg}{can\+\_\+msg} $\ast$msg)
+\begin{DoxyCompactList}\small\item\em dequeue messages from can message queue. Queue will be increased by raspberry i2c polling thread each time a succesfull can message is receieved via I2\+C protocol \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of polling queue for can messages. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{raspi__can__queue_8h_a5b73a15816e6b2939a9738643c9af23d}{}\index{raspi\+\_\+can\+\_\+queue.\+h@{raspi\+\_\+can\+\_\+queue.\+h}!rapspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+start@{rapspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+start}}
+\index{rapspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+start@{rapspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+start}!raspi\+\_\+can\+\_\+queue.\+h@{raspi\+\_\+can\+\_\+queue.\+h}}
+\subsubsection[{rapspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+start(void)}]{\setlength{\rightskip}{0pt plus 5cm}int rapspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{raspi__can__queue_8h_a5b73a15816e6b2939a9738643c9af23d}
+
+
+start i2c message polling, this is spawn a thread that will take control with i2c hardware and will start communication with i2c slave to get new can mailbox data 
+
+\begin{DoxyReturn}{Returns}
+0 \+: sucess ; -\/1 \+: fail 
+\end{DoxyReturn}
+\hypertarget{raspi__can__queue_8h_abbcd93117bfb1944bd23f8a016dc61c3}{}\index{raspi\+\_\+can\+\_\+queue.\+h@{raspi\+\_\+can\+\_\+queue.\+h}!raspi\+\_\+can\+\_\+msg\+\_\+dequeue@{raspi\+\_\+can\+\_\+msg\+\_\+dequeue}}
+\index{raspi\+\_\+can\+\_\+msg\+\_\+dequeue@{raspi\+\_\+can\+\_\+msg\+\_\+dequeue}!raspi\+\_\+can\+\_\+queue.\+h@{raspi\+\_\+can\+\_\+queue.\+h}}
+\subsubsection[{raspi\+\_\+can\+\_\+msg\+\_\+dequeue(can\+\_\+msg $\ast$msg)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+can\+\_\+msg\+\_\+dequeue (
+\begin{DoxyParamCaption}
+\item[{{\bf can\+\_\+msg} $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\label{raspi__can__queue_8h_abbcd93117bfb1944bd23f8a016dc61c3}
+
+
+dequeue messages from can message queue. Queue will be increased by raspberry i2c polling thread each time a succesfull can message is receieved via I2\+C protocol 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg.} & pointer to message structure to be populated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1\+: success -\/1 \+: fail 
+\end{DoxyReturn}
+\hypertarget{raspi__can__queue_8h_abe80539fcb7c5e648e4d07162388056b}{}\index{raspi\+\_\+can\+\_\+queue.\+h@{raspi\+\_\+can\+\_\+queue.\+h}!raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+init@{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+init}}
+\index{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+init@{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+init}!raspi\+\_\+can\+\_\+queue.\+h@{raspi\+\_\+can\+\_\+queue.\+h}}
+\subsubsection[{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+init(void)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{raspi__can__queue_8h_abe80539fcb7c5e648e4d07162388056b}
+
+
+prepare internal queue for message reception 
+
+\begin{DoxyReturn}{Returns}
+0 \+: sucess ; -\/1 \+: fail 
+\end{DoxyReturn}
+\hypertarget{raspi__can__queue_8h_a06fa8b20ccb5a9b60227aa7bcc1cec28}{}\index{raspi\+\_\+can\+\_\+queue.\+h@{raspi\+\_\+can\+\_\+queue.\+h}!raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+size@{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+size}}
+\index{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+size@{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+size}!raspi\+\_\+can\+\_\+queue.\+h@{raspi\+\_\+can\+\_\+queue.\+h}}
+\subsubsection[{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+size(void)}]{\setlength{\rightskip}{0pt plus 5cm}int raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{raspi__can__queue_8h_a06fa8b20ccb5a9b60227aa7bcc1cec28}
+
+
+retreive queue size so far. Total queue size will be that of M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+Z\+E definition 
+
+\begin{DoxyReturn}{Returns}
+0 \+: sucess ; -\/1 \+: fail 
+\end{DoxyReturn}
+\hypertarget{raspi__can__queue_8h_ab60b4ff28b258d50674036c9f1ab6f02}{}\index{raspi\+\_\+can\+\_\+queue.\+h@{raspi\+\_\+can\+\_\+queue.\+h}!raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+stop@{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+stop}}
+\index{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+stop@{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+stop}!raspi\+\_\+can\+\_\+queue.\+h@{raspi\+\_\+can\+\_\+queue.\+h}}
+\subsubsection[{raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+stop(void)}]{\setlength{\rightskip}{0pt plus 5cm}void raspi\+\_\+can\+\_\+msg\+\_\+queue\+\_\+stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{raspi__can__queue_8h_ab60b4ff28b258d50674036c9f1ab6f02}
+
+
+stop polling for i2c data from slave and stop enqueuing of can messages 
+
+\begin{DoxyReturn}{Returns}
+0 \+: sucess ; -\/1 \+: fail 
+\end{DoxyReturn}
