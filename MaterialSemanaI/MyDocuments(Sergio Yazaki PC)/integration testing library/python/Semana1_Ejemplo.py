@@ -13,11 +13,11 @@
 import SI_Serial
 
 ECU_00_ID = 0x0160
-ECU_01_ID = 0x0120
-ECU_02_ID = 0x0132
+ECU_01_ID = 0x0093
+ECU_02_ID = 0x0081
 
 BAUDRATE = 19200;
-SERIAL_PORT = 0;
+SERIAL_PORT = "COM6";
 
 #Test Case
 def main():
@@ -30,7 +30,7 @@ def main():
     #deinifir los 8 bytes de datos. Convertir velocidad a string en hex
     data = format(velocidad,'04x') + empty_data
     #enviar mensaje
-    SI_Serial.enviar(ECU_00_ID,8,data,10)
+    SI_Serial.enviar(ECU_02_ID,8,data,10)
 
     #esperar 3 segundos
     SI_Serial.esperar(3)
@@ -39,7 +39,7 @@ def main():
     velocidad = 20
     data = format(velocidad,'04x') + empty_data
     #enviar mensaje
-    SI_Serial.enviar(ECU_00_ID,8,data,10)
+    SI_Serial.enviar(ECU_02_ID,8,data,10)
     #esperar 5 segundos
     SI_Serial.esperar(5)
 
@@ -50,7 +50,7 @@ def main():
     for entrada in entradas:
         velocidad = entrada
         data = format(velocidad,'04x') + empty_data
-        SI_Serial.enviar(ECU_00_ID,8,data,10)
+        SI_Serial.enviar(ECU_02_ID,8,data,10)
         print "Enviando velocidad " + str(velocidad) + " km/h"
         SI_Serial.esperar(5)
 
