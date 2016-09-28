@@ -39,11 +39,11 @@ CONFIRMATION_PERIOD = 0.02
 ONE_BYTE_MASK = 0xFF
 #Mask to detect a receive command
 COMMAND_MASK = 0xB0
-#Mask to detect a receive command
+#Mask to detect a send confirmation
 SEND_CONFIRMATION_MASK = 0xD0
 #Command frame byte size
 COMMAND_FRAME_SIZE = 14
-#Command frame byte size
+#Confirmation frame byte size
 CONFIRMATION_FRAME_SIZE = 5
 
 #CAN ID Dictonary
@@ -54,12 +54,10 @@ CONFIRMATION_FRAME_SIZE = 5
 # 3 : Is Message currently being sent preiodically
 
 CAN_ID_DICTONARY = {
-    "0x01ba":(1,False,0,False),
-    "0x0224":(2,True,0.5,False),
-    "0x0101":(3,True,0.5,False),
-    "0x024b":(4,True,0.5,False),
-    "0x034a":(5,True,0.5,False),
-
+    "0x0160":(1,False,0,True),
+    "0x0093":(2,True,0.5,False),
+    "0x0081":(3,True,0.5,False),
+    "0x0130":(4,True,0.5,False),
 }
 
 
@@ -264,8 +262,7 @@ def __readConfirmation():
 #-------------------------------------------------------------------------------
 def __readByte():
     serial_string = puertoSerie.read(1)
-    #Uncomment the below line to log the received bytes
-	#print "0x" + format(int(serial_string.encode('hex'),16),'04x')
+    print "0x" + format(int(serial_string.encode('hex'),16),'04x')
     return int(serial_string.encode('hex'),16)
 
 #-------------------------------------------------------------------------------
@@ -393,7 +390,7 @@ def ayuda():
     print("DLC: Data Lenght Code. Rango: 0 ~ 8")
     print("Data: Datos con informacion a mandar. Formato texto ej. 01EF ")
     print("Periodo: Intervalo en ms para mander mensaje cicliccamente")
-    print("     Tiempo minimio = 10 milisegund")
+    print("     Tiempo minimio = 10 milisegundos")
     print("     Si Periodo = 0 el mensaje se enviara inmediatamente")
     print("___________________________________________________________________")
     print("")
@@ -410,12 +407,11 @@ __Init()
 
 puertoSerie = serial.Serial()
 #Debug
+
 #abrir(0,19200)
-#enviar(0x024B,8, "0000000000000000", 1)
-#enviar(0x034A,8, "0100000000000000", 20)
-#enviar(0x01BA,8, "4200000000000000", 3)
-#enviar(0x0224,8, "1200000000000000", 4)
-#enviar(0x0101,8, "3000000000000000", 5)
+#enviar(0x0160,8, "4200000000000000",0)
+#enviar(0x0093,8, "1200000000000000",3)
+#enviar(0x0081,8, "3000000000000000",1)
 #enviar(0x0002,8,"ABCDEF0123456789",0)
 #enviar(0x0003,8,"89ABCDEF00000000",0)
 #enviar(0x0001,8,"0123456789ABCDEF",0)
