@@ -26,9 +26,12 @@
 /*****************************************/
 // msg CAN IDs
 
-#define MSG_CAN_ID_SPEED    0x101 
-#define MSG_CAN_ID_TACHO    0x224 
-#define MSG_CAN_ID_FUEL     0x1BA
+#define MSG_CAN_ID_SPEED    0x0081
+#define MSG_CAN_ID_TACHO    0x0093 
+#define MSG_CAN_ID_FUEL     0x0160
+
+
+
 #define MG_CAN_ID_SYS_UNIT  0x34A
 #define MSG_CAN_ID_IGN_1    0x24B
 

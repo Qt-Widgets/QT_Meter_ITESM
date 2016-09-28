@@ -46,14 +46,14 @@ raspi_can_ctx g_ctx =
 };
 
 //add AVR mailboxes to poll here
-#define I2C_AVR_ENABLED_MBX 0x05 
+#define I2C_AVR_ENABLED_MBX 1 
 char avr_mlbx_poll_list[ I2C_AVR_ENABLED_MBX ] =
 {
-    I2C_AVR_MAILBOX_1,
-    I2C_AVR_MAILBOX_2,
+    /*I2C_AVR_MAILBOX_1,*/
+    /*I2C_AVR_MAILBOX_2,*/
     I2C_AVR_MAILBOX_3,
-    I2C_AVR_MAILBOX_4,
-    I2C_AVR_MAILBOX_5
+    /*I2C_AVR_MAILBOX_4,*/
+    /*I2C_AVR_MAILBOX_5*/
 };
 
 static int raspi_i2c_to_can(  i2c_msg* i2c, can_msg* can );
