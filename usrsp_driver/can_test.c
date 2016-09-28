@@ -535,7 +535,7 @@ static int integration_test_app( can_msg* msg )
 
             printf( "sending gage id: %d and gage data: %d \n ", activeGage, data );
             // maybe add unt later
-            ipc_sz = raspi_gui_server_send_gauge( ID_GAGE_SPEED, activeGage, activeUnit );
+            ipc_sz = raspi_gui_server_send_gauge( ID_GAGE_SPEED, data, activeUnit );
 
             break;
 
